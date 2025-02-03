@@ -1,12 +1,11 @@
-// three.meshline.d.ts
 declare module "three.meshline" {
   import * as THREE from "three";
 
   export class MeshLine extends THREE.BufferGeometry {
     /**
-     * 与えられたジオメトリからメッシュラインを作成します。
-     * @param geometry THREE.BufferGeometry や THREE.Geometry など
-     * @param options オプション（必要に応じて拡張してください）
+     * 与えられたジオメトリからメッシュラインを作成
+     * @param geometry THREE.BufferGeometryやTHREE.Geometry など
+     * @param options
      */
     setGeometry(
       geometry: THREE.BufferGeometry | THREE.Geometry,
@@ -27,7 +26,6 @@ declare module "three.meshline" {
     dashOffset?: number;
     dashRatio?: number;
     transparent?: boolean;
-    // 他に必要なパラメータがあればここに追加
   }
 
   export class MeshLineMaterial extends THREE.ShaderMaterial {
