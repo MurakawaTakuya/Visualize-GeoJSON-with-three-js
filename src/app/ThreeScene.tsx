@@ -1,5 +1,12 @@
 "use client";
-import { allFiles, groupList, layers, rootPath } from "@/const/const";
+import {
+  centeringFile,
+  geoFile,
+  groupList,
+  layers,
+  networkFiles,
+  terrainFiles,
+} from "@/const/const";
 import {
   fragmentShaderLogic,
   fragmentShaderUniforms,
@@ -22,7 +29,8 @@ export default function ThreeScene() {
 
   useEffect(() => {
     // 中心点を更新
-    loader.load("./fg.geojson", (data: unknown) => {
+    // TODO: 中心点の計算方法を修正
+    loader.load(centeringFile, (data: unknown) => {
       const fgData = data as FeatureCollection<
         Polygon,
         Record<string, unknown>
@@ -45,6 +53,7 @@ export default function ThreeScene() {
 
       // 中心点を更新
       setCenter([(minX + maxX) / 2, (minY + maxY) / 2]);
+      console.log("Center is at", [(minX + maxX) / 2, (minY + maxY) / 2]);
     });
   }, []);
 
@@ -60,7 +69,6 @@ export default function ThreeScene() {
     // 画面サイズやカメラの設定
     const sizes = { width: window.innerWidth, height: window.innerHeight };
     // 座標系の中心
-    // const center: [number, number] = [-12035.29, -34261.85];
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -117,45 +125,22 @@ export default function ThreeScene() {
         .add({ [`group${num}`]: true }, `group${num}`)
         .onChange((isVisible: boolean) => {
           const obj = scene.getObjectByName(`group${num}`);
-          if (obj) obj.visible = isVisible;
+          if (obj) {
+            obj.visible = isVisible;
+          }
         })
         .name(layers[i]);
     });
 
     // geojson ファイルの読み込み
-    // 物理的な空間データ
-    const SpaceLists = allFiles
-      .filter((f) => f.endsWith("_Space.geojson"))
-      .map((f) => rootPath + f);
-    // 階層データ
-    const FloorLists = allFiles
-      .filter((f) => f.endsWith("_Floor.geojson"))
-      .map((f) => rootPath + f);
-    // 固定設置物データ
-    const FixtureLists = allFiles
-      .filter((f) => f.endsWith("_Fixture.geojson"))
-      .map((f) => rootPath + f);
-    SpaceLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Space");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 5);
-      }
-    });
-    FloorLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Floor");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 0.5);
-      }
-    });
-    FixtureLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Fixture");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 5);
-      }
+    geoFile.forEach((f) => {
+      const floorNumber = getFloorNumber(f);
+      // 床データはdepthを浅くする
+      const depth = f.endsWith("_Floor.geojson") ? 0.5 : 5;
+      loadAndAddToScene(f, center, floorNumber ?? 0, depth);
     });
 
     // メッシュライン用マテリアルとシェーダー
-
     linkMaterial.onBeforeCompile = (shader: CustomShader): void => {
       Object.assign(shader.uniforms, linkMaterial.userData.uniforms);
       shader.vertexShader = shader.vertexShader.replace(
@@ -180,52 +165,60 @@ export default function ThreeScene() {
       .add({ hasCheck: true }, "hasCheck")
       .onChange((isV: boolean) => {
         const linkObj = scene.getObjectByName("link");
-        if (linkObj) linkObj.visible = isV;
+        if (linkObj) {
+          linkObj.visible = isV;
+        }
       })
       .name("歩行者ネットワーク");
 
-    // 歩行者ネットワークの読み込み
-    loader.load("./nw/Shinjuku_node.geojson", (data: unknown) => {
-      const nodeData = data as FeatureCollection<Point, NodeProperties>;
-      const nodeIds: { node_id: number; ordinal: number }[] =
-        nodeData.features.map((feature: Feature<Point, NodeProperties>) => ({
-          node_id: feature.properties.node_id,
-          ordinal: feature.properties.ordinal,
-        }));
-      creatingLink(nodeIds, center);
-    });
+    if (networkFiles) {
+      // 歩行者ネットワークの読み込み
+      loader.load(networkFiles.node, (data: unknown) => {
+        const nodeData = data as FeatureCollection<Point, NodeProperties>;
+        const nodeIds: { node_id: number; ordinal: number }[] =
+          nodeData.features.map((feature: Feature<Point, NodeProperties>) => ({
+            node_id: feature.properties.node_id,
+            ordinal: feature.properties.ordinal,
+          }));
+        creatingLink(nodeIds, center);
+      });
+    }
 
-    // 地表データの読み込み
-    loader.load("./fg.geojson", (data: unknown) => {
-      const fgData = data as FeatureCollection<
-        Polygon,
-        Record<string, unknown>
-      >;
-      fgData.features.forEach(
-        (feature: Feature<Polygon, Record<string, unknown>>) => {
-          const coordinates = feature.geometry!.coordinates;
-          const points = coordinates[0].map((point: number[]) => {
-            return new THREE.Vector3(
-              point[0] - center[0],
-              point[1] - center[1],
-              0
-            );
-          });
-          const geometry = new THREE.BufferGeometry().setFromPoints(points);
-          const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
-          geometry.applyMatrix4(matrix);
-          const material = new THREE.LineBasicMaterial({
-            color: new THREE.Color("rgb(23, 93, 199)"),
-          });
-          const line = new THREE.Line(geometry, material);
-          const group0 = scene.getObjectByName("group0");
-          if (group0) group0.add(line);
-        }
-      );
-    });
+    if (terrainFiles) {
+      // 地表データの読み込み
+      loader.load(terrainFiles, (data: unknown) => {
+        const fgData = data as FeatureCollection<
+          Polygon,
+          Record<string, unknown>
+        >;
+        fgData.features.forEach(
+          (feature: Feature<Polygon, Record<string, unknown>>) => {
+            const coordinates = feature.geometry!.coordinates;
+            const points = coordinates[0].map((point: number[]) => {
+              return new THREE.Vector3(
+                point[0] - center[0],
+                point[1] - center[1],
+                0
+              );
+            });
+            const geometry = new THREE.BufferGeometry().setFromPoints(points);
+            const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
+            geometry.applyMatrix4(matrix);
+            const material = new THREE.LineBasicMaterial({
+              color: new THREE.Color("rgb(23, 93, 199)"),
+            });
+            const line = new THREE.Line(geometry, material);
+            const group0 = scene.getObjectByName("group0");
+            if (group0) {
+              group0.add(line);
+            }
+          }
+        );
+      });
+    }
 
-    const startDisplay = () => {
-      requestAnimationFrame(startDisplay);
+    const animate = () => {
+      requestAnimationFrame(animate);
       const target = mapControls.target;
       mapControls.update();
       zoomControls.target.set(target.x, target.y, target.z);
@@ -235,7 +228,7 @@ export default function ThreeScene() {
       }
       renderer.render(scene, camera);
     };
-    startDisplay();
+    animate();
 
     return () => {
       window.removeEventListener("resize", onResize);

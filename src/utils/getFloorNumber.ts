@@ -5,11 +5,8 @@
  * @param {string} type
  * @return {*}  {(number | null)}
  */
-export const getFloorNumber = (
-  geojson: string,
-  type: string
-): number | null => {
-  const regex = new RegExp(`ShinjukuTerminal_([-B\\d]+)(out)?_${type}`);
+export const getFloorNumber = (geojson: string): number | null => {
+  const regex = new RegExp(`.*_([-B\\d]+)(out)?_.*`);
   const match = geojson.match(regex);
   if (!match) return null;
   const floor = match[1].replace("B", "-");
