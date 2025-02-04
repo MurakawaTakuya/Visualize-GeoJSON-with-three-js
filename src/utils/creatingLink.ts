@@ -1,4 +1,4 @@
-import { verticalOffset } from "@/const/const";
+import { networkFiles, verticalOffset } from "@/const/const";
 import { LinkProperties } from "@/types/types";
 import { Feature, FeatureCollection, LineString } from "geojson";
 import * as THREE from "three";
@@ -16,7 +16,10 @@ export const creatingLink = (
   nodeId: { node_id: number; ordinal: number }[],
   center: [number, number]
 ): void => {
-  loader.load("./nw/Shinjuku_link.geojson", (data: unknown) => {
+  if (!networkFiles) {
+    return;
+  }
+  loader.load(networkFiles.link, (data: unknown) => {
     const linkData = data as FeatureCollection<LineString, LinkProperties>;
     // リンクの描画
     linkData.features.forEach(

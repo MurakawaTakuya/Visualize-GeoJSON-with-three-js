@@ -16,3 +16,11 @@ export interface CustomShader {
   vertexShader: string;
   fragmentShader: string;
 }
+
+export interface FileStructure {
+  rootPath: string;
+  centeringFile: string;
+  geoFile: string[];
+  networkFiles?: { node: string; link: string }; // TODO: string[]の可能性あり
+  terrainFiles?: string; // TODO: string[]の可能性あり
+}
