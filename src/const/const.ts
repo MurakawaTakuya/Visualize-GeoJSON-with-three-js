@@ -1,4 +1,22 @@
 // ファイルパス
+// export const rootPath = "./NagoyaUnimall/";
+// export const allFiles = [
+//   "UniMall_B1_Build_Connect.geojson",
+//   "UniMall_B1_Building.geojson",
+//   "UniMall_B1_Drawing.geojson",
+//   "UniMall_B1_Facility.geojson",
+//   "UniMall_B1_Fixture.geojson",
+//   "UniMall_B1_Floor_Connect.geojson",
+//   "UniMall_B1_Floor.geojson",
+//   "UniMall_B1_Link.geojson",
+//   "UniMall_B1_Node.geojson",
+//   "UniMall_B1_Opening.geojson",
+//   "UniMall_B1_Site.geojson",
+//   "UniMall_B1_Space.geojson",
+//   "UniMall_B1_TWSI_Line.geojson",
+//   "UniMall_B1_TWSI_Point.geojson",
+// ];
+
 export const rootPath = "./ShinjukuTerminal/";
 export const allFiles = [
   "ShinjukuTerminal_B3_Space.geojson",

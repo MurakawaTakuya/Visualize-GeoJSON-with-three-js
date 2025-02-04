@@ -28,11 +28,17 @@ export const loadAndAddToScene = (
           feature.geometry !== null
       )
       .forEach((feature: Feature<Polygon, Record<string, unknown>>) => {
+        if (feature.geometry.type !== "Polygon") {
+          return;
+        }
+        // TODO: Point, LineStringの場合の処理を追加
+
         const geometry = createExtrudedGeometry(
           feature.geometry!.coordinates,
           depth,
           center
         );
+
         // 90度回転
         const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
         geometry.applyMatrix4(matrix);
@@ -41,7 +47,9 @@ export const loadAndAddToScene = (
         const line = new THREE.LineSegments(edges, lineMaterial);
         line.position.y += floorNumber * verticalOffset - 1;
         const group = scene.getObjectByName(`group${floorNumber}`);
-        if (group) group.add(line);
+        if (group) {
+          group.add(line);
+        }
       });
   });
 };

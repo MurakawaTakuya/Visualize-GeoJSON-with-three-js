@@ -22,7 +22,8 @@ export default function ThreeScene() {
 
   useEffect(() => {
     // 中心点を更新
-    loader.load("./fg.geojson", (data: unknown) => {
+    // TODO: 中心点の計算方法を修正
+    loader.load(`${rootPath}${allFiles[0]}`, (data: unknown) => {
       const fgData = data as FeatureCollection<
         Polygon,
         Record<string, unknown>
@@ -45,6 +46,7 @@ export default function ThreeScene() {
 
       // 中心点を更新
       setCenter([(minX + maxX) / 2, (minY + maxY) / 2]);
+      console.log("Center is at", [(minX + maxX) / 2, (minY + maxY) / 2]);
     });
   }, []);
 
@@ -60,7 +62,6 @@ export default function ThreeScene() {
     // 画面サイズやカメラの設定
     const sizes = { width: window.innerWidth, height: window.innerHeight };
     // 座標系の中心
-    // const center: [number, number] = [-12035.29, -34261.85];
 
     const camera = new THREE.PerspectiveCamera(
       75,
@@ -117,45 +118,23 @@ export default function ThreeScene() {
         .add({ [`group${num}`]: true }, `group${num}`)
         .onChange((isVisible: boolean) => {
           const obj = scene.getObjectByName(`group${num}`);
-          if (obj) obj.visible = isVisible;
+          if (obj) {
+            obj.visible = isVisible;
+          }
         })
         .name(layers[i]);
     });
 
     // geojson ファイルの読み込み
-    // 物理的な空間データ
-    const SpaceLists = allFiles
-      .filter((f) => f.endsWith("_Space.geojson"))
-      .map((f) => rootPath + f);
-    // 階層データ
-    const FloorLists = allFiles
-      .filter((f) => f.endsWith("_Floor.geojson"))
-      .map((f) => rootPath + f);
-    // 固定設置物データ
-    const FixtureLists = allFiles
-      .filter((f) => f.endsWith("_Fixture.geojson"))
-      .map((f) => rootPath + f);
-    SpaceLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Space");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 5);
-      }
-    });
-    FloorLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Floor");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 0.5);
-      }
-    });
-    FixtureLists.forEach((geojson) => {
-      const floorNumber = getFloorNumber(geojson, "Fixture");
-      if (floorNumber !== null) {
-        loadAndAddToScene(geojson, center, floorNumber, 5);
-      }
+    const fileList = allFiles.map((f) => rootPath + f);
+    fileList.forEach((f) => {
+      const floorNumber = getFloorNumber(f);
+      // 床データはdepthを浅くする
+      const depth = f.endsWith("_Floor.geojson") ? 0.5 : 5;
+      loadAndAddToScene(f, center, floorNumber ?? 0, depth);
     });
 
     // メッシュライン用マテリアルとシェーダー
-
     linkMaterial.onBeforeCompile = (shader: CustomShader): void => {
       Object.assign(shader.uniforms, linkMaterial.userData.uniforms);
       shader.vertexShader = shader.vertexShader.replace(
@@ -185,6 +164,7 @@ export default function ThreeScene() {
       .name("歩行者ネットワーク");
 
     // 歩行者ネットワークの読み込み
+    // TODO: implement
     loader.load("./nw/Shinjuku_node.geojson", (data: unknown) => {
       const nodeData = data as FeatureCollection<Point, NodeProperties>;
       const nodeIds: { node_id: number; ordinal: number }[] =
@@ -196,6 +176,7 @@ export default function ThreeScene() {
     });
 
     // 地表データの読み込み
+    // TODO: implement
     loader.load("./fg.geojson", (data: unknown) => {
       const fgData = data as FeatureCollection<
         Polygon,
