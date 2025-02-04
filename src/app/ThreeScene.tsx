@@ -1,5 +1,11 @@
 "use client";
-import { allFiles, groupList, layers, rootPath } from "@/const/const";
+import {
+  allFiles,
+  centeringFile,
+  groupList,
+  layers,
+  rootPath,
+} from "@/const/const";
 import {
   fragmentShaderLogic,
   fragmentShaderUniforms,
@@ -23,7 +29,7 @@ export default function ThreeScene() {
   useEffect(() => {
     // 中心点を更新
     // TODO: 中心点の計算方法を修正
-    loader.load(`${rootPath}${allFiles[0]}`, (data: unknown) => {
+    loader.load(`${rootPath}${centeringFile}`, (data: unknown) => {
       const fgData = data as FeatureCollection<
         Polygon,
         Record<string, unknown>
