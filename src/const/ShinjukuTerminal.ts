@@ -81,5 +81,6 @@ export const ShinjukuTerminal = {
       "ShinjukuTerminal_B3_TWSIPoint.geojson",
       "ShinjukuTerminal_Terrain.geojson",
     ],
+    center: [-12046.947632967798, -34285.595339754254] as [number, number],
   },
 };

@@ -17,5 +17,6 @@ export const NagoyaCentralPark = {
       "CentralPark_B1_TWSI_Line.geojson",
       "CentralPark_B1_TWSI_Point.geojson",
     ],
+    center: [-266467.79169992125, -87879.0502576503] as [number, number],
   },
 };
