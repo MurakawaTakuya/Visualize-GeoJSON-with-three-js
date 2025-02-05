@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "NRT2_4out_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "a80d050d72184877b4a7412f952841b3", "category": "F014", "floor_id": "a193eaf9eadd46d0b4bdbfefb87ed455", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50261.020907086123771, -25095.802658902757685 ] } },
+{ "type": "Feature", "properties": { "id": "41f3cd4fe3af4c22b8845d3ec36b3d2b", "category": "F014", "floor_id": "5b70fbc37d29458895705af12a3ebd24", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50118.4512473484574, -24856.2176535133367 ] } },
+{ "type": "Feature", "properties": { "id": "c7cb9a2ef43f4803b52a367ad33b6302", "category": "F011", "floor_id": "a193eaf9eadd46d0b4bdbfefb87ed455", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50257.73409628670197, -25099.290447230723657 ] } },
+{ "type": "Feature", "properties": { "id": "edabb4dcd08b49fe9d2b6763b465e3d3", "category": "F011", "floor_id": "5b70fbc37d29458895705af12a3ebd24", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50113.632532116636867, -24857.5283277034614 ] } },
+{ "type": "Feature", "properties": { "id": "8700194109f24676adcf0847031982f9", "category": "F011", "floor_id": "a193eaf9eadd46d0b4bdbfefb87ed455", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50277.168314341404766, -25088.443381579836569 ] } },
+{ "type": "Feature", "properties": { "id": "ee66b5c262a44ad08075479840946f66", "category": "F011", "floor_id": "5b70fbc37d29458895705af12a3ebd24", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ 50132.519123882193526, -24845.303033596337627 ] } },
+{ "type": "Feature", "properties": { "id": "6319189d290044e18e03ad5518a77c22", "category": "F011", "floor_id": "a193eaf9eadd46d0b4bdbfefb87ed455", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ 50265.381261403024837, -25093.236130470813805 ] } },
+{ "type": "Feature", "properties": { "id": "9eaab5b38c5544cfa92a3a446d7fc40a", "category": "F011", "floor_id": "5b70fbc37d29458895705af12a3ebd24", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50122.721152127174719, -24853.419609904267418 ] } }
+]
+}

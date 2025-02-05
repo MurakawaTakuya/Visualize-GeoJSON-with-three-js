@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Parking_NRT2_B1out_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "0f65285dd76442dca7cc5783cf1c3a43", "category": "F013", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50002.464720098112593, -25071.718292263343756 ] } },
+{ "type": "Feature", "properties": { "id": "299192163cd849ebbcbf76d2b08690a2", "category": "F011", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50041.847594944163575, -25032.56852433291715 ] } },
+{ "type": "Feature", "properties": { "id": "6349c47169da49e7b66427c8cd383f47", "category": "F011", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50064.071078855864471, -25070.454060190026212 ] } },
+{ "type": "Feature", "properties": { "id": "81d45daa2dad49af8cb96605af69a238", "category": "F011", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50012.852424249816977, -25076.014591520593967 ] } },
+{ "type": "Feature", "properties": { "id": "2c00de7a787e4472b0f207cd330d8cc2", "category": "F011", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50017.675012240171782, -25084.048253952576488 ] } },
+{ "type": "Feature", "properties": { "id": "cbbe4d0a33484af4a06c30fea48239e2", "category": "F011", "floor_id": "e27adc49ba074e3c8b88654e258680a7", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50022.66331106844882, -25075.623613614094211 ] } }
+]
+}

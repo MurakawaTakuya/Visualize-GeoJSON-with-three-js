@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "NRT3_1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "d53d8f7f826b4b8e87b62473831207b3", "floor_id": "66bac3ca99a04e00b8c2f5ccb8dc961e", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49786.699234837236872, -24424.415170208427298 ], [ 49785.109717362007359, -24425.360831387733924 ], [ 49786.699234837236872, -24424.415170208427298 ] ] } },
+{ "type": "Feature", "properties": { "id": "0b7e77b94e0e4f72981ed5dac9167106", "floor_id": "66bac3ca99a04e00b8c2f5ccb8dc961e", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49790.114552746439585, -24422.383272948107333 ], [ 49788.525032860699866, -24423.328936617144791 ], [ 49790.114552746439585, -24422.383272948107333 ] ] } },
+{ "type": "Feature", "properties": { "id": "dc148bb7eb5445fc8f099b6e7a7e99db", "floor_id": "a22e277111164a9d83fa6005fbc9c57a", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49785.891236931987805, -24418.901911682074569 ], [ 49787.437795286452456, -24417.981807353291515 ] ] } },
+{ "type": "Feature", "properties": { "id": "5eeba4f9029f41da83aa1a779535e8d0", "floor_id": "a22e277111164a9d83fa6005fbc9c57a", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49782.475919860211434, -24420.933807469515159 ], [ 49784.065438628109405, -24419.988145482959226 ] ] } },
+{ "type": "Feature", "properties": { "id": "f65059a001264bd894f7cc504522e6f5", "floor_id": "a22e277111164a9d83fa6005fbc9c57a", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49766.364594024504186, -24412.153230230025656 ], [ 49767.284697947245149, -24413.699788792135223 ], [ 49766.364594024504186, -24412.153230230025656 ] ] } },
+{ "type": "Feature", "properties": { "id": "d2b6773b434841dd93e14993fafcddf6", "floor_id": "a22e277111164a9d83fa6005fbc9c57a", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ 49763.866371803458605, -24415.733475271852512 ], [ 49762.946266907914833, -24414.186917423521663 ] ] } }
+]
+}

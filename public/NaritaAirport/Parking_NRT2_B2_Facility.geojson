@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Parking_NRT2_B2_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "8fb3b7f1b6524a8ea8428f88b1a0aa87", "category": "F013", "floor_id": "9bef330c835f486285264169dadb925e", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50054.921741055200982, -25054.311223363969475 ] } },
+{ "type": "Feature", "properties": { "id": "2671290e51c5466cb5066748a6507ea2", "category": "F013", "floor_id": "9bef330c835f486285264169dadb925e", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50014.838295366462262, -25092.432168968767655 ] } },
+{ "type": "Feature", "properties": { "id": "9beaa1f513134e69b546fa632054c012", "category": "F011", "floor_id": "9bef330c835f486285264169dadb925e", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 50053.769164578210621, -25057.969972035309183 ] } }
+]
+}
