@@ -1,6 +1,6 @@
 export const NaritaAirport = {
   NaritaAirport: {
-    rootPath: "./NaritaAirport/",
+    rootPath: "/NaritaAirport/",
     networkFiles: {
       node: "nrt_node.geojson",
       link: "nrt_link.geojson",
@@ -135,5 +135,6 @@ export const NaritaAirport = {
       "Railway_NRT2_B1_TWSI_Line.geojson",
       "Railway_NRT2_B1_TWSI_Point.geojson",
     ],
+    center: [49981.70887830284, -25506.22867806066] as [number, number],
   },
 };

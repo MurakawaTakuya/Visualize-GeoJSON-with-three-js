@@ -1,6 +1,6 @@
 export const NagoyaUnimall = {
   NagoyaUnimall: {
-    rootPath: "./NagoyaUnimall/",
+    rootPath: "/NagoyaUnimall/",
     geoFile: [
       "UniMall_B1_Build_Connect.geojson",
       "UniMall_B1_Building.geojson",
@@ -17,5 +17,6 @@ export const NagoyaUnimall = {
       "UniMall_B1_TWSI_Line.geojson",
       "UniMall_B1_TWSI_Point.geojson",
     ],
+    center: [-268478.06882765563, -87917.488896069] as [number, number],
   },
 };

@@ -1,11 +1,10 @@
 export const ShinyokohamaStation = {
   ShinyokohamaStation: {
-    rootPath: "./ShinyokohamaStation/",
+    rootPath: "/ShinyokohamaStation/",
     networkFiles: {
       node: "ShinyokohamaSt_node.geojson",
       link: "ShinyokohamaSt_link.geojson",
     },
-    terrainFiles: "ShinyokohamaStation_Terrain.geojson",
     geoFile: [
       "BLShinyoko_0_Drawing.geojson",
       "BLShinyoko_0_Facility.geojson",
@@ -42,5 +41,6 @@ export const ShinyokohamaStation = {
       "JrShinyokoSt_2_TWSI_Line.geojson",
       "JrShinyokoSt_2_TWSI_Point.geojson",
     ],
+    center: [-19581.029990072282, -54564.37425489624] as [number, number],
   },
 };

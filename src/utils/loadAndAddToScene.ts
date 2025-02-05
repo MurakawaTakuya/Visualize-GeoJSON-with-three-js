@@ -2,7 +2,6 @@ import { verticalOffset } from "@/const/const";
 import { Feature, FeatureCollection } from "geojson";
 import * as THREE from "three";
 import { createExtrudedGeometry } from "./createExtrudedGeometry";
-import { loader, scene } from "./geoUtils";
 
 /**
  * GeoJSONデータを読み込んでシーンに追加
@@ -15,7 +14,9 @@ export const loadAndAddToScene = (
   geojson: string,
   center: [number, number],
   floorNumber: number,
-  depth: number
+  depth: number,
+  loader: THREE.FileLoader,
+  scene: THREE.Scene
 ): void => {
   loader.load(geojson, (data: unknown) => {
     const geoData = data as FeatureCollection<
@@ -87,7 +88,9 @@ export const loadAndAddToScene = (
                 center
               );
               const lineMaterial = new THREE.LineBasicMaterial({
-                color: "rgba(255, 255, 255, 0.75)",
+                color: "rgb(255, 255, 255)",
+                transparent: true,
+                opacity: 0.9,
               });
               // -90度回転
               const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);

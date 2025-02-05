@@ -1,6 +1,6 @@
 export const NissanStd = {
   NissanStd: {
-    rootPath: "./NissanStd/",
+    rootPath: "/NissanStd/",
     networkFiles: {
       node: "NissanStd_node.geojson",
       link: "NissanStd_link.geojson",
@@ -60,5 +60,6 @@ export const NissanStd = {
       "NissanStdSeat_7_Floor.geojson",
       "NissanStdSeat_7_Space.geojson",
     ],
+    center: [-20584.916804536762, -54335.17151238966] as [number, number],
   },
 };

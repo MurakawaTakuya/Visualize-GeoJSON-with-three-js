@@ -1,65 +1,66 @@
 "use client";
-import {
-  geoFile,
-  groupList,
-  layers,
-  networkFiles,
-  terrainFiles,
-} from "@/const/const";
+import { data, groupList, layers } from "@/const/const";
 import {
   fragmentShaderLogic,
   fragmentShaderUniforms,
   vertexShaderUniforms,
 } from "@/const/uniforms";
 import { CustomShader, NodeProperties } from "@/types/types";
+import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { creatingLink } from "@/utils/creatingLink";
-import { linkMaterial, loader, scene } from "@/utils/geoUtils";
+import { linkMaterial } from "@/utils/geoUtils";
 import { getFloorNumber } from "@/utils/getFloorNumber";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
-import * as d3 from "d3";
+import { resetScene } from "@/utils/resetScene";
 import type { Feature, FeatureCollection, Point, Polygon } from "geojson";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js";
 
-const calculateCenterPoint = async (): Promise<[number, number]> => {
-  const polygons: [number, number][] = [];
-
-  for (const file of geoFile) {
-    const response = await fetch(file);
-    const data = await response.json();
-    const geometry = data.features[0].geometry;
-
-    if (geometry.type !== "Polygon") {
-      continue;
-    }
-
-    geometry.coordinates.forEach((coordinates: [number, number][]) => {
-      const center = d3.polygonCentroid(coordinates);
-      polygons.push(center);
-    });
-  }
-
-  const avgX = d3.mean(polygons, (d) => d[0]);
-  const avgY = d3.mean(polygons, (d) => d[1]);
-
-  return [avgX ?? 0, avgY ?? 0];
-};
-
-export default function ThreeScene() {
+export default function ThreeScene({ place }: { place: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
+  const selectedData = data[place];
+  const rootPath = selectedData && selectedData.rootPath;
+  const networkFiles =
+    selectedData && selectedData.networkFiles
+      ? {
+          node: rootPath + selectedData.networkFiles.node,
+          link: rootPath + selectedData.networkFiles.link,
+        }
+      : undefined;
+  const terrainFiles =
+    selectedData && selectedData.terrainFiles
+      ? rootPath + selectedData.terrainFiles
+      : undefined;
+  const geoFile = selectedData && selectedData.geoFile.map((f) => rootPath + f);
+
+  const loader = new THREE.FileLoader().setResponseType("json");
+  const scene = new THREE.Scene();
+  const meshLines: THREE.BufferGeometry[] = [];
+
   useEffect(() => {
+    if (!selectedData) {
+      return;
+    }
+    if (selectedData.center) {
+      setCenter(selectedData.center);
+      return;
+    }
     (async () => {
-      const center = await calculateCenterPoint();
+      const center = await calculateCenterPoint(geoFile);
       setCenter(center);
       console.log("Center is at", center);
     })();
   }, []);
 
   useEffect(() => {
+    if (!selectedData) {
+      return;
+    }
     if (!containerRef.current) {
       return;
     }
@@ -125,6 +126,7 @@ export default function ThreeScene() {
       const group = new THREE.Group();
       group.name = `group${num}`;
       scene.add(group);
+      // TODO: lineとpointも追加
       gui
         .add({ [`group${num}`]: true }, `group${num}`)
         .onChange((isVisible: boolean) => {
@@ -141,7 +143,7 @@ export default function ThreeScene() {
       const floorNumber = getFloorNumber(f);
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 5;
-      loadAndAddToScene(f, center, floorNumber ?? 0, depth);
+      loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
     });
 
     // メッシュライン用マテリアルとシェーダー
@@ -184,7 +186,7 @@ export default function ThreeScene() {
             node_id: feature.properties.node_id,
             ordinal: feature.properties.ordinal,
           }));
-        creatingLink(nodeIds, center);
+        creatingLink(nodeIds, center, loader, scene, meshLines, networkFiles);
       });
     }
 
@@ -236,8 +238,26 @@ export default function ThreeScene() {
 
     return () => {
       window.removeEventListener("resize", onResize);
+
+      // Three.jsをリセット
+      renderer.dispose();
+      mapControls.dispose();
+      zoomControls.dispose();
+      meshLines.forEach((mesh) => mesh.dispose());
+      resetScene(scene);
     };
   }, [center]);
 
-  return <div ref={containerRef} />;
+  return (
+    <>
+      <Link href="/">トップに戻る</Link>
+      {selectedData ? (
+        <div ref={containerRef} />
+      ) : (
+        <p style={{ color: "white", textAlign: "center" }}>
+          データが見つかりません
+        </p>
+      )}
+    </>
+  );
 }
