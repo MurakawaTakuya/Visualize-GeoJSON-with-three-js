@@ -1,6 +1,5 @@
 "use client";
 import {
-  centeringFile,
   geoFile,
   groupList,
   layers,
@@ -17,44 +16,47 @@ import { creatingLink } from "@/utils/creatingLink";
 import { linkMaterial, loader, scene } from "@/utils/geoUtils";
 import { getFloorNumber } from "@/utils/getFloorNumber";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
+import * as d3 from "d3";
 import type { Feature, FeatureCollection, Point, Polygon } from "geojson";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js";
 
+const calculateCenterPoint = async (): Promise<[number, number]> => {
+  const polygons: [number, number][] = [];
+
+  for (const file of geoFile) {
+    const response = await fetch(file);
+    const data = await response.json();
+    const geometry = data.features[0].geometry;
+
+    if (geometry.type !== "Polygon") {
+      continue;
+    }
+
+    geometry.coordinates.forEach((coordinates: [number, number][]) => {
+      const center = d3.polygonCentroid(coordinates);
+      polygons.push(center);
+    });
+  }
+
+  const avgX = d3.mean(polygons, (d) => d[0]);
+  const avgY = d3.mean(polygons, (d) => d[1]);
+
+  return [avgX ?? 0, avgY ?? 0];
+};
+
 export default function ThreeScene() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
   useEffect(() => {
-    // 中心点を更新
-    // TODO: 中心点の計算方法を修正
-    loader.load(centeringFile, (data: unknown) => {
-      const fgData = data as FeatureCollection<
-        Polygon,
-        Record<string, unknown>
-      >;
-      // GeoJSON全体のバウンディングボックスを計算
-      let minX = Infinity,
-        minY = Infinity,
-        maxX = -Infinity,
-        maxY = -Infinity;
-      fgData.features.forEach((feature) => {
-        const coordinates = feature.geometry.coordinates[0];
-        coordinates.forEach((point: number[]) => {
-          const [x, y] = point;
-          minX = Math.min(minX, x);
-          minY = Math.min(minY, y);
-          maxX = Math.max(maxX, x);
-          maxY = Math.max(maxY, y);
-        });
-      });
-
-      // 中心点を更新
-      setCenter([(minX + maxX) / 2, (minY + maxY) / 2]);
-      console.log("Center is at", [(minX + maxX) / 2, (minY + maxY) / 2]);
-    });
+    (async () => {
+      const center = await calculateCenterPoint();
+      setCenter(center);
+      console.log("Center is at", center);
+    })();
   }, []);
 
   useEffect(() => {
@@ -70,6 +72,8 @@ export default function ThreeScene() {
     const sizes = { width: window.innerWidth, height: window.innerHeight };
     // 座標系の中心
 
+    // TODO: 開始した時のカメラの遠さや視点を変更
+    // TODO: 開始してから操作するまでは回転しててもいいかも
     const camera = new THREE.PerspectiveCamera(
       75,
       sizes.width / sizes.height,
@@ -161,17 +165,17 @@ export default function ThreeScene() {
       );
     };
 
-    gui
-      .add({ hasCheck: true }, "hasCheck")
-      .onChange((isV: boolean) => {
-        const linkObj = scene.getObjectByName("link");
-        if (linkObj) {
-          linkObj.visible = isV;
-        }
-      })
-      .name("歩行者ネットワーク");
-
     if (networkFiles) {
+      gui
+        .add({ hasCheck: true }, "hasCheck")
+        .onChange((isV: boolean) => {
+          const linkObj = scene.getObjectByName("link");
+          if (linkObj) {
+            linkObj.visible = isV;
+          }
+        })
+        .name("歩行者ネットワーク");
+
       // 歩行者ネットワークの読み込み
       loader.load(networkFiles.node, (data: unknown) => {
         const nodeData = data as FeatureCollection<Point, NodeProperties>;

@@ -69,7 +69,6 @@ const data: Record<string, FileStructure> = {
 
 export const selected = "NagoyaUnimall";
 export const rootPath = data[selected].rootPath;
-export const centeringFile = rootPath + data[selected].centeringFile;
 export const networkFiles = data[selected].networkFiles
   ? {
       node: rootPath + data[selected].networkFiles.node,

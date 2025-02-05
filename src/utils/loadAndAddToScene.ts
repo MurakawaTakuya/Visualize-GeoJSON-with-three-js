@@ -22,9 +22,6 @@ export const loadAndAddToScene = (
       GeoJSON.Geometry,
       Record<string, unknown>
     >;
-    const lineMaterial = new THREE.LineBasicMaterial({
-      color: "rgba(255, 255, 255, 0.75)",
-    });
     geoData.features
       .filter(
         (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) =>
@@ -42,6 +39,9 @@ export const loadAndAddToScene = (
               const [longitude, latitude] = feature.geometry.coordinates;
               // 球体で点を表現
               const pointGeometry = new THREE.SphereGeometry(0.1, 32, 32);
+              const pointMaterial = new THREE.MeshBasicMaterial({
+                color: "rgb(255, 0, 0)",
+              });
               // 球体の中心を(longitude - center[0], latitude - center[1])へ平行移動
               pointGeometry.translate(
                 longitude - center[0],
@@ -52,9 +52,6 @@ export const loadAndAddToScene = (
               const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
               pointGeometry.applyMatrix4(matrix);
               // マテリアルとメッシュ生成
-              const pointMaterial = new THREE.MeshBasicMaterial({
-                color: 0xff0000,
-              });
               const pointMesh = new THREE.Mesh(pointGeometry, pointMaterial);
               pointMesh.position.y += floorNumber * verticalOffset - 1;
               group.add(pointMesh);
@@ -71,6 +68,9 @@ export const loadAndAddToScene = (
                   );
                 })
               );
+              const lineMaterial = new THREE.LineBasicMaterial({
+                color: "rgb(98, 232, 255)",
+              });
               // -90度回転
               const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
               lineGeometry.applyMatrix4(matrix);
@@ -80,12 +80,16 @@ export const loadAndAddToScene = (
               break;
             }
             case "Polygon": {
+              // ポリゴンを作成
               const geometry = createExtrudedGeometry(
                 feature.geometry.coordinates,
                 depth,
                 center
               );
-              // 90度回転
+              const lineMaterial = new THREE.LineBasicMaterial({
+                color: "rgba(255, 255, 255, 0.75)",
+              });
+              // -90度回転
               const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
               geometry.applyMatrix4(matrix);
               // エッジ抽出してLineを作成
