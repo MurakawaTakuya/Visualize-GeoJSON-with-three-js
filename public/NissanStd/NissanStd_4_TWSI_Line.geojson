@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "NissanStd_4_TWSI_Line",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "6fb34a610343465c816e70fa182c54f1", "startnode": "826022bf067d4fdfa5ee608938796dfe", "endnode": "7aa4a52603364f3781af653094c5a729", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20497.17849370386466, -54275.566213305472047 ], [ -20501.425974527166545, -54279.105950298195239 ] ] } },
+{ "type": "Feature", "properties": { "id": "00c5463554dd421598789563ad55b915", "startnode": "7aa4a52603364f3781af653094c5a729", "endnode": "c3bb99a892b64f79b3df9def355b8f9a", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20501.425974527166545, -54279.105950298195239 ], [ -20478.098100177652668, -54308.581770310243883 ] ] } },
+{ "type": "Feature", "properties": { "id": "33f3f4f754944bfbba0b99511ef473ff", "startnode": "c3bb99a892b64f79b3df9def355b8f9a", "endnode": "b0bb7b245d424d1b8e235ecebf3a0bec", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20478.098100177652668, -54308.581770310243883 ], [ -20483.361992840891617, -54312.671831607520289 ] ] } },
+{ "type": "Feature", "properties": { "id": "98e066e9f5ba46c8897d39de55f584d5", "startnode": "bbc3edd5d7b449a590833bd00bbcfa15", "endnode": "a7be0b29fc844bf1b2a98f515c226a00", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20694.242724104708032, -54359.377452963592077 ], [ -20699.527183571452042, -54363.47182468851679 ] ] } },
+{ "type": "Feature", "properties": { "id": "0a313d775a30441d9d0b02d494943b80", "startnode": "a7be0b29fc844bf1b2a98f515c226a00", "endnode": "47a9a31ba83b499a86a89b7149e905de", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20699.527183571452042, -54363.47182468851679 ], [ -20691.575760042858747, -54373.518511500762543 ] ] } },
+{ "type": "Feature", "properties": { "id": "fce58a5d50bc48829e1c8de98acd4358", "startnode": "47a9a31ba83b499a86a89b7149e905de", "endnode": "ba4e120a71804ef29c5992095b9d87f8", "category": "1", "roof": "2", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -20691.575760042858747, -54373.518511500762543 ], [ -20695.896068188092613, -54377.117372832057299 ] ] } }
+]
+}
