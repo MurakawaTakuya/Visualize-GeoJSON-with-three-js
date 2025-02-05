@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "FORUM_B2_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "40a659534bf24d3f81033e25f78ff4fd", "category": "F012", "floor_id": "4f202950e6b3442ea6ddcb72d5dcd726", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6259.22265205388976, -35769.734645033640845 ] } },
+{ "type": "Feature", "properties": { "id": "614220f79e7048ac9331dd0b63082908", "category": "F013", "floor_id": "4f202950e6b3442ea6ddcb72d5dcd726", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6252.43524818098831, -35766.548423327272758 ] } },
+{ "type": "Feature", "properties": { "id": "7acb34707af24b6bb1fc59869a5e494c", "category": "F108", "floor_id": "4f202950e6b3442ea6ddcb72d5dcd726", "name": "4(京葉線)", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6254.21774410308899, -35765.667183327510429 ] } },
+{ "type": "Feature", "properties": { "id": "2fe0e1db3c054ebba067d5f8c4a7e3da", "category": "F011", "floor_id": "4f202950e6b3442ea6ddcb72d5dcd726", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6254.308870964297967, -35766.049690776759235 ] } }
+]
+}

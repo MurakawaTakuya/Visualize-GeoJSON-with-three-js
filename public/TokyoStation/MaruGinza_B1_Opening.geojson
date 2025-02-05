@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "MaruGinza_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "9e8d7a1c12e94631a53bdfc91947f511", "floor_id": "a841efdc3e494841915d4081c7d10d85", "name": "日比谷方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6430.542135516832786, -36309.65895099658519 ], [ -6429.825518164297137, -36312.654424175860186 ] ] } },
+{ "type": "Feature", "properties": { "id": "2c7cc1862a824cf787939c02f9cad349", "floor_id": "4389d75cdf754c908e290f8b49fcf8a0", "name": "数寄屋橋交差点改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6369.419459304530392, -36304.269558632928238 ], [ -6368.853397468692492, -36306.65892776621331 ] ] } },
+{ "type": "Feature", "properties": { "id": "467e8280501f4757b761d4ec5b567cf0", "floor_id": "4389d75cdf754c908e290f8b49fcf8a0", "name": "数寄屋橋交差点改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6367.560668209941468, -36308.031852801665082 ], [ -6364.439531482757047, -36311.546571943654271 ] ] } },
+{ "type": "Feature", "properties": { "id": "c7d59ac2162e48609d904087c50a1b40", "floor_id": "4389d75cdf754c908e290f8b49fcf8a0", "name": "数寄屋橋交差点改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6348.641189569342714, -36297.879855444843997 ], [ -6350.197566373628433, -36306.10362242814881 ] ] } },
+{ "type": "Feature", "properties": { "id": "d71a762b550340d093ff00640aebee14", "floor_id": "5d227106a241476cbeafffc2a67e950c", "name": "有楽町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6287.968893270245644, -36270.224081802880391 ], [ -6286.228031211664529, -36273.818777431857598 ] ] } }
+]
+}

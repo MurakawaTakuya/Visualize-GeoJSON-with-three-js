@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "ITOCIA_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "45932adadd2f434a97a2bb1188e495ec", "floor_id": "d504734be7954527a87f0507ac3f63fb", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6319.218547292622134, -36126.849085190173355 ], [ -6312.935117525179521, -36121.684834689091076 ] ] } },
+{ "type": "Feature", "properties": { "id": "deac86ce21db4016809565f83fe62c0e", "floor_id": "d504734be7954527a87f0507ac3f63fb", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6291.018695030751587, -36176.947660711572098 ], [ -6294.015017124082988, -36176.276756720748381 ] ] } },
+{ "type": "Feature", "properties": { "id": "5edf3e817d6b47b4a208a2103a01203c", "floor_id": "d504734be7954527a87f0507ac3f63fb", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6347.807153421680596, -36167.644446221245744 ], [ -6350.941123533594691, -36166.942721171712037 ] ] } },
+{ "type": "Feature", "properties": { "id": "5136f9b178e544a6b78fc20d6249a387", "floor_id": "d504734be7954527a87f0507ac3f63fb", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6333.335947744588339, -36131.176904717744037 ], [ -6331.092313070003001, -36131.713223977130838 ] ] } }
+]
+}

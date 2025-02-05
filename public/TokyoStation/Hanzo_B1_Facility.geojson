@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "Hanzo_B1_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "cf68e9d809e043088e187272a390cf36", "category": "F108", "floor_id": "71d075d36f5b4c31b889a6bdc39133c4", "name": "E2", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6191.807319989628922, -34766.353061299581896 ] } },
+{ "type": "Feature", "properties": { "id": "f27c5924eac34d56b1f0afcc3b1bdd60", "category": "F108", "floor_id": "71d075d36f5b4c31b889a6bdc39133c4", "name": "E1", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6149.972646167751009, -34753.149719466957322 ] } },
+{ "type": "Feature", "properties": { "id": "385a6b90a8bc46288c2e8af36e707361", "category": "F011", "floor_id": "71d075d36f5b4c31b889a6bdc39133c4", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6107.737795995017223, -34779.822318241611356 ] } },
+{ "type": "Feature", "properties": { "id": "ef481d960101474aa11d9b2d314d6426", "category": "F011", "floor_id": "71d075d36f5b4c31b889a6bdc39133c4", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6189.382411495194901, -34764.948187071284337 ] } }
+]
+}

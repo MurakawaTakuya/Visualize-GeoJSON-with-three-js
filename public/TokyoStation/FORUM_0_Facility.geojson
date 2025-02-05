@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "FORUM_0_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "11bb397b927c40db91629e5cdd56ca77", "category": "F012", "floor_id": "af2c6ab45e33426c9a0eaf1d722d5ae2", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6259.202569763242536, -35769.724075206671841 ] } },
+{ "type": "Feature", "properties": { "id": "997054d3a1444acca93ce3cb3eb69a35", "category": "F108", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "name": "D5", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6334.703409183030089, -35965.852155768632656 ] } },
+{ "type": "Feature", "properties": { "id": "2b66e529229f40e18ee8760cd62cb73c", "category": "F011", "floor_id": "de1ab35fc3184ee58070ab1e739d112e", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6263.108064772514808, -35797.694141694293648 ] } },
+{ "type": "Feature", "properties": { "id": "9d664a37074e42f8a0467a6171252f4e", "category": "F011", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6334.516551452195017, -35965.359902694057382 ] } }
+]
+}

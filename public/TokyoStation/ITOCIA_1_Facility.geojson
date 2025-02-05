@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "ITOCIA_1_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "6f31b159d916408f8aacc73243910046", "category": "F017", "floor_id": "1500403654dc48669b008fc9ef4b56b5", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6326.151406979132844, -36135.601465293482761 ] } },
+{ "type": "Feature", "properties": { "id": "1e60a3da993e41edb6898d09c31ac056", "category": "F017", "floor_id": "1500403654dc48669b008fc9ef4b56b5", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6331.610522096160821, -36171.147659076945274 ] } }
+]
+}

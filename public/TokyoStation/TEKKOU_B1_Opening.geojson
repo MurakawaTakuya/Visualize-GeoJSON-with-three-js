@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "TEKKOU_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1f22093d52c54b7a8da261a6f9cd09bd", "floor_id": "55cba2c8c51d41b5a38c91b7a2c33703", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5756.962893591181455, -35266.544355337689922 ], [ -5752.381097771342866, -35268.674627242340648 ] ] } },
+{ "type": "Feature", "properties": { "id": "0499ef5dd8264d99beb4f102b2c1c327", "floor_id": "55cba2c8c51d41b5a38c91b7a2c33703", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5755.446592189578951, -35263.337240570814174 ], [ -5750.868233696350217, -35265.453911053278716 ] ] } },
+{ "type": "Feature", "properties": { "id": "e7325849a1a445298752312e344ced41", "floor_id": "55cba2c8c51d41b5a38c91b7a2c33703", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5702.70700062533615, -35136.981509023986291 ], [ -5697.993518294874775, -35138.818571545831219 ] ] } },
+{ "type": "Feature", "properties": { "id": "e1c25f877b304f2da18c503ec68c3c72", "floor_id": "55cba2c8c51d41b5a38c91b7a2c33703", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5704.030335850759002, -35140.377357239471166 ], [ -5699.316769442014447, -35142.214195382184698 ] ] } }
+]
+}

@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "MaruTokyo_1_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "48d93acc17ca49ccb3324db6a5fad7f1", "category": "F012", "floor_id": "3a5a1e6116db4a69971878bce13ed267", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6240.185209909484911, -35358.732142091226706 ] } },
+{ "type": "Feature", "properties": { "id": "d1d691bfc36f41bebc83f5b945c27b76", "category": "F011", "floor_id": "de646b3affee474d893e3fee6a07378d", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6251.874655693693967, -35336.747215322669945 ] } },
+{ "type": "Feature", "properties": { "id": "f1ef4986751c4f379e895f400c4b1765", "category": "F011", "floor_id": "62fb2654f1d341ce983dc60f79ba02c5", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6232.495658344976619, -35276.548280693350534 ] } },
+{ "type": "Feature", "properties": { "id": "b6632486585d4bd8b707de96d76e8acd", "category": "F011", "floor_id": "d036160801b44240a33b1891bac219f3", "name": "L階段", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6345.289799632855647, -35289.392262458903133 ] } },
+{ "type": "Feature", "properties": { "id": "0adffc91ce0840eab57979a8d8b58c7e", "category": "F011", "floor_id": "7df8ee1924a04be783a427c7cda0a1dd", "name": "K階段", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6301.975790355072604, -35279.441408501341357 ] } }
+]
+}

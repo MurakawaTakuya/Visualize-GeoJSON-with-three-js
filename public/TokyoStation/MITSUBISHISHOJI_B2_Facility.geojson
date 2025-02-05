@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "MITSUBISHISHOJI_B2_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "fb0b088df40246ae8e5c4e26849c0d3c", "category": "F012", "floor_id": "26c2f02b90814043bcca70104a417950", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6446.999504214230001, -35393.480830258413334 ] } }
+]
+}

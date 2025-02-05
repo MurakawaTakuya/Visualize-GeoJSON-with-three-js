@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "MITSUUFJ_1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "439a8e82e47046ae9504dade3510009f", "floor_id": "b34fae2ea90e42568fa1ee094a00eb41", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6241.668495567299942, -35111.40718986808497 ], [ -6240.617632136542852, -35111.697451301100955 ] ] } },
+{ "type": "Feature", "properties": { "id": "da15c8e1447f4099b16db17d9d67768b", "floor_id": "b34fae2ea90e42568fa1ee094a00eb41", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6240.11914671348859, -35109.892756995177479 ], [ -6241.170009946923528, -35109.602495620936679 ] ] } },
+{ "type": "Feature", "properties": { "id": "ed11080bad2c4ec0ab8eecfe42ae2a60", "floor_id": "b34fae2ea90e42568fa1ee094a00eb41", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6254.440829617093186, -35092.268154035911721 ], [ -6254.910745270361076, -35093.969427253236063 ] ] } },
+{ "type": "Feature", "properties": { "id": "c8585e56792e41f382e752c1f37a81a7", "floor_id": "b34fae2ea90e42568fa1ee094a00eb41", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6252.964937677015769, -35092.675813537942304 ], [ -6253.434850987467144, -35094.377087407447107 ] ] } }
+]
+}
