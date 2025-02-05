@@ -1,4 +1,4 @@
-import { networkFiles, verticalOffset } from "@/const/const";
+import { verticalOffset } from "@/const/const";
 import { LinkProperties } from "@/types/types";
 import { Feature, FeatureCollection, LineString } from "geojson";
 import * as THREE from "three";
@@ -14,7 +14,8 @@ const meshLines: THREE.BufferGeometry[] = [];
  */
 export const creatingLink = (
   nodeId: { node_id: number; ordinal: number }[],
-  center: [number, number]
+  center: [number, number],
+  networkFiles?: { link: string; node: string }
 ): void => {
   if (!networkFiles) {
     return;

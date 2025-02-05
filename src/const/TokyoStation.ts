@@ -1,6 +1,6 @@
 export const TokyoStation = {
   TokyoStation: {
-    rootPath: "./TokyoStation/",
+    rootPath: "/TokyoStation/",
     geoFile: [
       "BRICK_1_Drawing.geojson",
       "BRICK_1_Facility.geojson",

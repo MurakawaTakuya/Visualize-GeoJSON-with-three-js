@@ -1,6 +1,6 @@
 export const NagoyaCentralPark = {
   NagoyaCentralPark: {
-    rootPath: "./NagoyaCentralPark/",
+    rootPath: "/NagoyaCentralPark/",
     geoFile: [
       "CentralPark_B1_Build_Connect.geojson",
       "CentralPark_B1_Building.geojson",

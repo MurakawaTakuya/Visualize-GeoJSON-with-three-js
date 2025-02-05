@@ -87,7 +87,9 @@ export const loadAndAddToScene = (
                 center
               );
               const lineMaterial = new THREE.LineBasicMaterial({
-                color: "rgba(255, 255, 255, 0.75)",
+                color: "rgb(255, 255, 255)",
+                transparent: true,
+                opacity: 0.9,
               });
               // -90度回転
               const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
