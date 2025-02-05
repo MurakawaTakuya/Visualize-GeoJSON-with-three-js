@@ -19,8 +19,7 @@ export interface CustomShader {
 
 export interface FileStructure {
   rootPath: string;
-  centeringFile: string;
+  networkFiles?: { node: string; link: string };
+  terrainFiles?: string;
   geoFile: string[];
-  networkFiles?: { node: string; link: string }; // TODO: string[]の可能性あり
-  terrainFiles?: string; // TODO: string[]の可能性あり
 }
