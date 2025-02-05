@@ -2,7 +2,6 @@ import { verticalOffset } from "@/const/const";
 import { Feature, FeatureCollection } from "geojson";
 import * as THREE from "three";
 import { createExtrudedGeometry } from "./createExtrudedGeometry";
-import { loader, scene } from "./geoUtils";
 
 /**
  * GeoJSONデータを読み込んでシーンに追加
@@ -15,7 +14,9 @@ export const loadAndAddToScene = (
   geojson: string,
   center: [number, number],
   floorNumber: number,
-  depth: number
+  depth: number,
+  loader: THREE.FileLoader,
+  scene: THREE.Scene
 ): void => {
   loader.load(geojson, (data: unknown) => {
     const geoData = data as FeatureCollection<

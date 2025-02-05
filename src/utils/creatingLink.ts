@@ -4,9 +4,8 @@ import { Feature, FeatureCollection, LineString } from "geojson";
 import * as THREE from "three";
 import { MeshLine } from "three.meshline";
 import { BufferGeometryUtils } from "three/examples/jsm/Addons.js";
-import { linkMaterial, loader, scene } from "./geoUtils";
+import { linkMaterial } from "./geoUtils";
 
-const meshLines: THREE.BufferGeometry[] = [];
 /**
  * 歩行者ネットワークの構築
  *
@@ -15,6 +14,9 @@ const meshLines: THREE.BufferGeometry[] = [];
 export const creatingLink = (
   nodeId: { node_id: number; ordinal: number }[],
   center: [number, number],
+  loader: THREE.FileLoader,
+  scene: THREE.Scene,
+  meshLines: THREE.BufferGeometry[],
   networkFiles?: { link: string; node: string }
 ): void => {
   if (!networkFiles) {

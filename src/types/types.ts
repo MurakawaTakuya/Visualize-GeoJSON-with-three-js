@@ -22,4 +22,20 @@ export interface FileStructure {
   networkFiles?: { node: string; link: string };
   terrainFiles?: string;
   geoFile: string[];
+  center?: [number, number];
+}
+
+export interface MaterialWithTextures extends THREE.Material {
+  map?: THREE.Texture;
+  lightMap?: THREE.Texture;
+  aoMap?: THREE.Texture;
+  emissiveMap?: THREE.Texture;
+  bumpMap?: THREE.Texture;
+  normalMap?: THREE.Texture;
+  displacementMap?: THREE.Texture;
+  roughnessMap?: THREE.Texture;
+  metalnessMap?: THREE.Texture;
+  alphaMap?: THREE.Texture;
+  envMap?: THREE.Texture;
+  [key: string]: unknown;
 }

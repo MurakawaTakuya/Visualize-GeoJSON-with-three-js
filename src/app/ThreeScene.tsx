@@ -8,10 +8,12 @@ import {
 import { CustomShader, NodeProperties } from "@/types/types";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { creatingLink } from "@/utils/creatingLink";
-import { linkMaterial, loader, scene } from "@/utils/geoUtils";
+import { linkMaterial } from "@/utils/geoUtils";
 import { getFloorNumber } from "@/utils/getFloorNumber";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
+import { resetScene } from "@/utils/resetScene";
 import type { Feature, FeatureCollection, Point, Polygon } from "geojson";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
@@ -36,8 +38,16 @@ export default function ThreeScene({ place }: { place: string }) {
       : undefined;
   const geoFile = selectedData && selectedData.geoFile.map((f) => rootPath + f);
 
+  const loader = new THREE.FileLoader().setResponseType("json");
+  const scene = new THREE.Scene();
+  const meshLines: THREE.BufferGeometry[] = [];
+
   useEffect(() => {
     if (!selectedData) {
+      return;
+    }
+    if (selectedData.center) {
+      setCenter(selectedData.center);
       return;
     }
     (async () => {
@@ -133,7 +143,7 @@ export default function ThreeScene({ place }: { place: string }) {
       const floorNumber = getFloorNumber(f);
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 5;
-      loadAndAddToScene(f, center, floorNumber ?? 0, depth);
+      loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
     });
 
     // メッシュライン用マテリアルとシェーダー
@@ -176,7 +186,7 @@ export default function ThreeScene({ place }: { place: string }) {
             node_id: feature.properties.node_id,
             ordinal: feature.properties.ordinal,
           }));
-        creatingLink(nodeIds, center, networkFiles);
+        creatingLink(nodeIds, center, loader, scene, meshLines, networkFiles);
       });
     }
 
@@ -228,11 +238,19 @@ export default function ThreeScene({ place }: { place: string }) {
 
     return () => {
       window.removeEventListener("resize", onResize);
+
+      // Three.jsをリセット
+      renderer.dispose();
+      mapControls.dispose();
+      zoomControls.dispose();
+      meshLines.forEach((mesh) => mesh.dispose());
+      resetScene(scene);
     };
   }, [center]);
 
   return (
     <>
+      <Link href="/">トップに戻る</Link>
       {selectedData ? (
         <div ref={containerRef} />
       ) : (
