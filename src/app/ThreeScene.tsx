@@ -1,14 +1,8 @@
 "use client";
 import { data, groupList, layers } from "@/const/const";
-import {
-  fragmentShaderLogic,
-  fragmentShaderUniforms,
-  vertexShaderUniforms,
-} from "@/const/uniforms";
-import { CustomShader, NodeProperties } from "@/types/types";
+import { NodeProperties } from "@/types/types";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
-import { creatingLink } from "@/utils/creatingLink";
-import { linkMaterial } from "@/utils/geoUtils";
+import { createLink } from "@/utils/createLink";
 import { getFloorNumber } from "@/utils/getFloorNumber";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
 import { resetScene } from "@/utils/resetScene";
@@ -146,27 +140,6 @@ export default function ThreeScene({ place }: { place: string }) {
       loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
     });
 
-    // メッシュライン用マテリアルとシェーダー
-    linkMaterial.onBeforeCompile = (shader: CustomShader): void => {
-      Object.assign(shader.uniforms, linkMaterial.userData.uniforms);
-      shader.vertexShader = shader.vertexShader.replace(
-        "void main() {",
-        `${vertexShaderUniforms} void main() {`
-      );
-      shader.vertexShader = shader.vertexShader.replace(
-        "vUV = uv;",
-        `vUV = uv; vUv = uv; vDistance = uDistance; vDirection = uDirection;`
-      );
-      shader.fragmentShader = shader.fragmentShader.replace(
-        "void main() {",
-        `${fragmentShaderUniforms} void main() {`
-      );
-      shader.fragmentShader = shader.fragmentShader.replace(
-        "gl_FragColor.a *= step(vCounters, visibility);",
-        `gl_FragColor.a *= step(vCounters, visibility); ${fragmentShaderLogic}`
-      );
-    };
-
     if (networkFiles) {
       gui
         .add({ hasCheck: true }, "hasCheck")
@@ -186,7 +159,7 @@ export default function ThreeScene({ place }: { place: string }) {
             node_id: feature.properties.node_id,
             ordinal: feature.properties.ordinal,
           }));
-        creatingLink(nodeIds, center, loader, scene, meshLines, networkFiles);
+        createLink(nodeIds, center, loader, scene, meshLines, networkFiles);
       });
     }
 
@@ -229,9 +202,6 @@ export default function ThreeScene({ place }: { place: string }) {
       mapControls.update();
       zoomControls.target.set(target.x, target.y, target.z);
       zoomControls.update();
-      if (linkMaterial.uniforms.uTime) {
-        linkMaterial.uniforms.uTime.value += 0.1;
-      }
       renderer.render(scene, camera);
     };
     animate();
@@ -245,12 +215,22 @@ export default function ThreeScene({ place }: { place: string }) {
       zoomControls.dispose();
       meshLines.forEach((mesh) => mesh.dispose());
       resetScene(scene);
+      gui.destroy();
     };
   }, [center]);
 
   return (
     <>
-      <Link href="/">トップに戻る</Link>
+      <p
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "20px",
+          color: "white",
+        }}
+      >
+        <Link href="/">トップに戻る</Link>
+      </p>
       {selectedData ? (
         <div ref={containerRef} />
       ) : (

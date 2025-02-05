@@ -2,16 +2,15 @@ import { verticalOffset } from "@/const/const";
 import { LinkProperties } from "@/types/types";
 import { Feature, FeatureCollection, LineString } from "geojson";
 import * as THREE from "three";
-import { MeshLine } from "three.meshline";
+import { MeshLine, MeshLineMaterial } from "three.meshline";
 import { BufferGeometryUtils } from "three/examples/jsm/Addons.js";
-import { linkMaterial } from "./geoUtils";
 
 /**
  * 歩行者ネットワークの構築
  *
  * @param {{ node_id: number; ordinal: number }[]} nodeId
  */
-export const creatingLink = (
+export const createLink = (
   nodeId: { node_id: number; ordinal: number }[],
   center: [number, number],
   loader: THREE.FileLoader,
@@ -22,6 +21,14 @@ export const creatingLink = (
   if (!networkFiles) {
     return;
   }
+
+  const linkMaterial = new MeshLineMaterial({
+    color: new THREE.Color("rgb(255, 228, 93)"),
+    transparent: true,
+    opacity: 0.5,
+    lineWidth: 0.3,
+  });
+
   loader.load(networkFiles.link, (data: unknown) => {
     const linkData = data as FeatureCollection<LineString, LinkProperties>;
     // リンクの描画
@@ -101,7 +108,7 @@ export const creatingLink = (
     if (loading) {
       const animation = loading.animate(
         { opacity: [1, 0] },
-        { duration: 300, fill: "forwards" }
+        { duration: 30, fill: "forwards" }
       );
       animation.onfinish = () => {
         loading.remove();
