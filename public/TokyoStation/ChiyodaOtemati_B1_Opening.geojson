@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "ChiyodaOtemati_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "76d4c7e0bbfb45ed9ac3485842beec80", "floor_id": "740acfd0b34344689f8af43cd7e2e0ea", "name": "丸の内方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6349.9307986189242, -34918.870442432576965 ], [ -6346.962991239829535, -34919.597527351907047 ] ] } },
+{ "type": "Feature", "properties": { "id": "aaae23bcd6c34bcca0e9b8253dee0f87", "floor_id": "740acfd0b34344689f8af43cd7e2e0ea", "name": "丸の内方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6351.015625119139258, -34912.907493453669304 ], [ -6351.737467418339293, -34915.853901628172025 ] ] } },
+{ "type": "Feature", "properties": { "id": "0a11c4e72a9b443a9a56e6eab7b44e18", "floor_id": "22c8d689222b4caa8629aa2cf5148477", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6313.70039024959533, -34764.285378567205044 ], [ -6314.173477591218216, -34766.221864579820249 ] ] } },
+{ "type": "Feature", "properties": { "id": "307da4c585734db5bd185c4d214cd419", "floor_id": "22c8d689222b4caa8629aa2cf5148477", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6314.415547710511419, -34767.212728636353859 ], [ -6315.066098047582273, -34769.875620990460448 ] ] } },
+{ "type": "Feature", "properties": { "id": "0c9713e1af4c41a49cea0307eadca384", "floor_id": "ab59817322e5466e9c065d710365735e", "name": "神田橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6284.986917778865063, -34666.324480187206063 ], [ -6285.460674311691946, -34668.123647411943239 ] ] } },
+{ "type": "Feature", "properties": { "id": "55277b33303041309b1ee8dc0a0b4668", "floor_id": "ab59817322e5466e9c065d710365735e", "name": "神田橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6286.532612486277685, -34662.046804161778709 ], [ -6291.167180826166259, -34660.826419265198638 ] ] } }
+]
+}

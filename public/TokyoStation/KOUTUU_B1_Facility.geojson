@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "KOUTUU_B1_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "3a5153d8533e4018a7be6717c4807cce", "category": "F017", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": "地下鉄有楽町線[D8]連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6226.703276054816342, -36019.427768257839489 ] } },
+{ "type": "Feature", "properties": { "id": "418f2b688e5b4b61b098e2a221868974", "category": "F017", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": "イトシア連絡通路", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6281.355336042668569, -36081.603563631273573 ] } },
+{ "type": "Feature", "properties": { "id": "f09c80182f7848e19718b0c6a2392e23", "category": "F012", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6235.750799738603746, -36053.999403403882752 ] } },
+{ "type": "Feature", "properties": { "id": "803b0e41c7484f29b6e45eab8cd85c76", "category": "F012", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6239.391863230272975, -36059.70690993982862 ] } },
+{ "type": "Feature", "properties": { "id": "66d1c2b455614ac4b352e7cea5f3cf73", "category": "F001", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6248.752448609883686, -36090.916058452618017 ] } },
+{ "type": "Feature", "properties": { "id": "c38b7ef45e104e97a49130279697d2c5", "category": "F005", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6204.564947746159305, -36055.200696582287492 ] } },
+{ "type": "Feature", "properties": { "id": "41e7b2e6a4874fc9be1d7905ba01d4b5", "category": "F002", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6249.54137817805713, -36088.240881569261546 ] } },
+{ "type": "Feature", "properties": { "id": "1d602eec161c4eaabb610c098041edce", "category": "F002", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6201.624361633575063, -36052.501740434883686 ] } },
+{ "type": "Feature", "properties": { "id": "b3a3d2f221254b5e8474e2d514c83e2e", "category": "F001", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6201.622418954188106, -36049.715814914648945 ] } },
+{ "type": "Feature", "properties": { "id": "9b42a23e77ef4c2ca70516747d13804c", "category": "F011", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6249.504367273666503, -36064.471889179672871 ] } },
+{ "type": "Feature", "properties": { "id": "4472cb15936b435b8082230534d2d0a5", "category": "F011", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6236.101591698511584, -36067.619029339773988 ] } },
+{ "type": "Feature", "properties": { "id": "9ab076c9006c4a0bae293f7af94f0891", "category": "F011", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6239.439109208510672, -36046.806582972909382 ] } },
+{ "type": "Feature", "properties": { "id": "c3ccb73b1e64492fb0a1c5e22e078413", "category": "F011", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6225.358276124531585, -36023.163395199335355 ] } },
+{ "type": "Feature", "properties": { "id": "6ba15c80bc2e4bafbf56c9d141e132a9", "category": "F011", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6236.961915754974143, -36088.389531532833644 ] } }
+]
+}

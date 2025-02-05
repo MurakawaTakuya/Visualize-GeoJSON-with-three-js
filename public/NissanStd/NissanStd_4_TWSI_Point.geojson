@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "NissanStd_4_TWSI_Point",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "bbc3edd5d7b449a590833bd00bbcfa15", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.509810204694723", "lon": "139.605195448808870", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20694.242724104708032, -54359.377452963592077 ] } },
+{ "type": "Feature", "properties": { "id": "a7be0b29fc844bf1b2a98f515c226a00", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.509773188242541", "lon": "139.605137296596580", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20699.527183571452042, -54363.47182468851679 ] } },
+{ "type": "Feature", "properties": { "id": "47a9a31ba83b499a86a89b7149e905de", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.509682794150571", "lon": "139.605225210298780", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20691.575760042858747, -54373.518511500762543 ] } },
+{ "type": "Feature", "properties": { "id": "ba4e120a71804ef29c5992095b9d87f8", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.509650264297093", "lon": "139.605177674448900", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20695.896068188092613, -54377.117372832057299 ] } },
+{ "type": "Feature", "properties": { "id": "b0bb7b245d424d1b8e235ecebf3a0bec", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.510235578592692", "lon": "139.607519049461080", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20483.361992840891617, -54312.671831607520289 ] } },
+{ "type": "Feature", "properties": { "id": "c3bb99a892b64f79b3df9def355b8f9a", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.510272554621160", "lon": "139.607576976481140", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20478.098100177652668, -54308.581770310243883 ] } },
+{ "type": "Feature", "properties": { "id": "7aa4a52603364f3781af653094c5a729", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.510537765308428", "lon": "139.607319060621110", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20501.425974527166545, -54279.105950298195239 ] } },
+{ "type": "Feature", "properties": { "id": "826022bf067d4fdfa5ee608938796dfe", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "category": "6", "name": null, "lat": "35.510569759873547", "lon": "139.607365796487220", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20497.17849370386466, -54275.566213305472047 ] } }
+]
+}

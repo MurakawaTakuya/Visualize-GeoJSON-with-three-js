@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "NRT1_0_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "b3d4054b2cec46fa9e9f2291b7a9388a", "category": "F017", "floor_id": "6c0afc71692a4f8ab43882dd7a381cbc", "name": "北口 N3", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ 49917.188883030932629, -25893.896619460345391 ] } }
+]
+}

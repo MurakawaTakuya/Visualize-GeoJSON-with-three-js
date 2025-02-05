@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "KITTE_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "d9fed572c73c498c90683340204d0627", "floor_id": "efb79e1309704ba588e3c4040db1489d", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6159.678193517302134, -35585.144310789524752 ], [ -6165.98292463126927, -35583.293500604078872 ] ] } },
+{ "type": "Feature", "properties": { "id": "02a81efe6084444dbbe3755c8be473a6", "floor_id": "efb79e1309704ba588e3c4040db1489d", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6195.514513048388835, -35491.317613643950608 ], [ -6186.158375289403011, -35494.064191530080279 ] ] } }
+]
+}

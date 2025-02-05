@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "HibiyaHigagin_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "b7c7add410774e0586f2682be24a22ba", "floor_id": "b9e000ce53134cf4b78f4019e347d3cd", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5970.529545283869993, -36677.735281825756829 ], [ -5967.934593723151011, -36680.522924908356799 ] ] } },
+{ "type": "Feature", "properties": { "id": "6fc748892824468680556baf316eb98d", "floor_id": "b9e000ce53134cf4b78f4019e347d3cd", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5973.675602868763235, -36676.92401505982707 ], [ -5974.645138726025834, -36677.82653324851708 ] ] } },
+{ "type": "Feature", "properties": { "id": "3958eea3a12b44f4b7cff62f3fc68343", "floor_id": "c1076d5806924bd78bc71a9871877b91", "name": "築地方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5898.371711224693172, -36757.92119038758392 ], [ -5901.307606692115769, -36760.533740448168828 ] ] } },
+{ "type": "Feature", "properties": { "id": "679466a852d541a483ddf2d957c2210b", "floor_id": "c1076d5806924bd78bc71a9871877b91", "name": "築地方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5901.258839303704917, -36753.014909876059392 ], [ -5900.035061515228335, -36754.388943310470495 ] ] } },
+{ "type": "Feature", "properties": { "id": "968d71dfcefa409e813a9f17b4ce23bc", "floor_id": "d995987266bc458abde3533699d1d561", "name": "松屋通り方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5909.358800178005367, -36557.443231876357459 ], [ -5907.837718793426575, -36558.543993480845529 ] ] } },
+{ "type": "Feature", "properties": { "id": "ff23049fa5ce4497a52a37476acf0e75", "floor_id": "913fabc5007d411cba2f89c287c0d6b5", "name": "松屋通り方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5933.378986317154158, -36528.652790125917818 ], [ -5931.886753899787436, -36529.793352447231882 ] ] } },
+{ "type": "Feature", "properties": { "id": "2582cd9e16b9435c9c25c8980f476da7", "floor_id": "4acac1c920454caa9ceb1be21851c009", "name": "歌舞伎座方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5981.891288532456201, -36664.100630259148602 ], [ -5985.440749734621932, -36668.50553625838802 ] ] } },
+{ "type": "Feature", "properties": { "id": "bc068eb9090c44aab9514fe133c7c47f", "floor_id": "4d4fe0bfd7904ade94c2960b7fef82c5", "name": "三原橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6008.796939111189204, -36631.017144863952126 ], [ -6011.118533610340819, -36633.812328064006579 ] ] } },
+{ "type": "Feature", "properties": { "id": "54053ca606b64bc2b143346b7bd43fdc", "floor_id": "cf5c34593552493c8b0d82ff5ee3dfce", "name": "三原橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6031.522215812182367, -36617.682022877539566 ], [ -6035.75509206460174, -36621.622308098769281 ] ] } }
+]
+}

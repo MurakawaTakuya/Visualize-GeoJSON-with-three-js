@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "KITTE_1_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "262d3afaf3fc45c28ee789fba2613d76", "category": "F017", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": "皇居外苑", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6235.836505219073842, -35498.911430010128242 ] } },
+{ "type": "Feature", "properties": { "id": "2cf6c16a43244a538a03bae03d461679", "category": "F017", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": "JR東京駅", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6174.567871701525291, -35501.173783169877424 ] } },
+{ "type": "Feature", "properties": { "id": "6e35d40439c542baa6cbdc092218fc5d", "category": "F017", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": "東京ビル有楽町駅", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6193.696111832873612, -35557.892889837508847 ] } },
+{ "type": "Feature", "properties": { "id": "bea74b93ba2044b9867dd73bbe9e037a", "category": "F012", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6177.43070329850616, -35550.792708288056019 ] } },
+{ "type": "Feature", "properties": { "id": "5fdc935ecadd4e3ebca6661cac5bb7bb", "category": "F012", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6198.150182482778291, -35525.300509676613729 ] } },
+{ "type": "Feature", "properties": { "id": "eeb3151d53ce4e8ebc44255a21a99fde", "category": "F013", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6194.64568752370451, -35533.883419695972407 ] } },
+{ "type": "Feature", "properties": { "id": "ea9121367e6140108373d48b68bdb9a1", "category": "F013", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6215.47600767307722, -35512.085177649300022 ] } },
+{ "type": "Feature", "properties": { "id": "db1c98dfa6794f70812d6d00392c69d8", "category": "F013", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6191.504864916686529, -35523.184287989228324 ] } },
+{ "type": "Feature", "properties": { "id": "b7614529d5534f35bead33d7abd654e2", "category": "F011", "floor_id": "968a1c05c83e4d60bf78c5c443a586ab", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6146.719573780213068, -35563.657508189833607 ] } }
+]
+}

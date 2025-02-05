@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "NissanStd_0_Drawing",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "2eaf7487ab72450eb14fed43f49e6f76", "floor_id": "60b93bb332964958861fdf6445d8e76f", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20490.239621462213108, -54189.95767967194115 ], [ -20489.431263657857926, -54188.70846217637154 ] ] } },
+{ "type": "Feature", "properties": { "id": "fb78e44b4da94b3ca8d98300d9f7ea73", "floor_id": "60b93bb332964958861fdf6445d8e76f", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20490.827311860626651, -54189.577390313628712 ], [ -20490.018954056078655, -54188.328172818051826 ] ] } },
+{ "type": "Feature", "properties": { "id": "8e8638f32c9c4a1d9414265d2bdafe97", "floor_id": "60b93bb332964958861fdf6445d8e76f", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20491.415002257748711, -54189.197100954603229 ], [ -20490.60664445301154, -54187.947883461158199 ] ] } },
+{ "type": "Feature", "properties": { "id": "9fd673433831473ca753b7861b828b73", "floor_id": "60b93bb332964958861fdf6445d8e76f", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20492.002692653586564, -54188.816811597702326 ], [ -20491.194334850970336, -54187.567594101426948 ] ] } }
+]
+}

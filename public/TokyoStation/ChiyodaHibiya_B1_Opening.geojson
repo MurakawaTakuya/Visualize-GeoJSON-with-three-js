@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "ChiyodaHibiya_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "703af754151845f7845983ddaec0f655", "floor_id": "56a08ed1f8014f2eaa52d8a0900d7218", "name": "内幸町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6831.00441517029958, -36244.589379201235715 ], [ -6826.092243740424237, -36248.141097826119221 ] ] } },
+{ "type": "Feature", "properties": { "id": "8831eaf8fc6f4a24bc8a3212008d6840", "floor_id": "3c1bf68485bd43978fc2835620a3134f", "name": "日比谷交差点方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6722.859622634840889, -36125.276729081313533 ], [ -6726.047787293462534, -36129.559765088248241 ] ] } },
+{ "type": "Feature", "properties": { "id": "b4a683ac3ea64b1586c82e69012d6651", "floor_id": "a39ca46ee4b74557b92929f5b713ce34", "name": "日比谷交差点方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6725.838736983422677, -36117.277099907390948 ], [ -6727.951099955214886, -36115.643088622047799 ] ] } }
+]
+}

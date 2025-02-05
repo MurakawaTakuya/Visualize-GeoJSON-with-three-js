@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "NRT3_0_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "9fcbb036c05c4f70bd90d244082a4c0f", "category": "F012", "floor_id": "ee44afa1893a4b62bf0a5cbc155bdf0c", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 49780.657628403125273, -24523.8918891998037 ] } },
+{ "type": "Feature", "properties": { "id": "ce50fb5fb5164c3180520978263a5a3b", "category": "F013", "floor_id": "ee44afa1893a4b62bf0a5cbc155bdf0c", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 49761.151197515246167, -24526.28115084187084 ] } },
+{ "type": "Feature", "properties": { "id": "7f9d153a19a14d9f857a77c9a5333088", "category": "F011", "floor_id": "ee44afa1893a4b62bf0a5cbc155bdf0c", "name": null, "source": "2" }, "geometry": { "type": "Point", "coordinates": [ 49762.725412621482974, -24529.153149209079857 ] } }
+]
+}

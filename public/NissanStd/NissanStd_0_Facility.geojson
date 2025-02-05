@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "NissanStd_0_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "3c236a757263406292caa2f60c716b9b", "category": "F014", "floor_id": "60b93bb332964958861fdf6445d8e76f", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20417.815331279078237, -54336.345608857722254 ] } },
+{ "type": "Feature", "properties": { "id": "68be11cd9e2242b08289d645cedbf5fe", "category": "F014", "floor_id": "c9084f7ce7d04ef893fa92f43d899a02", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20553.085899866833643, -54174.318533364472387 ] } },
+{ "type": "Feature", "properties": { "id": "b83b374e32f34b2697ef2e167d2b2c12", "category": "F014", "floor_id": "50f686cf4eab4c87b90f6cb485e3b96d", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20671.020228004377714, -54484.39698880189826 ] } },
+{ "type": "Feature", "properties": { "id": "b0e35d34c79c4bdeacb59360e1078729", "category": "F014", "floor_id": "60b93bb332964958861fdf6445d8e76f", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20745.554946911375737, -54320.089608558213513 ] } },
+{ "type": "Feature", "properties": { "id": "568ee7a3055d4640a8fd5fc92bc818a1", "category": "F011", "floor_id": "60b93bb332964958861fdf6445d8e76f", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20489.257839685724321, -54189.728949308257143 ] } },
+{ "type": "Feature", "properties": { "id": "d41904e0f41b4e3fa1abfae1e3415b2d", "category": "F011", "floor_id": "c9084f7ce7d04ef893fa92f43d899a02", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20622.951647124897136, -54165.62622665429808 ] } }
+]
+}

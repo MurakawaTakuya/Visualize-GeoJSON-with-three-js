@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "KOUTUU_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "0477ba4f5f224a2aae4953bbd319d6b4", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6230.026208906003376, -36018.368432660136023 ], [ -6223.380342414227925, -36020.487102609971771 ] ] } },
+{ "type": "Feature", "properties": { "id": "af7fcf87b57b4aa5a0dccc93eb163b56", "floor_id": "dac5d8d1ff3e41e6be98827b2d99f53a", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6282.870670570792754, -36080.6006726005362 ], [ -6279.84000117071173, -36082.606454402841337 ] ] } }
+]
+}
