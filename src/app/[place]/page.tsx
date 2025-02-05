@@ -9,5 +9,5 @@ interface Params {
 export default function Page({ params }: { params: Promise<Params> }) {
   const { place } = use(params);
 
-  return <ThreeScene place={place} />;
+  return <ThreeScene place={place} key={place} />;
 }
