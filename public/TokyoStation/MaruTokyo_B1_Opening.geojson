@@ -1,15 +1,138 @@
 {
-"type": "FeatureCollection",
-"name": "MaruTokyo_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "6f1b0fdb86af431d85eb4d29a836731a", "floor_id": "b1e6c666889d443c830b677b749b1891", "name": "不明", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6233.048775164628751, -35282.233949956309516 ], [ -6233.357620908569515, -35283.376680234694504 ] ] } },
-{ "type": "Feature", "properties": { "id": "69dbf2610bf940a48fb3b14545926e58", "floor_id": "c785927f0d944a34b7ff9770af4eeb57", "name": "改札", "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ -6195.889902299260939, -35278.447169405095337 ], [ -6196.377433055655274, -35282.980198282719357 ] ] } },
-{ "type": "Feature", "properties": { "id": "fc72f6211dc54d998bca33dc15ef1803", "floor_id": "c785927f0d944a34b7ff9770af4eeb57", "name": "改札", "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ -6186.933608814074432, -35285.023080754785042 ], [ -6186.602624930824277, -35281.94582960101252 ] ] } },
-{ "type": "Feature", "properties": { "id": "e5de19656379420d92e275dde19a2df0", "floor_id": "c785927f0d944a34b7ff9770af4eeb57", "name": "改札", "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ -6185.184920670665633, -35280.981415773283516 ], [ -6184.797257822721804, -35277.377204011543654 ] ] } },
-{ "type": "Feature", "properties": { "id": "26a1ebab18ed475da8091111d5fbd8fc", "floor_id": "c785927f0d944a34b7ff9770af4eeb57", "name": "改札", "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ -6184.508568714410103, -35274.693179414643964 ], [ -6184.229986158972679, -35272.103118267456011 ] ] } },
-{ "type": "Feature", "properties": { "id": "345b15ef84a14312a4d544f9e3762e90", "floor_id": "c785927f0d944a34b7ff9770af4eeb57", "name": "改札", "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ -6195.627252691426293, -35273.462070884881541 ], [ -6195.354017217427099, -35270.921722999511985 ] ] } },
-{ "type": "Feature", "properties": { "id": "5e0a9bae69784ae186881515a4f8cb15", "floor_id": "0dfef29bd208407fae3e9d4490bed623", "name": "L階段", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6341.733893933963373, -35288.943318400393764 ], [ -6340.733663294349753, -35289.213662755690166 ] ] } },
-{ "type": "Feature", "properties": { "id": "b13baee66f1e403faaa6fcee6e36ffe3", "floor_id": "0dfef29bd208407fae3e9d4490bed623", "name": "K階段", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6306.58242512893321, -35280.005390645746957 ], [ -6305.582196317349371, -35280.275741701938387 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MaruTokyo_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6f1b0fdb86af431d85eb4d29a836731a",
+        "floor_id": "b1e6c666889d443c830b677b749b1891",
+        "name": "不明",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6233.048775164628751, -35282.233949956309516],
+          [-6233.357620908569515, -35283.376680234694504]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "69dbf2610bf940a48fb3b14545926e58",
+        "floor_id": "c785927f0d944a34b7ff9770af4eeb57",
+        "name": "改札",
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6195.889902299260939, -35278.447169405095337],
+          [-6196.377433055655274, -35282.980198282719357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fc72f6211dc54d998bca33dc15ef1803",
+        "floor_id": "c785927f0d944a34b7ff9770af4eeb57",
+        "name": "改札",
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6186.933608814074432, -35285.023080754785042],
+          [-6186.602624930824277, -35281.94582960101252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e5de19656379420d92e275dde19a2df0",
+        "floor_id": "c785927f0d944a34b7ff9770af4eeb57",
+        "name": "改札",
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6185.184920670665633, -35280.981415773283516],
+          [-6184.797257822721804, -35277.377204011543654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "26a1ebab18ed475da8091111d5fbd8fc",
+        "floor_id": "c785927f0d944a34b7ff9770af4eeb57",
+        "name": "改札",
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6184.508568714410103, -35274.693179414643964],
+          [-6184.229986158972679, -35272.103118267456011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "345b15ef84a14312a4d544f9e3762e90",
+        "floor_id": "c785927f0d944a34b7ff9770af4eeb57",
+        "name": "改札",
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6195.627252691426293, -35273.462070884881541],
+          [-6195.354017217427099, -35270.921722999511985]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5e0a9bae69784ae186881515a4f8cb15",
+        "floor_id": "0dfef29bd208407fae3e9d4490bed623",
+        "name": "L階段",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6341.733893933963373, -35288.943318400393764],
+          [-6340.733663294349753, -35289.213662755690166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b13baee66f1e403faaa6fcee6e36ffe3",
+        "floor_id": "0dfef29bd208407fae3e9d4490bed623",
+        "name": "K階段",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6306.58242512893321, -35280.005390645746957],
+          [-6305.582196317349371, -35280.275741701938387]
+        ]
+      }
+    }
+  ]
 }

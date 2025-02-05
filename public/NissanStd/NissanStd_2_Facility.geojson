@@ -1,26 +1,276 @@
 {
-"type": "FeatureCollection",
-"name": "NissanStd_2_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "8ad7e1c296184052b2ff62633a97b747", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20442.968601334439882, -54360.411418527917704 ] } },
-{ "type": "Feature", "properties": { "id": "0f2b701ae87c4140ad5abfad7eb5e8d7", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20446.330503585140832, -54362.572369794535916 ] } },
-{ "type": "Feature", "properties": { "id": "caf5e69951cd433a945690964448a639", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20591.141149885177583, -54483.923050741272164 ] } },
-{ "type": "Feature", "properties": { "id": "429575233ad34fa4acad5a4baf72c7d5", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20588.450082647883391, -54481.167961837752955 ] } },
-{ "type": "Feature", "properties": { "id": "d779db2c1535456f9c37a750f9b3ad2d", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20729.318304412539874, -54318.410772668081336 ] } },
-{ "type": "Feature", "properties": { "id": "0dd94db7b0dd434282b753256e59869a", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20726.109326079018501, -54316.150444645601965 ] } },
-{ "type": "Feature", "properties": { "id": "ccbdcc9addde4ce98352d3dfc093b9a0", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20584.0001356833709, -54197.599055733895511 ] } },
-{ "type": "Feature", "properties": { "id": "a7d9226f33df437494cd91b62289241b", "category": "F012", "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20581.176552906348661, -54194.681109802673745 ] } },
-{ "type": "Feature", "properties": { "id": "41ac92754b1b4e24bb4801477a32c2fe", "category": "F001", "floor_id": "241fa12378ce4a1eab6391cea1df32f3", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20407.937833552608936, -54289.332764960097848 ] } },
-{ "type": "Feature", "properties": { "id": "3268e48848cc47418b5c76efe2b7d059", "category": "F002", "floor_id": "241fa12378ce4a1eab6391cea1df32f3", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20417.952514552569482, -54288.440417467674706 ] } },
-{ "type": "Feature", "properties": { "id": "96ea2628ff73476886346a7e6a2b3669", "category": "F001", "floor_id": "95cded45dacf415781ea7f05ceed0449", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20760.465729071751412, -54437.212112035776954 ] } },
-{ "type": "Feature", "properties": { "id": "7ea772a6aa5b470eb7b55c4bc810b048", "category": "F002", "floor_id": "95cded45dacf415781ea7f05ceed0449", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20751.702958505826246, -54432.281310903694248 ] } },
-{ "type": "Feature", "properties": { "id": "1f7a9cd5ed89430aa898051f83a5bcfa", "category": "F011", "floor_id": "2413c79dd2a34ef3b78ab4292720873c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20399.766328666759364, -54229.223851827802719 ] } },
-{ "type": "Feature", "properties": { "id": "306f51a1632a429cbdc7597057f791bb", "category": "F011", "floor_id": "7068e4fa3ac9440f847052f1c35b0385", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20510.565280488794087, -54514.957133270727354 ] } },
-{ "type": "Feature", "properties": { "id": "c48fe4bb137945bbbf9d95d1fa88ea31", "category": "F011", "floor_id": "e0a24f5fdf434d3883589bcb9d58839e", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20739.779001920214796, -54303.917763449724589 ] } },
-{ "type": "Feature", "properties": { "id": "d646dfcaed91469dba7fd063fa6a9628", "category": "F008", "floor_id": "95cded45dacf415781ea7f05ceed0449", "name": "多目的男子便所", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20761.20988116528315, -54437.00372735298879 ] } },
-{ "type": "Feature", "properties": { "id": "5b6c4501f4bc4573af5026749d00d9b5", "category": "F008", "floor_id": "95cded45dacf415781ea7f05ceed0449", "name": "多目的女子便所", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20751.449182014101098, -54431.524867117506801 ] } },
-{ "type": "Feature", "properties": { "id": "825c87d073d3406a92ea415cceb6e15d", "category": "F008", "floor_id": "241fa12378ce4a1eab6391cea1df32f3", "name": "多目的男子便所", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20407.433536016273138, -54289.948932543949923 ] } },
-{ "type": "Feature", "properties": { "id": "c704d77106944b52a2d0f631ae27b75d", "category": "F008", "floor_id": "241fa12378ce4a1eab6391cea1df32f3", "name": "多目的女子便所", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20418.58835965596154, -54288.941804301874072 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "NissanStd_2_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8ad7e1c296184052b2ff62633a97b747",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20442.968601334439882, -54360.411418527917704]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0f2b701ae87c4140ad5abfad7eb5e8d7",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20446.330503585140832, -54362.572369794535916]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "caf5e69951cd433a945690964448a639",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20591.141149885177583, -54483.923050741272164]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "429575233ad34fa4acad5a4baf72c7d5",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20588.450082647883391, -54481.167961837752955]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d779db2c1535456f9c37a750f9b3ad2d",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20729.318304412539874, -54318.410772668081336]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0dd94db7b0dd434282b753256e59869a",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20726.109326079018501, -54316.150444645601965]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ccbdcc9addde4ce98352d3dfc093b9a0",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20584.0001356833709, -54197.599055733895511]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a7d9226f33df437494cd91b62289241b",
+        "category": "F012",
+        "floor_id": "ed3c368960cb437fb2ddcfbe2bbf8d26",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20581.176552906348661, -54194.681109802673745]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "41ac92754b1b4e24bb4801477a32c2fe",
+        "category": "F001",
+        "floor_id": "241fa12378ce4a1eab6391cea1df32f3",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20407.937833552608936, -54289.332764960097848]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3268e48848cc47418b5c76efe2b7d059",
+        "category": "F002",
+        "floor_id": "241fa12378ce4a1eab6391cea1df32f3",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20417.952514552569482, -54288.440417467674706]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "96ea2628ff73476886346a7e6a2b3669",
+        "category": "F001",
+        "floor_id": "95cded45dacf415781ea7f05ceed0449",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20760.465729071751412, -54437.212112035776954]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7ea772a6aa5b470eb7b55c4bc810b048",
+        "category": "F002",
+        "floor_id": "95cded45dacf415781ea7f05ceed0449",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20751.702958505826246, -54432.281310903694248]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1f7a9cd5ed89430aa898051f83a5bcfa",
+        "category": "F011",
+        "floor_id": "2413c79dd2a34ef3b78ab4292720873c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20399.766328666759364, -54229.223851827802719]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "306f51a1632a429cbdc7597057f791bb",
+        "category": "F011",
+        "floor_id": "7068e4fa3ac9440f847052f1c35b0385",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20510.565280488794087, -54514.957133270727354]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c48fe4bb137945bbbf9d95d1fa88ea31",
+        "category": "F011",
+        "floor_id": "e0a24f5fdf434d3883589bcb9d58839e",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20739.779001920214796, -54303.917763449724589]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d646dfcaed91469dba7fd063fa6a9628",
+        "category": "F008",
+        "floor_id": "95cded45dacf415781ea7f05ceed0449",
+        "name": "多目的男子便所",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20761.20988116528315, -54437.00372735298879]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5b6c4501f4bc4573af5026749d00d9b5",
+        "category": "F008",
+        "floor_id": "95cded45dacf415781ea7f05ceed0449",
+        "name": "多目的女子便所",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20751.449182014101098, -54431.524867117506801]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "825c87d073d3406a92ea415cceb6e15d",
+        "category": "F008",
+        "floor_id": "241fa12378ce4a1eab6391cea1df32f3",
+        "name": "多目的男子便所",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20407.433536016273138, -54289.948932543949923]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c704d77106944b52a2d0f631ae27b75d",
+        "category": "F008",
+        "floor_id": "241fa12378ce4a1eab6391cea1df32f3",
+        "name": "多目的女子便所",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20418.58835965596154, -54288.941804301874072]
+      }
+    }
+  ]
 }

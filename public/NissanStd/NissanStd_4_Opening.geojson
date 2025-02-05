@@ -1,23 +1,266 @@
 {
-"type": "FeatureCollection",
-"name": "NissanStd_4_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "0e603218254d490da5c740ab0f8fe464", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20508.935429598455812, -54260.182714323556866 ], [ -20511.653110117829783, -54256.981864152134222 ] ] } },
-{ "type": "Feature", "properties": { "id": "a0e1f6421164489281e2b5d00bc5c57d", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20505.470576602154324, -54264.269806999021966 ], [ -20508.184746645623818, -54261.06685931244283 ] ] } },
-{ "type": "Feature", "properties": { "id": "8fb59bbcfd964302bc4b539c8d9d361b", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20502.030091749198618, -54268.379054780853039 ], [ -20504.724965890087333, -54265.158377249943442 ] ] } },
-{ "type": "Feature", "properties": { "id": "950259678a49432a9e3c3ba303c2bf09", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20498.603790541041235, -54272.499535153852776 ], [ -20501.286927263678081, -54269.269732359294721 ] ] } },
-{ "type": "Feature", "properties": { "id": "6c8372b79b5242589b0f006a52a5c575", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20495.623137341339316, -54276.11282102426776 ], [ -20497.864168210831849, -54273.393742575950455 ] ] } },
-{ "type": "Feature", "properties": { "id": "aaabbacaff7e4c4899ae3efa70a5de17", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "東ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20491.723589426164835, -54280.718343562926748 ], [ -20494.38616477850519, -54277.470969628993771 ] ] } },
-{ "type": "Feature", "properties": { "id": "c7b903aa310448d6ae771ee4738afddd", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "北ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20627.898745401675114, -54205.807059681945248 ], [ -20636.343662891547865, -54208.741207485974883 ] ] } },
-{ "type": "Feature", "properties": { "id": "3bff9f25a07b4ac98088e591ea1dc3bd", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "北ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20705.774905518068408, -54266.673077892461151 ], [ -20710.174421645482653, -54274.456292022921843 ] ] } },
-{ "type": "Feature", "properties": { "id": "8590d0553241454d8ed1b84e829a88f0", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20677.985827690405131, -54401.235159463307355 ], [ -20680.648146705490944, -54397.988116686647118 ] ] } },
-{ "type": "Feature", "properties": { "id": "c20df334d101452ca5706b67722accd8", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20674.588533624122647, -54405.378599456009397 ], [ -20677.250436820788309, -54402.132063847217069 ] ] } },
-{ "type": "Feature", "properties": { "id": "dd0445df076a4788af9a668c88f1e489", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20671.158861708212498, -54409.496891918657639 ], [ -20673.849269852784346, -54406.272456040176621 ] ] } },
-{ "type": "Feature", "properties": { "id": "99fb106c849046419d95ae3c2200034b", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20667.720107444041787, -54413.6069917205823 ], [ -20670.415697245185584, -54410.387569507009175 ] ] } },
-{ "type": "Feature", "properties": { "id": "8aa0ab741fb74469a4958c80c894acf4", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20664.261042323596484, -54417.699764984623471 ], [ -20666.974823997046769, -54414.496490382385673 ] ] } },
-{ "type": "Feature", "properties": { "id": "343eccfa6f6c4ba6a14b98bb0317db76", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "西ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20660.79267887601236, -54421.784760124399327 ], [ -20663.51035939349822, -54418.583909963599581 ] ] } },
-{ "type": "Feature", "properties": { "id": "ccd7f6fee05549a09af39fbe644b0549", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "南ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20536.101680578613013, -54470.025286328782386 ], [ -20544.547036098934768, -54472.959589416866947 ] ] } },
-{ "type": "Feature", "properties": { "id": "33f49dd5605448bca93963f339f336dc", "floor_id": "819e5385acc34d3ab536aa60dccb1b06", "name": "南ゲート", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -20462.26231333596661, -54404.294314742910501 ], [ -20466.670883651459008, -54412.093546696356498 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "NissanStd_4_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0e603218254d490da5c740ab0f8fe464",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20508.935429598455812, -54260.182714323556866],
+          [-20511.653110117829783, -54256.981864152134222]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a0e1f6421164489281e2b5d00bc5c57d",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20505.470576602154324, -54264.269806999021966],
+          [-20508.184746645623818, -54261.06685931244283]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8fb59bbcfd964302bc4b539c8d9d361b",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20502.030091749198618, -54268.379054780853039],
+          [-20504.724965890087333, -54265.158377249943442]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "950259678a49432a9e3c3ba303c2bf09",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20498.603790541041235, -54272.499535153852776],
+          [-20501.286927263678081, -54269.269732359294721]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6c8372b79b5242589b0f006a52a5c575",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20495.623137341339316, -54276.11282102426776],
+          [-20497.864168210831849, -54273.393742575950455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aaabbacaff7e4c4899ae3efa70a5de17",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "東ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20491.723589426164835, -54280.718343562926748],
+          [-20494.38616477850519, -54277.470969628993771]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c7b903aa310448d6ae771ee4738afddd",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "北ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20627.898745401675114, -54205.807059681945248],
+          [-20636.343662891547865, -54208.741207485974883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3bff9f25a07b4ac98088e591ea1dc3bd",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "北ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20705.774905518068408, -54266.673077892461151],
+          [-20710.174421645482653, -54274.456292022921843]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8590d0553241454d8ed1b84e829a88f0",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20677.985827690405131, -54401.235159463307355],
+          [-20680.648146705490944, -54397.988116686647118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c20df334d101452ca5706b67722accd8",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20674.588533624122647, -54405.378599456009397],
+          [-20677.250436820788309, -54402.132063847217069]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dd0445df076a4788af9a668c88f1e489",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20671.158861708212498, -54409.496891918657639],
+          [-20673.849269852784346, -54406.272456040176621]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "99fb106c849046419d95ae3c2200034b",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20667.720107444041787, -54413.6069917205823],
+          [-20670.415697245185584, -54410.387569507009175]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8aa0ab741fb74469a4958c80c894acf4",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20664.261042323596484, -54417.699764984623471],
+          [-20666.974823997046769, -54414.496490382385673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "343eccfa6f6c4ba6a14b98bb0317db76",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "西ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20660.79267887601236, -54421.784760124399327],
+          [-20663.51035939349822, -54418.583909963599581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ccd7f6fee05549a09af39fbe644b0549",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "南ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20536.101680578613013, -54470.025286328782386],
+          [-20544.547036098934768, -54472.959589416866947]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "33f49dd5605448bca93963f339f336dc",
+        "floor_id": "819e5385acc34d3ab536aa60dccb1b06",
+        "name": "南ゲート",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-20462.26231333596661, -54404.294314742910501],
+          [-20466.670883651459008, -54412.093546696356498]
+        ]
+      }
+    }
+  ]
 }

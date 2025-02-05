@@ -1,8 +1,24 @@
 {
-"type": "FeatureCollection",
-"name": "Railway_NRT2_B1_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "8ec3268344254a97935309ddb0ce0ca4", "category": "F003", "floor_id": "d9749266a5a346f0a37e13d15b096e72", "name": null, "source": "9" }, "geometry": { "type": "Point", "coordinates": [ 50092.486446502181934, -25071.0515892311887 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "Railway_NRT2_B1_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8ec3268344254a97935309ddb0ce0ca4",
+        "category": "F003",
+        "floor_id": "d9749266a5a346f0a37e13d15b096e72",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [50092.486446502181934, -25071.0515892311887]
+      }
+    }
+  ]
 }

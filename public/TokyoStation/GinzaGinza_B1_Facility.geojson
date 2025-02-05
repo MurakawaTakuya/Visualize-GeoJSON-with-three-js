@@ -1,13 +1,94 @@
 {
-"type": "FeatureCollection",
-"name": "GinzaGinza_B1_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "bbe05cf5e6eb4fe3bb190cd2056e7208", "category": "F108", "floor_id": null, "name": "A12", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6086.279248362076942, -36381.81252239990863 ] } },
-{ "type": "Feature", "properties": { "id": "602699827ff54d9aad1c1e22f00f3300", "category": "F108", "floor_id": null, "name": "A11", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6134.110508100066909, -36434.345803574447928 ] } },
-{ "type": "Feature", "properties": { "id": "d417080d4cbd418daead076c14db5b04", "category": "F108", "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec", "name": "A13", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6081.625093209131592, -36368.245081788038078 ] } },
-{ "type": "Feature", "properties": { "id": "bb1974918f2f4ed399246529c11eb62b", "category": "F011", "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6088.131143112492282, -36375.805954410388949 ] } },
-{ "type": "Feature", "properties": { "id": "f49119ce81b743c88e6b6e74936831ba", "category": "F011", "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6088.733820390289111, -36379.440150330417964 ] } },
-{ "type": "Feature", "properties": { "id": "7f1c05d5e19547cb9ca12cf1ab9b4c45", "category": "F011", "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6137.802446680887442, -36431.599029354809318 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "GinzaGinza_B1_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bbe05cf5e6eb4fe3bb190cd2056e7208",
+        "category": "F108",
+        "floor_id": null,
+        "name": "A12",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6086.279248362076942, -36381.81252239990863]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "602699827ff54d9aad1c1e22f00f3300",
+        "category": "F108",
+        "floor_id": null,
+        "name": "A11",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6134.110508100066909, -36434.345803574447928]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d417080d4cbd418daead076c14db5b04",
+        "category": "F108",
+        "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec",
+        "name": "A13",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6081.625093209131592, -36368.245081788038078]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bb1974918f2f4ed399246529c11eb62b",
+        "category": "F011",
+        "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6088.131143112492282, -36375.805954410388949]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f49119ce81b743c88e6b6e74936831ba",
+        "category": "F011",
+        "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6088.733820390289111, -36379.440150330417964]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7f1c05d5e19547cb9ca12cf1ab9b4c45",
+        "category": "F011",
+        "floor_id": "5c03f3ae33b74c36b1a18f81aa5faeec",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6137.802446680887442, -36431.599029354809318]
+      }
+    }
+  ]
 }

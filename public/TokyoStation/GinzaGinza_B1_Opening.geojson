@@ -1,8 +1,26 @@
 {
-"type": "FeatureCollection",
-"name": "GinzaGinza_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "f41089bc63f34719bf43410d669b9ae0", "floor_id": "0de7515676294d5c9bf4492b0f42772f", "name": "松屋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6134.719757055700939, -36412.569082479225472 ], [ -6130.804641272597109, -36415.930253141508729 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "GinzaGinza_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f41089bc63f34719bf43410d669b9ae0",
+        "floor_id": "0de7515676294d5c9bf4492b0f42772f",
+        "name": "松屋方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6134.719757055700939, -36412.569082479225472],
+          [-6130.804641272597109, -36415.930253141508729]
+        ]
+      }
+    }
+  ]
 }

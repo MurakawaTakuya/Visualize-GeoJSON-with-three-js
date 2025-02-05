@@ -1,10 +1,58 @@
 {
-"type": "FeatureCollection",
-"name": "MaruOtemati_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "c87b79c97a484da89f5233e555930f8f", "floor_id": "f7c70f244e044e7aabbef1dbbd258b2a", "name": "鎌倉橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6061.29987404167332, -34675.764991949312389 ], [ -6052.978530413724911, -34677.145138671905443 ] ] } },
-{ "type": "Feature", "properties": { "id": "3973834e33c747419be3c1783a1b90ff", "floor_id": "20f96bbb6b4f4f908feaf37a35357282", "name": "丸の内方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6079.592004831343729, -34808.256999534292845 ], [ -6079.844724498150754, -34809.506702607999614 ] ] } },
-{ "type": "Feature", "properties": { "id": "adcec2c11c38429db6c3cf2beb224346", "floor_id": "20f96bbb6b4f4f908feaf37a35357282", "name": "丸の内方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6091.618308700697526, -34805.702623341465369 ], [ -6091.963196717609208, -34807.408100477383414 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MaruOtemati_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c87b79c97a484da89f5233e555930f8f",
+        "floor_id": "f7c70f244e044e7aabbef1dbbd258b2a",
+        "name": "鎌倉橋方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6061.29987404167332, -34675.764991949312389],
+          [-6052.978530413724911, -34677.145138671905443]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3973834e33c747419be3c1783a1b90ff",
+        "floor_id": "20f96bbb6b4f4f908feaf37a35357282",
+        "name": "丸の内方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6079.592004831343729, -34808.256999534292845],
+          [-6079.844724498150754, -34809.506702607999614]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "adcec2c11c38429db6c3cf2beb224346",
+        "floor_id": "20f96bbb6b4f4f908feaf37a35357282",
+        "name": "丸の内方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6091.618308700697526, -34805.702623341465369],
+          [-6091.963196717609208, -34807.408100477383414]
+        ]
+      }
+    }
+  ]
 }

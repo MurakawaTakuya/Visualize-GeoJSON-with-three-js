@@ -1,22 +1,220 @@
 {
-"type": "FeatureCollection",
-"name": "JrShinyokoSt_2_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "fa72c2183f724bd6b2b9ac36b9167998", "category": "F017", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19612.921556322497054, -54591.729158684735012 ] } },
-{ "type": "Feature", "properties": { "id": "21f50c7478cf4f4aa65b4adcb5afc6f3", "category": "F013", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19543.982026324156323, -54562.579934540015529 ] } },
-{ "type": "Feature", "properties": { "id": "bb0174c5faf6433e9ae931b4267dcc98", "category": "F012", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19586.077926040172315, -54616.513356530937017 ] } },
-{ "type": "Feature", "properties": { "id": "28252a6b51c243f197ad0066de12d95e", "category": "F017", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": "横浜アリーナ方面出口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19547.067929692351754, -54558.516293153588776 ] } },
-{ "type": "Feature", "properties": { "id": "d00243cc614b44f59d63a9b0cb302b0d", "category": "F011", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19544.47634069792548, -54555.957227387560124 ] } },
-{ "type": "Feature", "properties": { "id": "aba89671a6a4482383b3904def33c3b4", "category": "F017", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19608.726721799575898, -54587.494602834442048 ] } },
-{ "type": "Feature", "properties": { "id": "9490bed8ca164b98bb3b6009e27c2739", "category": "F011", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19586.360902798660391, -54635.080907110183034 ] } },
-{ "type": "Feature", "properties": { "id": "a7baca3c07a3459eb74175e2d8ac2a10", "category": "F013", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19580.424350525590853, -54574.350972861655464 ] } },
-{ "type": "Feature", "properties": { "id": "3827aadd101d42ddb9e4e725433b7bd3", "category": "F013", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19586.969264345385454, -54613.148175948197604 ] } },
-{ "type": "Feature", "properties": { "id": "006314f162ce46569f6652dbe04d161f", "category": "F017", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19603.625128890511405, -54582.347677397658117 ] } },
-{ "type": "Feature", "properties": { "id": "48f72662006f436a872d91545a48d067", "category": "F011", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19577.622059320259723, -54576.251790046531823 ] } },
-{ "type": "Feature", "properties": { "id": "79db61921ae84855a8dcf6bb676145a9", "category": "F017", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -19616.292454161517526, -54595.136997220950434 ] } },
-{ "type": "Feature", "properties": { "id": "311be7db33334787b6ce5e2dca43d6d9", "category": "F047", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "9" }, "geometry": { "type": "Point", "coordinates": [ -19580.913789364272816, -54614.384101577095862 ] } },
-{ "type": "Feature", "properties": { "id": "0dc9f17d5944431b80dc8ce95b47387d", "category": "F048", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "9" }, "geometry": { "type": "Point", "coordinates": [ -19580.913789364272816, -54614.384101577095862 ] } },
-{ "type": "Feature", "properties": { "id": "1becc04d9a4746c1a57d1b8f35181bed", "category": "F046", "floor_id": "424521d76aa040f49c60323aef6a359c", "name": null, "source": "9" }, "geometry": { "type": "Point", "coordinates": [ -19580.662962585851346, -54614.131396126409527 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "JrShinyokoSt_2_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fa72c2183f724bd6b2b9ac36b9167998",
+        "category": "F017",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19612.921556322497054, -54591.729158684735012]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21f50c7478cf4f4aa65b4adcb5afc6f3",
+        "category": "F013",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19543.982026324156323, -54562.579934540015529]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bb0174c5faf6433e9ae931b4267dcc98",
+        "category": "F012",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19586.077926040172315, -54616.513356530937017]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "28252a6b51c243f197ad0066de12d95e",
+        "category": "F017",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": "横浜アリーナ方面出口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19547.067929692351754, -54558.516293153588776]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d00243cc614b44f59d63a9b0cb302b0d",
+        "category": "F011",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19544.47634069792548, -54555.957227387560124]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "aba89671a6a4482383b3904def33c3b4",
+        "category": "F017",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19608.726721799575898, -54587.494602834442048]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9490bed8ca164b98bb3b6009e27c2739",
+        "category": "F011",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19586.360902798660391, -54635.080907110183034]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a7baca3c07a3459eb74175e2d8ac2a10",
+        "category": "F013",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19580.424350525590853, -54574.350972861655464]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3827aadd101d42ddb9e4e725433b7bd3",
+        "category": "F013",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19586.969264345385454, -54613.148175948197604]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "006314f162ce46569f6652dbe04d161f",
+        "category": "F017",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19603.625128890511405, -54582.347677397658117]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "48f72662006f436a872d91545a48d067",
+        "category": "F011",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19577.622059320259723, -54576.251790046531823]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "79db61921ae84855a8dcf6bb676145a9",
+        "category": "F017",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19616.292454161517526, -54595.136997220950434]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "311be7db33334787b6ce5e2dca43d6d9",
+        "category": "F047",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19580.913789364272816, -54614.384101577095862]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0dc9f17d5944431b80dc8ce95b47387d",
+        "category": "F048",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19580.913789364272816, -54614.384101577095862]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1becc04d9a4746c1a57d1b8f35181bed",
+        "category": "F046",
+        "floor_id": "424521d76aa040f49c60323aef6a359c",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19580.662962585851346, -54614.131396126409527]
+      }
+    }
+  ]
 }

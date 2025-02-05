@@ -1,17 +1,170 @@
 {
-"type": "FeatureCollection",
-"name": "Tozai_B2_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "8111113ce7e14828a238f250dd5373cd", "floor_id": "9da0538b4e6040faad675dd9632657b1", "name": "西改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6230.853680245656506, -34952.907010100243497 ], [ -6231.887080440545105, -34956.518035465021967 ] ] } },
-{ "type": "Feature", "properties": { "id": "818615b005b44940924728637160078f", "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6166.959663391543472, -34961.158853473287309 ], [ -6165.190676719261319, -34961.665100589620124 ] ] } },
-{ "type": "Feature", "properties": { "id": "83e364e769a74146952f5438f0d96481", "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6163.171724532606277, -34962.242882624683261 ], [ -6158.071466754349785, -34963.70247009749437 ] ] } },
-{ "type": "Feature", "properties": { "id": "9337329ba680425e8eecfeaf7065e304", "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6153.926911244320763, -34971.69683600076678 ], [ -6154.475318794306077, -34973.741249203885673 ] ] } },
-{ "type": "Feature", "properties": { "id": "2e39971bb3e44e17b4c8929d034aa1be", "floor_id": "2a84fb00a53d40718a24b55cb6ec106c", "name": "中央東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6064.067733209637481, -34990.256125714324298 ], [ -6061.375796964142864, -34991.026501754233323 ] ] } },
-{ "type": "Feature", "properties": { "id": "7f0e3f12a07e4d6792d2fa5aabf68317", "floor_id": "2a84fb00a53d40718a24b55cb6ec106c", "name": "中央東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6059.11185097134512, -34993.655869282134518 ], [ -6059.499927918941466, -34995.011932165354665 ] ] } },
-{ "type": "Feature", "properties": { "id": "fcb753722a274c65b9b363b40766cd49", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5954.830107193196454, -35030.618625681272533 ], [ -5953.246361844740022, -35031.071860524309159 ] ] } },
-{ "type": "Feature", "properties": { "id": "de3eec0b4a9e40e087ab0c758fc03577", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5951.865096047557927, -35030.882589093482238 ], [ -5949.413511240581101, -35031.584181555481337 ] ] } },
-{ "type": "Feature", "properties": { "id": "427396ef2b114eb5942ff34a9ca71861", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5943.934021850871432, -35027.33893517357501 ], [ -5944.434766283134195, -35029.088693723868346 ] ] } },
-{ "type": "Feature", "properties": { "id": "f0097ef474ea40e58f782b570822d187", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5948.918323904700628, -35022.948122831636283 ], [ -5947.668496352133843, -35023.305797418230213 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "Tozai_B2_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8111113ce7e14828a238f250dd5373cd",
+        "floor_id": "9da0538b4e6040faad675dd9632657b1",
+        "name": "西改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6230.853680245656506, -34952.907010100243497],
+          [-6231.887080440545105, -34956.518035465021967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "818615b005b44940924728637160078f",
+        "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e",
+        "name": "中央改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6166.959663391543472, -34961.158853473287309],
+          [-6165.190676719261319, -34961.665100589620124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "83e364e769a74146952f5438f0d96481",
+        "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e",
+        "name": "中央改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6163.171724532606277, -34962.242882624683261],
+          [-6158.071466754349785, -34963.70247009749437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9337329ba680425e8eecfeaf7065e304",
+        "floor_id": "7ce93f1504fd47fdb6ee91407ee95f6e",
+        "name": "中央改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6153.926911244320763, -34971.69683600076678],
+          [-6154.475318794306077, -34973.741249203885673]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2e39971bb3e44e17b4c8929d034aa1be",
+        "floor_id": "2a84fb00a53d40718a24b55cb6ec106c",
+        "name": "中央東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6064.067733209637481, -34990.256125714324298],
+          [-6061.375796964142864, -34991.026501754233323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7f0e3f12a07e4d6792d2fa5aabf68317",
+        "floor_id": "2a84fb00a53d40718a24b55cb6ec106c",
+        "name": "中央東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6059.11185097134512, -34993.655869282134518],
+          [-6059.499927918941466, -34995.011932165354665]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fcb753722a274c65b9b363b40766cd49",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5954.830107193196454, -35030.618625681272533],
+          [-5953.246361844740022, -35031.071860524309159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "de3eec0b4a9e40e087ab0c758fc03577",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5951.865096047557927, -35030.882589093482238],
+          [-5949.413511240581101, -35031.584181555481337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "427396ef2b114eb5942ff34a9ca71861",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5943.934021850871432, -35027.33893517357501],
+          [-5944.434766283134195, -35029.088693723868346]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f0097ef474ea40e58f782b570822d187",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5948.918323904700628, -35022.948122831636283],
+          [-5947.668496352133843, -35023.305797418230213]
+        ]
+      }
+    }
+  ]
 }

@@ -1,32 +1,360 @@
 {
-"type": "FeatureCollection",
-"name": "MARUBIRU_B1_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "dd951c25c16f4979993efbf24f153d75", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "東京メトロ　千代田線二重橋前駅連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6336.050224162647282, -35404.382435997635184 ] } },
-{ "type": "Feature", "properties": { "id": "9df3070706294402bfe79ede1ad47d70", "category": "F017", "floor_id": "1eb487de82774e1c9cdc5ba3c6a3533a", "name": "東京メトロ　丸ノ内線東京駅連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6254.970608645562606, -35392.044501473625132 ] } },
-{ "type": "Feature", "properties": { "id": "308d498749e446689f92bcf3540b796d", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "新丸ビル連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6248.050668805473833, -35348.43522360768111 ] } },
-{ "type": "Feature", "properties": { "id": "24ab9280dc4d4e38aaf5ebceece0b7e4", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "行幸通り地下通路・新丸ビル連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6315.336511362235797, -35329.863246574648656 ] } },
-{ "type": "Feature", "properties": { "id": "d0c1a84cc63d476292206a7a64fa3c2b", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6323.986463965253279, -35425.684827429518919 ] } },
-{ "type": "Feature", "properties": { "id": "cb2d13119e214c248231c91e79b217c0", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "丸の内仲通り側", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6332.876351292969048, -35373.379202763695503 ] } },
-{ "type": "Feature", "properties": { "id": "361cc81964cc421ba7b6a4e604a2c757", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "丸の内仲通り側", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6335.028813578662266, -35372.791847179745673 ] } },
-{ "type": "Feature", "properties": { "id": "1b38960955294b0fa6182fb697a85d14", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "行幸通り地下通路・新丸ビル連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6315.710822095762524, -35340.417740300297737 ] } },
-{ "type": "Feature", "properties": { "id": "b0f3ecaaedcc45b3be568a7a7670eeb9", "category": "F017", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": "新丸ビル連絡口", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6248.750373210716134, -35359.550553231551021 ] } },
-{ "type": "Feature", "properties": { "id": "2d263abbf395450fad83c113bfccffe3", "category": "F012", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6295.826582921818044, -35392.015666537852667 ] } },
-{ "type": "Feature", "properties": { "id": "c7ece502c22f43598fc3dc90be37eb4f", "category": "F012", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6291.188927004866855, -35366.694930123245285 ] } },
-{ "type": "Feature", "properties": { "id": "c85ff6aeedca4210ad1cd65faa8175c3", "category": "F013", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6335.689073318693772, -35372.619400721552665 ] } },
-{ "type": "Feature", "properties": { "id": "74000f8642184bf796f60bc7e3223356", "category": "F013", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6269.826473860935948, -35379.574790762686462 ] } },
-{ "type": "Feature", "properties": { "id": "fca9539fe534457aa1e5d5138ddc8119", "category": "F013", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6269.591891805447631, -35374.580106304398214 ] } },
-{ "type": "Feature", "properties": { "id": "4ac66c2cff4c476185e351cef2ed1fe6", "category": "F005", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6314.392373500256326, -35352.077037782175466 ] } },
-{ "type": "Feature", "properties": { "id": "b2f1243626c94efbb8c459054d4b2f07", "category": "F002", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6318.996132707187826, -35350.727660082426155 ] } },
-{ "type": "Feature", "properties": { "id": "cbc112ac55024bb699285f2ae01ef948", "category": "F001", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6319.948634612048409, -35354.418604964892438 ] } },
-{ "type": "Feature", "properties": { "id": "77e92f245a2844cfbbe8ded80c29fa31", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6315.909197086468339, -35341.142734756584105 ] } },
-{ "type": "Feature", "properties": { "id": "113766637850425f94675cf7c5b1ffc4", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6332.71155769537836, -35373.423300320144335 ] } },
-{ "type": "Feature", "properties": { "id": "0e2460c5a763459bb14b7522cd4ef804", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6272.613409114674141, -35378.818081925346632 ] } },
-{ "type": "Feature", "properties": { "id": "340dbdc382944cc99b945c62abb933cc", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6324.002974490906126, -35425.678616822900949 ] } },
-{ "type": "Feature", "properties": { "id": "f70edfc2ffa541c79a479251f79d8677", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6248.848548054756975, -35359.557324257737491 ] } },
-{ "type": "Feature", "properties": { "id": "21d1760009ef484d954c7bff0616ff0f", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6303.745360241758135, -35391.211230849832646 ] } },
-{ "type": "Feature", "properties": { "id": "3f6934fc6f2f4534ab3d678ed3c9604a", "category": "F011", "floor_id": "b8c5ff50bddf488799be9efadd76e31a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6315.654960372885398, -35329.79671726104425 ] } },
-{ "type": "Feature", "properties": { "id": "4aeffc1104144dc287d13689754713fa", "category": "F035", "floor_id": "fec17c7942c64226be5aa7fe2662a2a5", "name": "段差解消機", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6317.821866664808113, -35325.977879714897426 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MARUBIRU_B1_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dd951c25c16f4979993efbf24f153d75",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "東京メトロ　千代田線二重橋前駅連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6336.050224162647282, -35404.382435997635184]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9df3070706294402bfe79ede1ad47d70",
+        "category": "F017",
+        "floor_id": "1eb487de82774e1c9cdc5ba3c6a3533a",
+        "name": "東京メトロ　丸ノ内線東京駅連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6254.970608645562606, -35392.044501473625132]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "308d498749e446689f92bcf3540b796d",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "新丸ビル連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6248.050668805473833, -35348.43522360768111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "24ab9280dc4d4e38aaf5ebceece0b7e4",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "行幸通り地下通路・新丸ビル連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6315.336511362235797, -35329.863246574648656]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d0c1a84cc63d476292206a7a64fa3c2b",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6323.986463965253279, -35425.684827429518919]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cb2d13119e214c248231c91e79b217c0",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "丸の内仲通り側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6332.876351292969048, -35373.379202763695503]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "361cc81964cc421ba7b6a4e604a2c757",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "丸の内仲通り側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6335.028813578662266, -35372.791847179745673]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1b38960955294b0fa6182fb697a85d14",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "行幸通り地下通路・新丸ビル連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6315.710822095762524, -35340.417740300297737]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b0f3ecaaedcc45b3be568a7a7670eeb9",
+        "category": "F017",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": "新丸ビル連絡口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6248.750373210716134, -35359.550553231551021]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2d263abbf395450fad83c113bfccffe3",
+        "category": "F012",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6295.826582921818044, -35392.015666537852667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c7ece502c22f43598fc3dc90be37eb4f",
+        "category": "F012",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6291.188927004866855, -35366.694930123245285]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c85ff6aeedca4210ad1cd65faa8175c3",
+        "category": "F013",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6335.689073318693772, -35372.619400721552665]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "74000f8642184bf796f60bc7e3223356",
+        "category": "F013",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6269.826473860935948, -35379.574790762686462]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fca9539fe534457aa1e5d5138ddc8119",
+        "category": "F013",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6269.591891805447631, -35374.580106304398214]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4ac66c2cff4c476185e351cef2ed1fe6",
+        "category": "F005",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6314.392373500256326, -35352.077037782175466]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b2f1243626c94efbb8c459054d4b2f07",
+        "category": "F002",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6318.996132707187826, -35350.727660082426155]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cbc112ac55024bb699285f2ae01ef948",
+        "category": "F001",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6319.948634612048409, -35354.418604964892438]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "77e92f245a2844cfbbe8ded80c29fa31",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6315.909197086468339, -35341.142734756584105]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "113766637850425f94675cf7c5b1ffc4",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6332.71155769537836, -35373.423300320144335]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0e2460c5a763459bb14b7522cd4ef804",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6272.613409114674141, -35378.818081925346632]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "340dbdc382944cc99b945c62abb933cc",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6324.002974490906126, -35425.678616822900949]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f70edfc2ffa541c79a479251f79d8677",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6248.848548054756975, -35359.557324257737491]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21d1760009ef484d954c7bff0616ff0f",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6303.745360241758135, -35391.211230849832646]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3f6934fc6f2f4534ab3d678ed3c9604a",
+        "category": "F011",
+        "floor_id": "b8c5ff50bddf488799be9efadd76e31a",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6315.654960372885398, -35329.79671726104425]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4aeffc1104144dc287d13689754713fa",
+        "category": "F035",
+        "floor_id": "fec17c7942c64226be5aa7fe2662a2a5",
+        "name": "段差解消機",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6317.821866664808113, -35325.977879714897426]
+      }
+    }
+  ]
 }

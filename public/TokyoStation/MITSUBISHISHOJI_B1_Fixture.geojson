@@ -1,8 +1,31 @@
 {
-"type": "FeatureCollection",
-"name": "MITSUBISHISHOJI_B1_Fixture",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "7dba57a07ba94fc5a4c6c736e69c9623", "category": "C010", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "source": "1" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -6447.223643709095086, -35384.57551756023895 ], [ -6448.797407391023626, -35390.783006478268362 ], [ -6448.903389569659339, -35390.755459918909764 ], [ -6447.32962414857775, -35384.547964428158593 ], [ -6447.223643709095086, -35384.57551756023895 ] ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MITSUBISHISHOJI_B1_Fixture",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7dba57a07ba94fc5a4c6c736e69c9623",
+        "category": "C010",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-6447.223643709095086, -35384.57551756023895],
+            [-6448.797407391023626, -35390.783006478268362],
+            [-6448.903389569659339, -35390.755459918909764],
+            [-6447.32962414857775, -35384.547964428158593],
+            [-6447.223643709095086, -35384.57551756023895]
+          ]
+        ]
+      }
+    }
+  ]
 }

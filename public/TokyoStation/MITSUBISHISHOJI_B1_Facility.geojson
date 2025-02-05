@@ -1,15 +1,122 @@
 {
-"type": "FeatureCollection",
-"name": "MITSUBISHISHOJI_B1_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "fb2367abccd74a679abaebf5c2a022a1", "category": "F017", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": "東京メトロ", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6448.245614933165598, -35380.061932781703945 ] } },
-{ "type": "Feature", "properties": { "id": "b07be3d3319745bebf3723f1f92d150e", "category": "F017", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": "丸ビル東京駅方面", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6365.57348920907225, -35396.225395082066825 ] } },
-{ "type": "Feature", "properties": { "id": "ff61cb5a5020427f874d076e64dd80f0", "category": "F012", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6445.91034906916957, -35388.591244590563292 ] } },
-{ "type": "Feature", "properties": { "id": "951325ebcd1e4da2be3bca22314689b0", "category": "F005", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6388.878790799500166, -35403.77626245081774 ] } },
-{ "type": "Feature", "properties": { "id": "c62f5e83e7464c37b9b9c75282b29ece", "category": "F002", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6385.246143037936235, -35404.64594928209408 ] } },
-{ "type": "Feature", "properties": { "id": "a274e9d153d94f069719fe831f8d6a5b", "category": "F001", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6381.440707659794498, -35405.106305415662064 ] } },
-{ "type": "Feature", "properties": { "id": "d4b006eb06b94c2e929c4f7a5651fe6c", "category": "F011", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6448.811961459131453, -35386.406892875464109 ] } },
-{ "type": "Feature", "properties": { "id": "712b28021e764b6983bbd7b5d0de0972", "category": "F011", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6390.918106096602969, -35405.052625405078288 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MITSUBISHISHOJI_B1_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fb2367abccd74a679abaebf5c2a022a1",
+        "category": "F017",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": "東京メトロ",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6448.245614933165598, -35380.061932781703945]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b07be3d3319745bebf3723f1f92d150e",
+        "category": "F017",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": "丸ビル東京駅方面",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6365.57348920907225, -35396.225395082066825]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ff61cb5a5020427f874d076e64dd80f0",
+        "category": "F012",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6445.91034906916957, -35388.591244590563292]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "951325ebcd1e4da2be3bca22314689b0",
+        "category": "F005",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6388.878790799500166, -35403.77626245081774]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c62f5e83e7464c37b9b9c75282b29ece",
+        "category": "F002",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6385.246143037936235, -35404.64594928209408]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a274e9d153d94f069719fe831f8d6a5b",
+        "category": "F001",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6381.440707659794498, -35405.106305415662064]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d4b006eb06b94c2e929c4f7a5651fe6c",
+        "category": "F011",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6448.811961459131453, -35386.406892875464109]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "712b28021e764b6983bbd7b5d0de0972",
+        "category": "F011",
+        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6390.918106096602969, -35405.052625405078288]
+      }
+    }
+  ]
 }

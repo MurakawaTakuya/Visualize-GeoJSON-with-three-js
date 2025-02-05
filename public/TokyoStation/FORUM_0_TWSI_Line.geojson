@@ -1,15 +1,162 @@
 {
-"type": "FeatureCollection",
-"name": "FORUM_0_TWSI_Line",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "a4009418703e44aea39ae6ac402c9d2e", "startnode": null, "endnode": "385f7c14b0dd479bbab2cc681fb57ca1", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6335.457241598051951, -35967.656136141224124 ], [ -6335.008770771162744, -35965.986433379774098 ] ] } },
-{ "type": "Feature", "properties": { "id": "672e27170d804cec8970dba79a0ca8e8", "startnode": null, "endnode": "1d632ed06d1c4b6faa0ebd525f1b061c", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6318.827274172405851, -35971.8952991237893 ], [ -6313.051162283191843, -35950.415279761735292 ] ] } },
-{ "type": "Feature", "properties": { "id": "735fed03df084dcaaaedf8c6ed146ed5", "startnode": "ee4362a1db1d47a997d528f4aa78f687", "endnode": "7409d1118b8143fa9b60bcb28f59913d", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6208.359479425937025, -35794.90265253571124 ], [ -6205.738033801251731, -35785.095556681182643 ] ] } },
-{ "type": "Feature", "properties": { "id": "b728453e2af14aa0bb0772d218e3be77", "startnode": "7409d1118b8143fa9b60bcb28f59913d", "endnode": "45387cb5851144efb1191d58e7efe08b", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6205.738033801251731, -35785.095556681182643 ], [ -6240.187946734234174, -35775.761856907753099 ] ] } },
-{ "type": "Feature", "properties": { "id": "ecde1955dad241598c967bacbad008cf", "startnode": "be5c98cdde5646848b3a061b5970fc9e", "endnode": "45387cb5851144efb1191d58e7efe08b", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6239.602086544465237, -35773.399969377678644 ], [ -6240.187946734234174, -35775.761856907753099 ] ] } },
-{ "type": "Feature", "properties": { "id": "f858474cacb74c37bb19f9742e0d6504", "startnode": "1d632ed06d1c4b6faa0ebd525f1b061c", "endnode": "b9b6bc1a214441b38b033992e1b9c2fa", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6313.051162283191843, -35950.415279761735292 ], [ -6308.688636405028774, -35947.898778371723893 ] ] } },
-{ "type": "Feature", "properties": { "id": "60ba4aed9f934fb1ae02248e211a14b9", "startnode": "95527a7dc99a439e893bb22aff32ed45", "endnode": "ee4362a1db1d47a997d528f4aa78f687", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6206.976972034185565, -35797.266716383572202 ], [ -6208.359479425937025, -35794.90265253571124 ] ] } },
-{ "type": "Feature", "properties": { "id": "457ffb3ca83747a9b4c274ab81cfd333", "startnode": null, "endnode": "7409d1118b8143fa9b60bcb28f59913d", "category": "1", "roof": "9", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6202.916523462589794, -35774.539973212580662 ], [ -6205.738033801251731, -35785.095556681182643 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "FORUM_0_TWSI_Line",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a4009418703e44aea39ae6ac402c9d2e",
+        "startnode": null,
+        "endnode": "385f7c14b0dd479bbab2cc681fb57ca1",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6335.457241598051951, -35967.656136141224124],
+          [-6335.008770771162744, -35965.986433379774098]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "672e27170d804cec8970dba79a0ca8e8",
+        "startnode": null,
+        "endnode": "1d632ed06d1c4b6faa0ebd525f1b061c",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6318.827274172405851, -35971.8952991237893],
+          [-6313.051162283191843, -35950.415279761735292]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "735fed03df084dcaaaedf8c6ed146ed5",
+        "startnode": "ee4362a1db1d47a997d528f4aa78f687",
+        "endnode": "7409d1118b8143fa9b60bcb28f59913d",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6208.359479425937025, -35794.90265253571124],
+          [-6205.738033801251731, -35785.095556681182643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b728453e2af14aa0bb0772d218e3be77",
+        "startnode": "7409d1118b8143fa9b60bcb28f59913d",
+        "endnode": "45387cb5851144efb1191d58e7efe08b",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6205.738033801251731, -35785.095556681182643],
+          [-6240.187946734234174, -35775.761856907753099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ecde1955dad241598c967bacbad008cf",
+        "startnode": "be5c98cdde5646848b3a061b5970fc9e",
+        "endnode": "45387cb5851144efb1191d58e7efe08b",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6239.602086544465237, -35773.399969377678644],
+          [-6240.187946734234174, -35775.761856907753099]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f858474cacb74c37bb19f9742e0d6504",
+        "startnode": "1d632ed06d1c4b6faa0ebd525f1b061c",
+        "endnode": "b9b6bc1a214441b38b033992e1b9c2fa",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6313.051162283191843, -35950.415279761735292],
+          [-6308.688636405028774, -35947.898778371723893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "60ba4aed9f934fb1ae02248e211a14b9",
+        "startnode": "95527a7dc99a439e893bb22aff32ed45",
+        "endnode": "ee4362a1db1d47a997d528f4aa78f687",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6206.976972034185565, -35797.266716383572202],
+          [-6208.359479425937025, -35794.90265253571124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "457ffb3ca83747a9b4c274ab81cfd333",
+        "startnode": null,
+        "endnode": "7409d1118b8143fa9b60bcb28f59913d",
+        "category": "1",
+        "roof": "9",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6202.916523462589794, -35774.539973212580662],
+          [-6205.738033801251731, -35785.095556681182643]
+        ]
+      }
+    }
+  ]
 }

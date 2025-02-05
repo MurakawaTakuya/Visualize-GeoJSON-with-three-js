@@ -1,45 +1,633 @@
 {
-"type": "FeatureCollection",
-"name": "NRT2_1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "078ec770f7544981a1fad79a9c12d5de", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50052.339665986619366, -24889.473151796133607 ], [ 50053.106604668486398, -24890.762154310315964 ] ] } },
-{ "type": "Feature", "properties": { "id": "91019026e8c549d48c7905d251e4a8a1", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50054.3336900780414, -24892.824757990409125 ], [ 50055.100720381640713, -24894.113870766665059 ] ] } },
-{ "type": "Feature", "properties": { "id": "c78c9f13b25f420db50cde9aef1edd1f", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "中央口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50124.125829152188089, -25009.988008273070591 ], [ 50124.892698247691442, -25011.277115974266053 ] ] } },
-{ "type": "Feature", "properties": { "id": "bae576a1bd904a44a0f50a5bcf43631d", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "中央口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50119.098298152297502, -25012.978994240842439 ], [ 50119.865166760660941, -25014.2681023676123 ], [ 50119.098298152297502, -25012.978994240842439 ] ] } },
-{ "type": "Feature", "properties": { "id": "21d3f8e457c04ae8a210f705779247a3", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "中央口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50127.986097458124277, -25016.476447760574956 ], [ 50128.752967672553496, -25017.765555126828986 ] ] } },
-{ "type": "Feature", "properties": { "id": "2e9e1dff88b3465e8e1595644c6b52c5", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "中央口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50122.958564640903205, -25019.467546813673835 ], [ 50123.725524767127354, -25020.756654094246187 ], [ 50122.958564640903205, -25019.467546813673835 ] ] } },
-{ "type": "Feature", "properties": { "id": "42a14d71994748e4a44f6acd3d6e8788", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50143.410780161822913, -25053.698042623138463 ], [ 50142.643904820099124, -25052.408936554151296 ], [ 50143.410780161822913, -25053.698042623138463 ] ] } },
-{ "type": "Feature", "properties": { "id": "dfe051d88a624eeeacf0890615bd982f", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50145.404874198313337, -25057.049739051155484 ], [ 50144.637907876065583, -25055.760633666912327 ], [ 50145.404874198313337, -25057.049739051155484 ] ] } },
-{ "type": "Feature", "properties": { "id": "196596ed811b4287a535de49c0ebeefb", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50149.536591897609469, -25052.846251642538846 ], [ 50150.303467655750865, -25054.135246174137137 ] ] } },
-{ "type": "Feature", "properties": { "id": "ed9c1356e85e43dea7376c00bb405f9b", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50147.542496554007812, -25049.494445169842948 ], [ 50148.30946279251657, -25050.783550314030435 ] ] } },
-{ "type": "Feature", "properties": { "id": "e628156964214234b056c36a0456e3da", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50163.453482766293746, -25087.38671490751949 ], [ 50162.686601679401065, -25086.097610588287353 ], [ 50163.453482766293746, -25087.38671490751949 ] ] } },
-{ "type": "Feature", "properties": { "id": "95234a3ea5b040baa3ca74d1800b1dd2", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50165.447591723124788, -25090.738406780936202 ], [ 50164.680619650760491, -25089.449303147866885 ], [ 50165.447591723124788, -25090.738406780936202 ] ] } },
-{ "type": "Feature", "properties": { "id": "0b88b677d61146e381a54e0948c8ebdd", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50169.579225695539208, -25086.534910801288788 ], [ 50170.346198230901791, -25087.824014014448039 ] ] } },
-{ "type": "Feature", "properties": { "id": "e464feb6f83d40bfac84695a295d8b07", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50167.585206484312948, -25083.183219315924362 ], [ 50168.352088664680196, -25084.472434162064019 ] ] } },
-{ "type": "Feature", "properties": { "id": "ec71cb6ca81e4d55ba08eb990698da96", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50199.643322855103179, -25137.067980909319886 ], [ 50200.41021421172627, -25138.357192959116219 ] ] } },
-{ "type": "Feature", "properties": { "id": "0c847ee6ecd94f2e9c03636e01a06b46", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50197.649191482312744, -25133.716407714640809 ], [ 50198.416172066048603, -25135.005508479840501 ] ] } },
-{ "type": "Feature", "properties": { "id": "ebc1b9009a8b41e68cbb98eca7d80e44", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "国内線出口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50211.540503915282898, -25174.68947914725868 ], [ 50210.758216099842684, -25173.374590561266814 ], [ 50211.540503915282898, -25174.68947914725868 ] ] } },
-{ "type": "Feature", "properties": { "id": "7f5dae794b9544c5b36d314454f3a47e", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "国内線出口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50209.03513569120696, -25170.478403612371039 ], [ 50208.252847358642612, -25169.163516257791343 ], [ 50209.03513569120696, -25170.478403612371039 ] ] } },
-{ "type": "Feature", "properties": { "id": "273965d2817e4617b7bcad80f1661f45", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "国内線出口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50211.561558404959214, -25167.194928192864609 ], [ 50212.343879796433612, -25168.509791993397812 ] ] } },
-{ "type": "Feature", "properties": { "id": "871f9217e1904a7e91d4cd5fa671bf29", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "国内線出口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50214.06690634520055, -25171.406009411086416 ], [ 50214.849138053112256, -25172.720873494159605 ] ] } },
-{ "type": "Feature", "properties": { "id": "57408b7ce65c47d491237b8be9fb77ae", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50082.403723978284688, -24940.006172763780341 ], [ 50083.170671905761992, -24941.295283617506357 ] ] } },
-{ "type": "Feature", "properties": { "id": "77bd5ea30fca4d52a6d71ae1d0d34cbb", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50084.397771077550715, -24943.35788313246303 ], [ 50085.164719574851915, -24944.646993811991706 ] ] } },
-{ "type": "Feature", "properties": { "id": "ba70693b94c345a69269a946061167a2", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50097.547840260638623, -24976.609338634712913 ], [ 50098.314703040239692, -24977.898448674812244 ], [ 50097.547840260638623, -24976.609338634712913 ] ] } },
-{ "type": "Feature", "properties": { "id": "72230b13094d4d8f96992096efe8f9fd", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50100.308764390763827, -24981.2501554306873 ], [ 50099.541810004098807, -24979.960935129933205 ], [ 50100.308764390763827, -24981.2501554306873 ] ] } },
-{ "type": "Feature", "properties": { "id": "ed0bfdc3057f416688092f460f30907d", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50104.440468009772303, -24977.046577676454035 ], [ 50105.207421909944969, -24978.335686587815871 ] ] } },
-{ "type": "Feature", "properties": { "id": "f64929fda8264c93a217957ef8d27670", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 1", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50102.446406212526199, -24973.694871846084425 ], [ 50103.213359876623144, -24974.983980955719744 ] ] } },
-{ "type": "Feature", "properties": { "id": "a0f530f5b4144dce922294fc14d2d034", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50139.511571205817745, -25052.468924671775312 ], [ 50140.800651153760555, -25051.701965791700786 ], [ 50139.511571205817745, -25052.468924671775312 ] ] } },
-{ "type": "Feature", "properties": { "id": "cd565cf9abea4062b91e3f28d1f70f0a", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50135.361463040593662, -25051.705101806328457 ], [ 50134.594588412670419, -25050.415884102232667 ], [ 50135.361463040593662, -25051.705101806328457 ] ] } },
-{ "type": "Feature", "properties": { "id": "9b50cf545e284ced8ca7ae975e951d87", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50098.914114694882301, -24984.040527783563448 ], [ 50100.203188561892603, -24983.273574738359457 ], [ 50098.914114694882301, -24984.040527783563448 ] ] } },
-{ "type": "Feature", "properties": { "id": "3892dff3b40f4b56a4432133d795be38", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50097.619076043622044, -24987.290664478099643 ], [ 50098.386030121873773, -24988.579773989942623 ], [ 50097.619076043622044, -24987.290664478099643 ] ] } },
-{ "type": "Feature", "properties": { "id": "405c3091cb3a491aaacff1810465372c", "floor_id": "fcfda2f9c22b472bacbc7631b65c8ddd", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50044.552810378620052, -24979.375618514870439 ], [ 50046.194315013621235, -24978.399288567001349 ] ] } },
-{ "type": "Feature", "properties": { "id": "2453a931fce74a8d86eb694e30a7b7d8", "floor_id": "ccfe19a73b0f450a9588a94fe91f4d63", "name": null, "source": "9" }, "geometry": { "type": "LineString", "coordinates": [ [ 50089.555564212634636, -25054.966914578366413 ], [ 50091.19730462784355, -25053.990232395459316 ] ] } },
-{ "type": "Feature", "properties": { "id": "85d4a4b4e11743ce9e7fdb0947bfaff3", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50193.517588739669009, -25137.919835283249995 ], [ 50193.148325874324655, -25137.299157511661178 ], [ 50192.75062088669074, -25136.630672508377756 ] ] } },
-{ "type": "Feature", "properties": { "id": "3b96a5104b1c423baf6e7716a69c9965", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "南口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50195.511601954727666, -25141.271482983007445 ], [ 50194.744681175987353, -25139.982400467357365 ] ] } },
-{ "type": "Feature", "properties": { "id": "bd1e168cd1c04880b04e45f6960e2799", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50080.265998601462343, -24947.56138563101922 ], [ 50079.499041593611764, -24946.272279996108409 ] ] } },
-{ "type": "Feature", "properties": { "id": "baa384f0eaae47a8a03bc1f8e0c0ad99", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 2", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50078.27190687226539, -24944.209704187436728 ], [ 50077.504949307789502, -24942.92059648482973 ] ] } },
-{ "type": "Feature", "properties": { "id": "897afad8cb324943b6ffb6dade9eec09", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50048.207963838576688, -24893.67660424296264 ], [ 50047.44099567377998, -24892.38745150421164 ] ] } },
-{ "type": "Feature", "properties": { "id": "0b1fbfa02d68468ca6d4d6f7e781c3b6", "floor_id": "e2c583bc6b2c41819627991a1519d396", "name": "北口 3", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ 50050.201996293631964, -24897.02825683084302 ], [ 50049.435029918815417, -24895.739108237397886 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "NRT2_1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "078ec770f7544981a1fad79a9c12d5de",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50052.339665986619366, -24889.473151796133607],
+          [50053.106604668486398, -24890.762154310315964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "91019026e8c549d48c7905d251e4a8a1",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50054.3336900780414, -24892.824757990409125],
+          [50055.100720381640713, -24894.113870766665059]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c78c9f13b25f420db50cde9aef1edd1f",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "中央口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50124.125829152188089, -25009.988008273070591],
+          [50124.892698247691442, -25011.277115974266053]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bae576a1bd904a44a0f50a5bcf43631d",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "中央口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50119.098298152297502, -25012.978994240842439],
+          [50119.865166760660941, -25014.2681023676123],
+          [50119.098298152297502, -25012.978994240842439]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21d3f8e457c04ae8a210f705779247a3",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "中央口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50127.986097458124277, -25016.476447760574956],
+          [50128.752967672553496, -25017.765555126828986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2e9e1dff88b3465e8e1595644c6b52c5",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "中央口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50122.958564640903205, -25019.467546813673835],
+          [50123.725524767127354, -25020.756654094246187],
+          [50122.958564640903205, -25019.467546813673835]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "42a14d71994748e4a44f6acd3d6e8788",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50143.410780161822913, -25053.698042623138463],
+          [50142.643904820099124, -25052.408936554151296],
+          [50143.410780161822913, -25053.698042623138463]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "dfe051d88a624eeeacf0890615bd982f",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50145.404874198313337, -25057.049739051155484],
+          [50144.637907876065583, -25055.760633666912327],
+          [50145.404874198313337, -25057.049739051155484]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "196596ed811b4287a535de49c0ebeefb",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50149.536591897609469, -25052.846251642538846],
+          [50150.303467655750865, -25054.135246174137137]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ed9c1356e85e43dea7376c00bb405f9b",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50147.542496554007812, -25049.494445169842948],
+          [50148.30946279251657, -25050.783550314030435]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e628156964214234b056c36a0456e3da",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50163.453482766293746, -25087.38671490751949],
+          [50162.686601679401065, -25086.097610588287353],
+          [50163.453482766293746, -25087.38671490751949]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "95234a3ea5b040baa3ca74d1800b1dd2",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50165.447591723124788, -25090.738406780936202],
+          [50164.680619650760491, -25089.449303147866885],
+          [50165.447591723124788, -25090.738406780936202]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0b88b677d61146e381a54e0948c8ebdd",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50169.579225695539208, -25086.534910801288788],
+          [50170.346198230901791, -25087.824014014448039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e464feb6f83d40bfac84695a295d8b07",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50167.585206484312948, -25083.183219315924362],
+          [50168.352088664680196, -25084.472434162064019]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ec71cb6ca81e4d55ba08eb990698da96",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50199.643322855103179, -25137.067980909319886],
+          [50200.41021421172627, -25138.357192959116219]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0c847ee6ecd94f2e9c03636e01a06b46",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50197.649191482312744, -25133.716407714640809],
+          [50198.416172066048603, -25135.005508479840501]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ebc1b9009a8b41e68cbb98eca7d80e44",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "国内線出口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50211.540503915282898, -25174.68947914725868],
+          [50210.758216099842684, -25173.374590561266814],
+          [50211.540503915282898, -25174.68947914725868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7f5dae794b9544c5b36d314454f3a47e",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "国内線出口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50209.03513569120696, -25170.478403612371039],
+          [50208.252847358642612, -25169.163516257791343],
+          [50209.03513569120696, -25170.478403612371039]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "273965d2817e4617b7bcad80f1661f45",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "国内線出口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50211.561558404959214, -25167.194928192864609],
+          [50212.343879796433612, -25168.509791993397812]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "871f9217e1904a7e91d4cd5fa671bf29",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "国内線出口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50214.06690634520055, -25171.406009411086416],
+          [50214.849138053112256, -25172.720873494159605]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57408b7ce65c47d491237b8be9fb77ae",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50082.403723978284688, -24940.006172763780341],
+          [50083.170671905761992, -24941.295283617506357]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "77bd5ea30fca4d52a6d71ae1d0d34cbb",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50084.397771077550715, -24943.35788313246303],
+          [50085.164719574851915, -24944.646993811991706]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ba70693b94c345a69269a946061167a2",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50097.547840260638623, -24976.609338634712913],
+          [50098.314703040239692, -24977.898448674812244],
+          [50097.547840260638623, -24976.609338634712913]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "72230b13094d4d8f96992096efe8f9fd",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50100.308764390763827, -24981.2501554306873],
+          [50099.541810004098807, -24979.960935129933205],
+          [50100.308764390763827, -24981.2501554306873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ed0bfdc3057f416688092f460f30907d",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50104.440468009772303, -24977.046577676454035],
+          [50105.207421909944969, -24978.335686587815871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f64929fda8264c93a217957ef8d27670",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 1",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50102.446406212526199, -24973.694871846084425],
+          [50103.213359876623144, -24974.983980955719744]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a0f530f5b4144dce922294fc14d2d034",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50139.511571205817745, -25052.468924671775312],
+          [50140.800651153760555, -25051.701965791700786],
+          [50139.511571205817745, -25052.468924671775312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd565cf9abea4062b91e3f28d1f70f0a",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50135.361463040593662, -25051.705101806328457],
+          [50134.594588412670419, -25050.415884102232667],
+          [50135.361463040593662, -25051.705101806328457]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9b50cf545e284ced8ca7ae975e951d87",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50098.914114694882301, -24984.040527783563448],
+          [50100.203188561892603, -24983.273574738359457],
+          [50098.914114694882301, -24984.040527783563448]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3892dff3b40f4b56a4432133d795be38",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50097.619076043622044, -24987.290664478099643],
+          [50098.386030121873773, -24988.579773989942623],
+          [50097.619076043622044, -24987.290664478099643]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "405c3091cb3a491aaacff1810465372c",
+        "floor_id": "fcfda2f9c22b472bacbc7631b65c8ddd",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50044.552810378620052, -24979.375618514870439],
+          [50046.194315013621235, -24978.399288567001349]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2453a931fce74a8d86eb694e30a7b7d8",
+        "floor_id": "ccfe19a73b0f450a9588a94fe91f4d63",
+        "name": null,
+        "source": "9"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50089.555564212634636, -25054.966914578366413],
+          [50091.19730462784355, -25053.990232395459316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "85d4a4b4e11743ce9e7fdb0947bfaff3",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50193.517588739669009, -25137.919835283249995],
+          [50193.148325874324655, -25137.299157511661178],
+          [50192.75062088669074, -25136.630672508377756]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3b96a5104b1c423baf6e7716a69c9965",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "南口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50195.511601954727666, -25141.271482983007445],
+          [50194.744681175987353, -25139.982400467357365]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bd1e168cd1c04880b04e45f6960e2799",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50080.265998601462343, -24947.56138563101922],
+          [50079.499041593611764, -24946.272279996108409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "baa384f0eaae47a8a03bc1f8e0c0ad99",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 2",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50078.27190687226539, -24944.209704187436728],
+          [50077.504949307789502, -24942.92059648482973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "897afad8cb324943b6ffb6dade9eec09",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50048.207963838576688, -24893.67660424296264],
+          [50047.44099567377998, -24892.38745150421164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0b1fbfa02d68468ca6d4d6f7e781c3b6",
+        "floor_id": "e2c583bc6b2c41819627991a1519d396",
+        "name": "北口 3",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [50050.201996293631964, -24897.02825683084302],
+          [50049.435029918815417, -24895.739108237397886]
+        ]
+      }
+    }
+  ]
 }

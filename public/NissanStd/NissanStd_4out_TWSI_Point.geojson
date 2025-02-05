@@ -1,22 +1,250 @@
 {
-"type": "FeatureCollection",
-"name": "NissanStd_4out_TWSI_Point",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "b8153632eef949bf8e8abe8f9b7b7f28", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.509640631200348", "lon": "139.605163620741050", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20697.173347827163525, -54378.183111544647545 ] } },
-{ "type": "Feature", "properties": { "id": "baed230c49d94e9d8bbfe932e6f606b2", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.509575890959930", "lon": "139.605069070105860", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20705.766628933910397, -54385.345494738146954 ] } },
-{ "type": "Feature", "properties": { "id": "4bee78fe4c194439b8add58e7a36d5cd", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.509438616233076", "lon": "139.605209661815450", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20693.04880426863383, -54400.604135380694061 ] } },
-{ "type": "Feature", "properties": { "id": "b2b0718d7b944d0c8252cf4a26c206ee", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.509252207252871", "lon": "139.604911064102680", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20720.182472744661936, -54421.221504570174147 ] } },
-{ "type": "Feature", "properties": { "id": "1cb23db6292948d7aadba7d2ede5dd6c", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.510578105170403", "lon": "139.607377972128010", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20496.071936814721994, -54274.642923232524481 ] } },
-{ "type": "Feature", "properties": { "id": "b62d48fd73e24f52a5b7f98bdfb44518", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.510742696080129", "lon": "139.607618325347090", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20474.228036904201872, -54256.433264328239602 ] } },
-{ "type": "Feature", "properties": { "id": "5fbd6436e91842ca936093489e95afd1", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "6", "name": null, "lat": "35.510651756643050", "lon": "139.607711804043870", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20465.771803682480822, -54266.541406579555769 ] } },
-{ "type": "Feature", "properties": { "id": "fb0c6f0133ae4eb285ebfe762b0009ac", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.510734183807159", "lon": "139.607857935297830", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20452.495543810811796, -54257.427317070447316 ] } },
-{ "type": "Feature", "properties": { "id": "875aaca8ce2a4bfc8128b8c0a3a0812b", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.510820028404531", "lon": "139.607790040072440", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20458.632440487272106, -54247.889710946670675 ] } },
-{ "type": "Feature", "properties": { "id": "7120374337654c758354dc5477327a95", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.510901767352749", "lon": "139.607712106712540", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20465.680907815261889, -54238.805494967695267 ] } },
-{ "type": "Feature", "properties": { "id": "be17d23b2a644cf1bd5c9fd379e73325", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.510978529836805", "lon": "139.607626963122070", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20473.38465108822129, -54230.271861427536351 ] } },
-{ "type": "Feature", "properties": { "id": "a690675bf3c240b59c679f090a68472c", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.511050907444464", "lon": "139.607535292889450", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20481.681512619805289, -54222.223320349781716 ] } },
-{ "type": "Feature", "properties": { "id": "5da5d3d9d8324a689ed4ff014e422f13", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.508935738912079", "lon": "139.605234475602200", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20690.926950563476566, -54456.398109004352591 ] } },
-{ "type": "Feature", "properties": { "id": "df5b84fa92804426bba5ebb96a156329", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.509004271533257", "lon": "139.605147062216820", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20698.838675643270108, -54448.77682164961152 ] } },
-{ "type": "Feature", "properties": { "id": "e771badae7bd43029f872a95b36e65b7", "floor_id": "d0ce6de396a142d98191573232fa5016", "category": "4", "name": null, "lat": "35.509166852650196", "lon": "139.604980196266180", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -20713.93340425601491, -54430.705188487336272 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "NissanStd_4out_TWSI_Point",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b8153632eef949bf8e8abe8f9b7b7f28",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.509640631200348",
+        "lon": "139.605163620741050",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20697.173347827163525, -54378.183111544647545]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "baed230c49d94e9d8bbfe932e6f606b2",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.509575890959930",
+        "lon": "139.605069070105860",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20705.766628933910397, -54385.345494738146954]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4bee78fe4c194439b8add58e7a36d5cd",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.509438616233076",
+        "lon": "139.605209661815450",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20693.04880426863383, -54400.604135380694061]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b2b0718d7b944d0c8252cf4a26c206ee",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.509252207252871",
+        "lon": "139.604911064102680",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20720.182472744661936, -54421.221504570174147]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1cb23db6292948d7aadba7d2ede5dd6c",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.510578105170403",
+        "lon": "139.607377972128010",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20496.071936814721994, -54274.642923232524481]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b62d48fd73e24f52a5b7f98bdfb44518",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.510742696080129",
+        "lon": "139.607618325347090",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20474.228036904201872, -54256.433264328239602]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5fbd6436e91842ca936093489e95afd1",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "6",
+        "name": null,
+        "lat": "35.510651756643050",
+        "lon": "139.607711804043870",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20465.771803682480822, -54266.541406579555769]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fb0c6f0133ae4eb285ebfe762b0009ac",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.510734183807159",
+        "lon": "139.607857935297830",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20452.495543810811796, -54257.427317070447316]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "875aaca8ce2a4bfc8128b8c0a3a0812b",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.510820028404531",
+        "lon": "139.607790040072440",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20458.632440487272106, -54247.889710946670675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7120374337654c758354dc5477327a95",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.510901767352749",
+        "lon": "139.607712106712540",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20465.680907815261889, -54238.805494967695267]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "be17d23b2a644cf1bd5c9fd379e73325",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.510978529836805",
+        "lon": "139.607626963122070",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20473.38465108822129, -54230.271861427536351]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a690675bf3c240b59c679f090a68472c",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.511050907444464",
+        "lon": "139.607535292889450",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20481.681512619805289, -54222.223320349781716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5da5d3d9d8324a689ed4ff014e422f13",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.508935738912079",
+        "lon": "139.605234475602200",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20690.926950563476566, -54456.398109004352591]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "df5b84fa92804426bba5ebb96a156329",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.509004271533257",
+        "lon": "139.605147062216820",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20698.838675643270108, -54448.77682164961152]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e771badae7bd43029f872a95b36e65b7",
+        "floor_id": "d0ce6de396a142d98191573232fa5016",
+        "category": "4",
+        "name": null,
+        "lat": "35.509166852650196",
+        "lon": "139.604980196266180",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20713.93340425601491, -54430.705188487336272]
+      }
+    }
+  ]
 }
