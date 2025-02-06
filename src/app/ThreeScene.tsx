@@ -102,6 +102,9 @@ export default function ThreeScene({ place }: { place: string }) {
       const floorNumber = getFloorNumber(f);
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
+      if (floorNumber === null) {
+        console.log("Couldn't get floor number in", f);
+      }
       loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
 
       // floorListに無い場合は追加

@@ -1,80 +1,12 @@
 {
-  "type": "FeatureCollection",
-  "name": "BRICK_B2_Facility",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "75fef7e16abb47bdb0036409c222d7cb",
-        "category": "F017",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6311.273379593920254, -35644.323186287510907]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "0640a49c24d647f383cd2f41a36e8f5a",
-        "category": "F017",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6326.960347711095892, -35625.141313032829203]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "60ecf994feb24c469d82a18360ea2a30",
-        "category": "F012",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6326.992317057489345, -35625.132097320180037]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "75cd71deea644afca8748241d4297d08",
-        "category": "F013",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6328.256464523611612, -35639.444844995276071]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "1220b1d128394c2093781149110f8d9c",
-        "category": "F011",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6328.657123299469276, -35640.829497355960484]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "BRICK_B2_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "75fef7e16abb47bdb0036409c222d7cb", "category": "F017", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6311.273379593920254, -35644.323186287510907 ] } },
+{ "type": "Feature", "properties": { "id": "0640a49c24d647f383cd2f41a36e8f5a", "category": "F017", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6326.960347711095892, -35625.141313032829203 ] } },
+{ "type": "Feature", "properties": { "id": "60ecf994feb24c469d82a18360ea2a30", "category": "F012", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6326.992317057489345, -35625.132097320180037 ] } },
+{ "type": "Feature", "properties": { "id": "75cd71deea644afca8748241d4297d08", "category": "F013", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6328.256464523611612, -35639.444844995276071 ] } },
+{ "type": "Feature", "properties": { "id": "1220b1d128394c2093781149110f8d9c", "category": "F011", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6328.657123299469276, -35640.829497355960484 ] } }
+]
 }

@@ -1,80 +1,12 @@
 {
-  "type": "FeatureCollection",
-  "name": "TEKKOU_0_Facility",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "94ac53a742bb4b81a8c43f1690e38153",
-        "category": "F013",
-        "floor_id": "3484f03b79ab4d2db032d050a36dace7",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-5755.669184800469338, -35285.712626928019745]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "bf2f7ec9b25d4f22b00a429d935cbca4",
-        "category": "F013",
-        "floor_id": "3484f03b79ab4d2db032d050a36dace7",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-5746.501573556020048, -35271.293050916690845]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "8379aca5322b4d8aa7b44a8db077b65c",
-        "category": "F014",
-        "floor_id": "3484f03b79ab4d2db032d050a36dace7",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-5693.806049873837765, -35158.212990747852018]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "bdddfb5c860141baaaa2c4d19913b962",
-        "category": "F011",
-        "floor_id": "3484f03b79ab4d2db032d050a36dace7",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-5756.396789550020003, -35286.919622438384977]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "6528e93c96fa4e9d8fc252d99be3a81b",
-        "category": "F011",
-        "floor_id": "3484f03b79ab4d2db032d050a36dace7",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-5746.108948531663373, -35273.530277709833172]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "TEKKOU_0_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "94ac53a742bb4b81a8c43f1690e38153", "category": "F013", "floor_id": "3484f03b79ab4d2db032d050a36dace7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -5755.669184800469338, -35285.712626928019745 ] } },
+{ "type": "Feature", "properties": { "id": "bf2f7ec9b25d4f22b00a429d935cbca4", "category": "F013", "floor_id": "3484f03b79ab4d2db032d050a36dace7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -5746.501573556020048, -35271.293050916690845 ] } },
+{ "type": "Feature", "properties": { "id": "8379aca5322b4d8aa7b44a8db077b65c", "category": "F014", "floor_id": "3484f03b79ab4d2db032d050a36dace7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -5693.806049873837765, -35158.212990747852018 ] } },
+{ "type": "Feature", "properties": { "id": "bdddfb5c860141baaaa2c4d19913b962", "category": "F011", "floor_id": "3484f03b79ab4d2db032d050a36dace7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -5756.396789550020003, -35286.919622438384977 ] } },
+{ "type": "Feature", "properties": { "id": "6528e93c96fa4e9d8fc252d99be3a81b", "category": "F011", "floor_id": "3484f03b79ab4d2db032d050a36dace7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -5746.108948531663373, -35273.530277709833172 ] } }
+]
 }

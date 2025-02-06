@@ -1,58 +1,10 @@
 {
-  "type": "FeatureCollection",
-  "name": "HibiyaHibiya_B2_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "827429c0c809486e935f6c3f927ee421",
-        "floor_id": "957bdf5f8380429880b1ab9681d4128f",
-        "name": "日比谷公園方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6656.856485688638713, -36071.185481686814455],
-          [-6661.978561386748879, -36077.370849437036668]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "d808a68d2bdc4a8283c43dc7492e8c9e",
-        "floor_id": "575c829c8d1b4cada22a9e5b9392787b",
-        "name": "有楽町方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6544.493889511630186, -36167.306429859359923],
-          [-6541.476479181174, -36169.657144569580851]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "341690e7d0e642c084e37edc42f0a6d9",
-        "floor_id": "62351f504a6b4cb9899cb505a2d8f770",
-        "name": "有楽町方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6549.659301578223676, -36173.917840787973546],
-          [-6546.632687400605391, -36176.27572574075748]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "HibiyaHibiya_B2_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "827429c0c809486e935f6c3f927ee421", "floor_id": "957bdf5f8380429880b1ab9681d4128f", "name": "日比谷公園方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6656.856485688638713, -36071.185481686814455 ], [ -6661.978561386748879, -36077.370849437036668 ] ] } },
+{ "type": "Feature", "properties": { "id": "d808a68d2bdc4a8283c43dc7492e8c9e", "floor_id": "575c829c8d1b4cada22a9e5b9392787b", "name": "有楽町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6544.493889511630186, -36167.306429859359923 ], [ -6541.476479181174, -36169.657144569580851 ] ] } },
+{ "type": "Feature", "properties": { "id": "341690e7d0e642c084e37edc42f0a6d9", "floor_id": "62351f504a6b4cb9899cb505a2d8f770", "name": "有楽町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6549.659301578223676, -36173.917840787973546 ], [ -6546.632687400605391, -36176.27572574075748 ] ] } }
+]
 }

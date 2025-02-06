@@ -1,66 +1,11 @@
 {
-  "type": "FeatureCollection",
-  "name": "KITTE_B2_Facility",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "0eb78612160b4d4a99121159501eec32",
-        "category": "F017",
-        "floor_id": "91c3683b08f3416c9fec345df476faa8",
-        "name": "JR京葉線",
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6258.771186359211242, -35541.971337526258139]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "4a4081153c6e436f89043d2e47608d16",
-        "category": "F012",
-        "floor_id": "0f2a09008fdb4f8aab69f31fec00751a",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6247.928585673243106, -35534.70844751525874]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "f1a33bbd27534594ae61704c205c7f04",
-        "category": "F013",
-        "floor_id": "0f2a09008fdb4f8aab69f31fec00751a",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6249.15441412020391, -35529.809827054712514]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "5f7a9673d49349d2aee22b57532ce41e",
-        "category": "F011",
-        "floor_id": "0f2a09008fdb4f8aab69f31fec00751a",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6247.349196547224892, -35532.274016742623644]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "KITTE_B2_Facility",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "0eb78612160b4d4a99121159501eec32", "category": "F017", "floor_id": "91c3683b08f3416c9fec345df476faa8", "name": "JR京葉線", "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6258.771186359211242, -35541.971337526258139 ] } },
+{ "type": "Feature", "properties": { "id": "4a4081153c6e436f89043d2e47608d16", "category": "F012", "floor_id": "0f2a09008fdb4f8aab69f31fec00751a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6247.928585673243106, -35534.70844751525874 ] } },
+{ "type": "Feature", "properties": { "id": "f1a33bbd27534594ae61704c205c7f04", "category": "F013", "floor_id": "0f2a09008fdb4f8aab69f31fec00751a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6249.15441412020391, -35529.809827054712514 ] } },
+{ "type": "Feature", "properties": { "id": "5f7a9673d49349d2aee22b57532ce41e", "category": "F011", "floor_id": "0f2a09008fdb4f8aab69f31fec00751a", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6247.349196547224892, -35532.274016742623644 ] } }
+]
 }

@@ -1,90 +1,12 @@
 {
-  "type": "FeatureCollection",
-  "name": "MITSUBISHISHOJI_B1_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "fd9014dfc13e436e9922ef0b175088aa",
-        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6441.803332635217885, -35381.352502519672271],
-          [-6442.924237995504882, -35385.86588126989227]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "ee248349d3b743a1804ff65683ccf128",
-        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6394.566966924976441, -35398.675707196925941],
-          [-6391.093545082571836, -35399.595941338142438]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "b6030784f2724f4f8448d30d562d0d6f",
-        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6391.471111121172726, -35400.975208744210249],
-          [-6392.675146597747698, -35405.37360689687921]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "ac5d29ecaeb944ff8f15bbfe04b5d03d",
-        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6395.255288461157761, -35401.191870102084067],
-          [-6396.151976855596331, -35404.469716940555372]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "6cdd33b589d2410ea95c04b988b043af",
-        "floor_id": "52aecc20a4f348a1931cce2309d4491c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6364.786466322566412, -35393.350350044573133],
-          [-6366.401658373165446, -35399.250796057189291]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "MITSUBISHISHOJI_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "fd9014dfc13e436e9922ef0b175088aa", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6438.911497832808891, -35382.136799739084381 ], [ -6440.049936488289859, -35386.627325028151972 ] ] } },
+{ "type": "Feature", "properties": { "id": "ee248349d3b743a1804ff65683ccf128", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6394.566966924976441, -35398.675707196925941 ], [ -6391.093545082571836, -35399.595941338142438 ] ] } },
+{ "type": "Feature", "properties": { "id": "b6030784f2724f4f8448d30d562d0d6f", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6391.471111121172726, -35400.975208744210249 ], [ -6392.675146597747698, -35405.37360689687921 ] ] } },
+{ "type": "Feature", "properties": { "id": "ac5d29ecaeb944ff8f15bbfe04b5d03d", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6395.255288461157761, -35401.191870102084067 ], [ -6396.151976855596331, -35404.469716940555372 ] ] } },
+{ "type": "Feature", "properties": { "id": "6cdd33b589d2410ea95c04b988b043af", "floor_id": "52aecc20a4f348a1931cce2309d4491c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6364.786466322566412, -35393.350350044573133 ], [ -6366.401658373165446, -35399.250796057189291 ] ] } }
+]
 }

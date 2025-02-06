@@ -1,90 +1,12 @@
 {
-  "type": "FeatureCollection",
-  "name": "KOUTUU_1_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "b718b95eec3d46a390853d8e3ddd4e68",
-        "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6266.518941749436635, -36088.956573463248787],
-          [-6262.334666523593114, -36091.081793996549095]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "29fd25812ccb4ae18207eb6358674de8",
-        "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6244.822428286017384, -36092.659615901327925],
-          [-6238.106527498504875, -36092.864035069593228]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "d5a434a67c68467f8b5cddc1439bac22",
-        "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6264.935181230242051, -36048.243266138328181],
-          [-6267.647066994766647, -36054.101023749921296]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "626ca822edc84990bbed3731545e695d",
-        "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6206.335198308212057, -36028.11604617912235],
-          [-6201.54906449236023, -36030.787119861277461]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "40779c14e1314010a9bb174cf53cd70e",
-        "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6231.214548662955167, -36018.215159020583087],
-          [-6225.386093006394731, -36020.2876150296579]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "KOUTUU_1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "b718b95eec3d46a390853d8e3ddd4e68", "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6266.518941749436635, -36088.956573463248787 ], [ -6262.334666523593114, -36091.081793996549095 ] ] } },
+{ "type": "Feature", "properties": { "id": "29fd25812ccb4ae18207eb6358674de8", "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6244.822428286017384, -36092.659615901327925 ], [ -6238.106527498504875, -36092.864035069593228 ] ] } },
+{ "type": "Feature", "properties": { "id": "d5a434a67c68467f8b5cddc1439bac22", "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6264.935181230242051, -36048.243266138328181 ], [ -6267.647066994766647, -36054.101023749921296 ] ] } },
+{ "type": "Feature", "properties": { "id": "626ca822edc84990bbed3731545e695d", "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6206.335198308212057, -36028.11604617912235 ], [ -6201.54906449236023, -36030.787119861277461 ] ] } },
+{ "type": "Feature", "properties": { "id": "40779c14e1314010a9bb174cf53cd70e", "floor_id": "7aa4f0ec5b2d43aab57d1410c2a6aa60", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6231.214548662955167, -36018.215159020583087 ], [ -6225.386093006394731, -36020.2876150296579 ] ] } }
+]
 }

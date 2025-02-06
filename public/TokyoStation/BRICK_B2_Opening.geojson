@@ -1,42 +1,9 @@
 {
-  "type": "FeatureCollection",
-  "name": "BRICK_B2_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "324b0c83c8244f63ab70c3202443c5a7",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6320.956823851852278, -35642.445903988249484],
-          [-6320.496072175738846, -35640.701965005515376]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "d0966a72076c4b38af487cfcedf63407",
-        "floor_id": "1996b4a528a146cf98915e47ed27605c",
-        "name": null,
-        "source": "1"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6311.498266976630475, -35645.174385372818506],
-          [-6311.037517018964536, -35643.430445907855756]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "BRICK_B2_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "324b0c83c8244f63ab70c3202443c5a7", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6320.956823851852278, -35642.445903988249484 ], [ -6320.496072175738846, -35640.701965005515376 ] ] } },
+{ "type": "Feature", "properties": { "id": "d0966a72076c4b38af487cfcedf63407", "floor_id": "1996b4a528a146cf98915e47ed27605c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6311.498266976630475, -35645.174385372818506 ], [ -6311.037517018964536, -35643.430445907855756 ] ] } }
+]
 }

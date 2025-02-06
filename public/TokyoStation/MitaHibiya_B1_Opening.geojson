@@ -1,58 +1,10 @@
 {
-  "type": "FeatureCollection",
-  "name": "MitaHibiya_B1_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "0d9272a65dc14684ae3c0e6871b6ff61",
-        "floor_id": "e0e110b117d44c86a4254cd9ed80594e",
-        "name": "皇居外苑方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6577.76359471745036, -35777.09385447519162],
-          [-6579.325697086887885, -35783.072393161099171]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "e2a917be6b324addbed2146bbcafefee",
-        "floor_id": "9aac1021488949b0a4e8a6d36a806828",
-        "name": "東京国際フォーラム方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6606.588840413529397, -35892.141109107295051],
-          [-6608.840358833856044, -35899.814395767680253]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "2913af1e79d14f9e96eba4d53177b57e",
-        "floor_id": "131a986e10504a92b19cdb80416048bf",
-        "name": "日比谷公園方面改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6634.111795260046165, -35975.926912267612352],
-          [-6636.798521147654355, -35982.155297625271487]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "MitaHibiya_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "0d9272a65dc14684ae3c0e6871b6ff61", "floor_id": "e0e110b117d44c86a4254cd9ed80594e", "name": "皇居外苑改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6577.845964599904619, -35781.773129151122703 ], [ -6578.749293942799341, -35785.75104043616011 ] ] } },
+{ "type": "Feature", "properties": { "id": "e2a917be6b324addbed2146bbcafefee", "floor_id": "700cd9369f2e48c2b3caa183a8f932e9", "name": "東京国際フォーラム方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6608.831271518733047, -35897.369857442128705 ], [ -6611.216644030482712, -35906.06987320062035 ] ] } },
+{ "type": "Feature", "properties": { "id": "2913af1e79d14f9e96eba4d53177b57e", "floor_id": "131a986e10504a92b19cdb80416048bf", "name": "日比谷公園方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6629.101455614780207, -35970.781676845370384 ], [ -6631.452846595449046, -35976.097515895700781 ] ] } }
+]
 }

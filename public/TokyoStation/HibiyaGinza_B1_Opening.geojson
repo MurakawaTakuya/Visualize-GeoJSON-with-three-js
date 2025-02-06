@@ -1,122 +1,14 @@
 {
-  "type": "FeatureCollection",
-  "name": "HibiyaGinza_B1_Opening",
-  "crs": {
-    "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
-  },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "6a5a5e69c68c44548302eadbcc92dcc1",
-        "floor_id": "9074688174b74cc0a18a681d2d7386b4",
-        "name": "銀座４丁目交差点改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6176.693502431844536, -36472.245038531895261],
-          [-6181.520299852732933, -36477.867326914099976]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "16598fd003234e229b086bd7d7f8f5cb",
-        "floor_id": "9074688174b74cc0a18a681d2d7386b4",
-        "name": "銀座４丁目交差点改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6189.751130204223045, -36486.495170381960634],
-          [-6190.671024805511479, -36487.566670081847406]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "3c0d90fb7fd64af1b8b16af039bdfba1",
-        "floor_id": "9074688174b74cc0a18a681d2d7386b4",
-        "name": "銀座４丁目交差点改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6194.51987656475012, -36486.779708010835748],
-          [-6199.013223307031694, -36482.922119599134021]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "dc7fe4162fbe4b47b0ceb16948c890a9",
-        "floor_id": "9074688174b74cc0a18a681d2d7386b4",
-        "name": "銀座４丁目交差点改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6201.906993573173168, -36461.192166757449741],
-          [-6199.725182597278945, -36463.170227894632262]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "22f1219f7b224a7db8686599f3721ac4",
-        "floor_id": "d17547ddac3e4917ab984dc6677a03c5",
-        "name": "銀座４丁目交差点改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6195.81208939757289, -36453.961512524248974],
-          [-6193.53026444268562, -36456.030247953094658]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "5a365477026e469abcca6dbca0554a8d",
-        "floor_id": "0c4116d2de09452ca7d735d1ace5cfee",
-        "name": "中央改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6279.399059092016614, -36378.545760232234898],
-          [-6276.642357572370202, -36380.995377558378095]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "dfc9d3a41ab7449eaee5e420b54474b0",
-        "floor_id": "0c4116d2de09452ca7d735d1ace5cfee",
-        "name": "中央改札",
-        "source": "2"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-6283.417428396002833, -36389.755373768428399],
-          [-6287.641433018943644, -36386.001904327102238]
-        ]
-      }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "HibiyaGinza_B1_Opening",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "3bb4c6e8a5fe43388766bc53be36a669", "floor_id": "181cbe3d874a47aebc065fe9572564b7", "name": "銀座４丁目交差点改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6172.904763037232442, -36468.138926509767771 ], [ -6176.541753753453122, -36472.375316453442792 ] ] } },
+{ "type": "Feature", "properties": { "id": "f74bf9d7b79c4b039279207c6306b5b3", "floor_id": "181cbe3d874a47aebc065fe9572564b7", "name": "銀座４丁目交差点改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6181.368551178611597, -36477.997604836353275 ], [ -6184.999781623120725, -36482.227275031313184 ] ] } },
+{ "type": "Feature", "properties": { "id": "ead7cc87bb8c406f940a2f7075e36681", "floor_id": "181cbe3d874a47aebc065fe9572564b7", "name": "銀座４丁目交差点改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6196.925476228292609, -36480.490297753261984 ], [ -6194.456792044845315, -36477.614742388286686 ] ] } },
+{ "type": "Feature", "properties": { "id": "24ed0fed7c614d4db73cb3f45da2044b", "floor_id": "181cbe3d874a47aebc065fe9572564b7", "name": "銀座４丁目交差点改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6194.909791835176293, -36469.223176290819538 ], [ -6193.022477298384729, -36470.934241856914014 ] ] } },
+{ "type": "Feature", "properties": { "id": "84fbf65be3124c67ae3fbd66a7a5480e", "floor_id": "d17547ddac3e4917ab984dc6677a03c5", "name": "銀座４丁目交差点改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6188.972374303165452, -36460.448204458574764 ], [ -6186.410408733821896, -36462.770918092086504 ] ] } },
+{ "type": "Feature", "properties": { "id": "5a365477026e469abcca6dbca0554a8d", "floor_id": "0c4116d2de09452ca7d735d1ace5cfee", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6279.399059092016614, -36378.545760232234898 ], [ -6276.642357572370202, -36380.995377558378095 ] ] } },
+{ "type": "Feature", "properties": { "id": "dfc9d3a41ab7449eaee5e420b54474b0", "floor_id": "0c4116d2de09452ca7d735d1ace5cfee", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6283.417428396002833, -36389.755373768428399 ], [ -6287.641433018943644, -36386.001904327102238 ] ] } }
+]
 }
