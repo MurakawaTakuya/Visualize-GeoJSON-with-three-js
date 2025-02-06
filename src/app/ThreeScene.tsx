@@ -35,6 +35,7 @@ export default function ThreeScene({ place }: { place: string }) {
   const loader = new THREE.FileLoader().setResponseType("json");
   const scene = new THREE.Scene();
   const meshLines: THREE.BufferGeometry[] = [];
+  const floorList: number[] = [];
 
   useEffect(() => {
     if (!selectedData) {
@@ -102,11 +103,16 @@ export default function ThreeScene({ place }: { place: string }) {
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
       loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
+
+      // floorListに無い場合は追加
+      if (floorNumber !== null && !floorList.includes(floorNumber)) {
+        floorList.push(floorNumber);
+      }
     });
 
     // GUIを表示
     const gui = new GUI({ width: 150 });
-    loadGUI(gui, scene);
+    loadGUI(gui, scene, floorList);
 
     // 歩行者ネットワークの読み込み
     if (networkFile) {
@@ -115,7 +121,7 @@ export default function ThreeScene({ place }: { place: string }) {
 
     // 地表データの読み込み
     if (terrainFile) {
-      loadTerrainFile(loader, terrainFile, center, scene);
+      loadTerrainFile(loader, terrainFile, center, scene, gui);
     }
 
     // 描画

@@ -6,7 +6,7 @@ import { MeshLine, MeshLineMaterial } from "three.meshline";
 import { BufferGeometryUtils } from "three/examples/jsm/Addons.js";
 
 /**
- * 歩行者ネットワークの構築
+ * ネットワークの描画
  *
  * @param {{ node_id: number; ordinal: number }[]} nodeId
  */
@@ -104,15 +104,5 @@ export const createNetworkLink = (
     const linkGeometry = new THREE.Mesh(mergedGeometry, linkMaterial);
     linkGeometry.name = "link";
     scene.add(linkGeometry);
-    const loading = document.getElementById("loading");
-    if (loading) {
-      const animation = loading.animate(
-        { opacity: [1, 0] },
-        { duration: 30, fill: "forwards" }
-      );
-      animation.onfinish = () => {
-        loading.remove();
-      };
-    }
   });
 };

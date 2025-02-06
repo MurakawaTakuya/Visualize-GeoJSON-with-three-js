@@ -1,17 +1,26 @@
-import { groupList, layers } from "@/const/const";
 import * as THREE from "three";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js";
 
-export const loadGUI = (gui: GUI, scene: THREE.Scene) => {
-  // GUI設定と階層グループ作成
-  if (window.innerWidth < 768) {
+/**
+ * 階層グループの作成とGUIを設定
+ *
+ * @param {GUI} gui
+ * @param {THREE.Scene} scene
+ * @param {number[]} floorList
+ */
+export const loadGUI = (gui: GUI, scene: THREE.Scene, floorList: number[]) => {
+  if (window.innerWidth < 700) {
     gui.close();
   }
+
   // Polygon
-  groupList.forEach((num, i) => {
+  floorList.sort((a, b) => b - a);
+  floorList.forEach((num) => {
     const group = new THREE.Group();
     group.name = `group${num}`;
     scene.add(group);
+    const guiName =
+      num === 0 ? "地上" : num > 0 ? `${num}F` : "B" + Math.abs(num);
     gui
       .add({ [`group${num}`]: true }, `group${num}`)
       .onChange((isVisible: boolean) => {
@@ -20,7 +29,7 @@ export const loadGUI = (gui: GUI, scene: THREE.Scene) => {
           obj.visible = isVisible;
         }
       })
-      .name(layers[i]);
+      .name(guiName);
   });
 
   const lineStringGroup = new THREE.Group();

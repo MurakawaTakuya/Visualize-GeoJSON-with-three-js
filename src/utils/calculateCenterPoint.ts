@@ -1,6 +1,12 @@
 import * as d3 from "d3";
 import { Feature, Position } from "geojson";
 
+/**
+ * 中心点を計算する
+ *
+ * @param {string[]} geoFile
+ * @return {*}  {Promise<[number, number]>}
+ */
 export const calculateCenterPoint = async (
   geoFile: string[]
 ): Promise<[number, number]> => {

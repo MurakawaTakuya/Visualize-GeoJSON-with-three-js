@@ -1,6 +1,11 @@
 import { MaterialWithTextures } from "@/types/types";
 import * as THREE from "three";
 
+/**
+ * シーンをリセット
+ *
+ * @param {THREE.Scene} scene
+ */
 export const resetScene = (scene: THREE.Scene) => {
   scene.traverse((object) => {
     if (object instanceof THREE.Mesh) {
