@@ -1,5 +1,9 @@
 /**
  * 与えられたgeojsonから階数を取得
+ * 以下のパターンを想定
+ * - 文字列_数字_文字列
+ * - 文字列_数字out_文字列
+ * - 文字列_B数字_文字列
  *
  * @param {string} geojson
  * @param {string} type

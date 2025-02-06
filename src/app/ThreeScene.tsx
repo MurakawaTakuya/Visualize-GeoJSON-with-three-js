@@ -1,17 +1,18 @@
 "use client";
-import { data, groupList, layers } from "@/const/const";
+import { data } from "@/const/const";
 import { NodeProperties } from "@/types/types";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
-import { createLink } from "@/utils/createLink";
+import { createNetworkLink } from "@/utils/createNetworkLink";
 import { getFloorNumber } from "@/utils/getFloorNumber";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
+import { loadGUI } from "@/utils/loadGUI";
 import { resetScene } from "@/utils/resetScene";
 import type { Feature, FeatureCollection, Point, Polygon } from "geojson";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
-import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js";
+import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
 
 export default function ThreeScene({ place }: { place: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -65,15 +66,11 @@ export default function ThreeScene({ place }: { place: string }) {
 
     // 画面サイズやカメラの設定
     const sizes = { width: window.innerWidth, height: window.innerHeight };
-    // 座標系の中心
-
-    // TODO: 開始した時のカメラの遠さや視点を変更
-    // TODO: 開始してから操作するまでは回転しててもいいかも
     const camera = new THREE.PerspectiveCamera(
       75,
       sizes.width / sizes.height,
-      0.1,
-      100000
+      0.000001,
+      1000
     );
     const canvas = document.createElement("canvas");
     const mapControls = new MapControls(camera, canvas);
@@ -83,7 +80,8 @@ export default function ThreeScene({ place }: { place: string }) {
     containerRef.current.appendChild(canvas);
 
     // シーン, カメラ, レンダラーの設定
-    camera.position.set(-190, 280, -350);
+    camera.position.set(200, 200, 200);
+    camera.lookAt(new THREE.Vector3(0, 0, 0));
     scene.add(camera);
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -111,35 +109,18 @@ export default function ThreeScene({ place }: { place: string }) {
     };
     window.addEventListener("resize", onResize);
 
-    // GUI設定と階層グループ作成
-    const gui = new GUI({ width: 150 });
-    if (window.innerWidth < 768) {
-      gui.close();
-    }
-    groupList.forEach((num, i) => {
-      const group = new THREE.Group();
-      group.name = `group${num}`;
-      scene.add(group);
-      // TODO: lineとpointも追加
-      gui
-        .add({ [`group${num}`]: true }, `group${num}`)
-        .onChange((isVisible: boolean) => {
-          const obj = scene.getObjectByName(`group${num}`);
-          if (obj) {
-            obj.visible = isVisible;
-          }
-        })
-        .name(layers[i]);
-    });
-
-    // geojson ファイルの読み込み
+    // geojsonファイルの読み込み
     geoFile.forEach((f) => {
       const floorNumber = getFloorNumber(f);
       // 床データはdepthを浅くする
-      const depth = f.endsWith("_Floor.geojson") ? 0.5 : 5;
+      const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
       loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
     });
 
+    const gui = new GUI({ width: 150 });
+    loadGUI(gui, scene);
+
+    // 歩行者ネットワークの読み込み
     if (networkFiles) {
       gui
         .add({ hasCheck: true }, "hasCheck")
@@ -151,7 +132,6 @@ export default function ThreeScene({ place }: { place: string }) {
         })
         .name("歩行者ネットワーク");
 
-      // 歩行者ネットワークの読み込み
       loader.load(networkFiles.node, (data: unknown) => {
         const nodeData = data as FeatureCollection<Point, NodeProperties>;
         const nodeIds: { node_id: number; ordinal: number }[] =
@@ -170,8 +150,8 @@ export default function ThreeScene({ place }: { place: string }) {
       });
     }
 
+    // 地表データの読み込み
     if (terrainFiles) {
-      // 地表データの読み込み
       loader.load(terrainFiles, (data: unknown) => {
         const fgData = data as FeatureCollection<
           Polygon,

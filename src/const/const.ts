@@ -33,5 +33,4 @@ export const layers = [
   "B2",
   "B3",
 ];
-// TODO: データごとに調節を検討
 export const verticalOffset = 10;
