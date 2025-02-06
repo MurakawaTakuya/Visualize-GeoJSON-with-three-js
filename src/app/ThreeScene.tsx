@@ -159,7 +159,14 @@ export default function ThreeScene({ place }: { place: string }) {
             node_id: feature.properties.node_id,
             ordinal: feature.properties.ordinal,
           }));
-        createLink(nodeIds, center, loader, scene, meshLines, networkFiles);
+        createNetworkLink(
+          nodeIds,
+          center,
+          loader,
+          scene,
+          meshLines,
+          networkFiles
+        );
       });
     }
 

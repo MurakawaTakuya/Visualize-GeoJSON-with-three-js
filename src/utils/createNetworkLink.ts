@@ -10,7 +10,7 @@ import { BufferGeometryUtils } from "three/examples/jsm/Addons.js";
  *
  * @param {{ node_id: number; ordinal: number }[]} nodeId
  */
-export const createLink = (
+export const createNetworkLink = (
   nodeId: { node_id: number; ordinal: number }[],
   center: [number, number],
   loader: THREE.FileLoader,

@@ -1,6 +1,10 @@
 export const TokyoStation = {
   TokyoStation: {
     rootPath: "/TokyoStation/",
+    networkFiles: {
+      node: "Tokyo_node.geojson",
+      link: "Tokyo_link.geojson",
+    },
     geoFile: [
       "BRICK_1_Drawing.geojson",
       "BRICK_1_Facility.geojson",
@@ -299,8 +303,6 @@ export const TokyoStation = {
       "TOKIA_B1_Floor.geojson",
       "TOKIA_B1_Opening.geojson",
       "TOKIA_B1_Space.geojson",
-      "Tokyo_link.geojson",
-      "Tokyo_node.geojson",
       "TokyoSt_0_Drawing.geojson",
       "TokyoSt_0_Facility.geojson",
       "TokyoSt_0_Floor.geojson",
