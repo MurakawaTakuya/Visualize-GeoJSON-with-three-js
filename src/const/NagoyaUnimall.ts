@@ -1,7 +1,7 @@
 export const NagoyaUnimall = {
   NagoyaUnimall: {
     rootPath: "/NagoyaUnimall/",
-    networkFiles: {
+    networkFile: {
       node: "UniMall_B1_Node.geojson",
       link: "UniMall_B1_Link.geojson",
     },

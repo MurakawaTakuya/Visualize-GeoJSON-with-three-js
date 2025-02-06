@@ -16,9 +16,9 @@ export const createNetworkLink = (
   loader: THREE.FileLoader,
   scene: THREE.Scene,
   meshLines: THREE.BufferGeometry[],
-  networkFiles?: { link: string; node: string }
+  networkFile?: { link: string; node: string }
 ): void => {
-  if (!networkFiles) {
+  if (!networkFile) {
     return;
   }
 
@@ -29,7 +29,7 @@ export const createNetworkLink = (
     lineWidth: 0.3,
   });
 
-  loader.load(networkFiles.link, (data: unknown) => {
+  loader.load(networkFile.link, (data: unknown) => {
     const linkData = data as FeatureCollection<LineString, LinkProperties>;
     // リンクの描画
     linkData.features.forEach(

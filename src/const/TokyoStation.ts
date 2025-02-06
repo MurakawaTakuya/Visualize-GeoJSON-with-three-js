@@ -1,7 +1,7 @@
 export const TokyoStation = {
   TokyoStation: {
     rootPath: "/TokyoStation/",
-    networkFiles: {
+    networkFile: {
       node: "Tokyo_node.geojson",
       link: "Tokyo_link.geojson",
     },

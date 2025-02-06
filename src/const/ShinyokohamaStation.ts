@@ -1,7 +1,7 @@
 export const ShinyokohamaStation = {
   ShinyokohamaStation: {
     rootPath: "/ShinyokohamaStation/",
-    networkFiles: {
+    networkFile: {
       node: "ShinyokohamaSt_node.geojson",
       link: "ShinyokohamaSt_link.geojson",
     },

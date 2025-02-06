@@ -1,11 +1,11 @@
 export const ShinjukuTerminal = {
   ShinjukuTerminal: {
     rootPath: "/ShinjukuTerminal/",
-    networkFiles: {
+    networkFile: {
       node: "Shinjuku_node.geojson",
       link: "Shinjuku_link.geojson",
     },
-    terrainFiles: "ShinjukuTerminal_Terrain.geojson",
+    terrainFile: "ShinjukuTerminal_Terrain.geojson",
     geoFile: [
       "ShinjukuTerminal_0_Drawing.geojson",
       "ShinjukuTerminal_0_Facility.geojson",
