@@ -30,11 +30,6 @@ export const loadAndAddToScene = (
       )
       .forEach(
         (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) => {
-          const group = scene.getObjectByName(`group${floorNumber}`);
-          if (!group) {
-            return;
-          }
-
           switch (feature.geometry.type) {
             case "Point": {
               const [longitude, latitude] = feature.geometry.coordinates;
@@ -55,7 +50,11 @@ export const loadAndAddToScene = (
               // マテリアルとメッシュ生成
               const pointMesh = new THREE.Mesh(pointGeometry, pointMaterial);
               pointMesh.position.y += floorNumber * verticalOffset - 1;
-              group.add(pointMesh);
+
+              const group = scene.getObjectByName("Point");
+              if (group) {
+                group.add(pointMesh);
+              }
               break;
             }
             case "LineString": {
@@ -77,7 +76,11 @@ export const loadAndAddToScene = (
               lineGeometry.applyMatrix4(matrix);
               const line = new THREE.Line(lineGeometry, lineMaterial);
               line.position.y += floorNumber * verticalOffset - 1;
-              group.add(line);
+
+              const group = scene.getObjectByName("LineString");
+              if (group) {
+                group.add(line);
+              }
               break;
             }
             case "Polygon": {
@@ -99,7 +102,11 @@ export const loadAndAddToScene = (
               const edges = new THREE.EdgesGeometry(geometry);
               const line = new THREE.LineSegments(edges, lineMaterial);
               line.position.y += floorNumber * verticalOffset - 1;
-              group.add(line);
+
+              const group = scene.getObjectByName(`group${floorNumber}`);
+              if (group) {
+                group.add(line);
+              }
               break;
             }
           }
