@@ -1,5 +1,6 @@
 export const ShinyokohamaStation = {
   ShinyokohamaStation: {
+    name: "新横浜駅",
     rootPath: "/ShinyokohamaStation/",
     networkFile: {
       node: "ShinyokohamaSt_node.geojson",

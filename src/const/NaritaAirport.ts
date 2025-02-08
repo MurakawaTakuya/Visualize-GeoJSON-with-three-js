@@ -1,5 +1,6 @@
 export const NaritaAirport = {
   NaritaAirport: {
+    name: "成田空港",
     rootPath: "/NaritaAirport/",
     networkFile: {
       node: "nrt_node.geojson",

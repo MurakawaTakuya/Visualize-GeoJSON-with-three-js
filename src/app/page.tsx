@@ -1,9 +1,9 @@
 "use client";
-import { data } from "@/const/const";
+import PlaceSelection from "@/components/PlaceSelection";
+import { Prefectures } from "@/const/Prefectures";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
 import { resetScene } from "@/utils/resetScene";
-import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
@@ -19,7 +19,7 @@ export default function Page() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
-  const selectedData = data["Prefectures"];
+  const selectedData = Prefectures.Prefectures;
   const rootPath = selectedData && selectedData.rootPath;
   const geoFile = selectedData && selectedData.geoFile.map((f) => rootPath + f);
 
@@ -151,27 +151,7 @@ export default function Page() {
         </p>
       )}
 
-      <p>
-        <Link href="/NagoyaCentralPark/">NagoyaCentralPark</Link>
-      </p>
-      <p>
-        <Link href="/NagoyaUnimall/">NagoyaUnimall</Link>
-      </p>
-      <p>
-        <Link href="/NaritaAirport/">NaritaAirport</Link>
-      </p>
-      <p>
-        <Link href="/NissanStd/">NissanStd</Link>
-      </p>
-      <p>
-        <Link href="/ShinjukuTerminal/">ShinjukuTerminal</Link>
-      </p>
-      <p>
-        <Link href="/ShinyokohamaStation/">ShinyokohamaStation</Link>
-      </p>
-      <p>
-        <Link href="/TokyoStation/">TokyoStation</Link>
-      </p>
+      <PlaceSelection />
     </>
   );
 }
