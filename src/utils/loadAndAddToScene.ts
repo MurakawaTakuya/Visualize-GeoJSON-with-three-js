@@ -54,6 +54,11 @@ export const loadAndAddToScene = (
               const group = scene.getObjectByName("Point");
               if (group) {
                 group.add(pointMesh);
+              } else {
+                const group = new THREE.Group();
+                group.name = "Point";
+                group.add(pointMesh);
+                scene.add(group);
               }
               break;
             }
@@ -80,6 +85,11 @@ export const loadAndAddToScene = (
               const group = scene.getObjectByName("LineString");
               if (group) {
                 group.add(line);
+              } else {
+                const group = new THREE.Group();
+                group.name = "LineString";
+                group.add(line);
+                scene.add(group);
               }
               break;
             }
@@ -106,7 +116,45 @@ export const loadAndAddToScene = (
               const group = scene.getObjectByName(`group${floorNumber}`);
               if (group) {
                 group.add(line);
+              } else {
+                const group = new THREE.Group();
+                group.name = `group${floorNumber}`;
+                group.add(line);
+                scene.add(group);
               }
+              break;
+            }
+            case "MultiPolygon": {
+              // マルチポリゴンを作成
+              feature.geometry.coordinates.forEach((coordinates) => {
+                const geometry = createExtrudedGeometry(
+                  coordinates,
+                  depth,
+                  center
+                );
+                const lineMaterial = new THREE.LineBasicMaterial({
+                  color: "rgb(255, 255, 255)",
+                  transparent: true,
+                  opacity: 0.9,
+                });
+                // -90度回転
+                const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
+                geometry.applyMatrix4(matrix);
+                // エッジ抽出してLineを作成
+                const edges = new THREE.EdgesGeometry(geometry);
+                const line = new THREE.LineSegments(edges, lineMaterial);
+                line.position.y += floorNumber * verticalOffset - 1;
+
+                const group = scene.getObjectByName(`group${floorNumber}`);
+                if (group) {
+                  group.add(line);
+                } else {
+                  const group = new THREE.Group();
+                  group.name = `group${floorNumber}`;
+                  group.add(line);
+                  scene.add(group);
+                }
+              });
               break;
             }
           }
