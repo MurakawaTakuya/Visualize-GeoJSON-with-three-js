@@ -18,6 +18,7 @@ export interface CustomShader {
 }
 
 export interface FileStructure {
+  name: string;
   rootPath: string;
   networkFile?: { node: string; link: string };
   terrainFile?: string;

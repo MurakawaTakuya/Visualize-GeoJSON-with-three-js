@@ -1,5 +1,16 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   overflow: hidden;
   background: #101010;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

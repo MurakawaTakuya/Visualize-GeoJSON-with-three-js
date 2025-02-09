@@ -1,5 +1,6 @@
 export const NagoyaUnimall = {
   NagoyaUnimall: {
+    name: "名古屋ユニモール",
     rootPath: "/NagoyaUnimall/",
     networkFile: {
       node: "UniMall_B1_Node.geojson",

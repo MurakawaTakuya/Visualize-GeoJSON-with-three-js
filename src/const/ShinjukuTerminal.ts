@@ -1,5 +1,6 @@
 export const ShinjukuTerminal = {
   ShinjukuTerminal: {
+    name: "新宿駅",
     rootPath: "/ShinjukuTerminal/",
     networkFile: {
       node: "Shinjuku_node.geojson",

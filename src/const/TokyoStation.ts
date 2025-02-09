@@ -1,5 +1,6 @@
 export const TokyoStation = {
   TokyoStation: {
+    name: "東京駅",
     rootPath: "/TokyoStation/",
     networkFile: {
       node: "Tokyo_node.geojson",
