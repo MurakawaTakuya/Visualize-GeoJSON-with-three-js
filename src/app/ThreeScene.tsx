@@ -13,7 +13,31 @@ import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
 
-export default function ThreeScene({ place }: { place: string }) {
+export default function ThreeScene({
+  place,
+  startCoordinate = {
+    x: 200,
+    y: 200,
+    z: 200,
+  },
+  startLookAt = {
+    x: 0,
+    y: 0,
+    z: 0,
+  },
+}: {
+  place: string;
+  startCoordinate?: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  startLookAt?: {
+    x: number;
+    y: number;
+    z: number;
+  };
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
@@ -69,10 +93,10 @@ export default function ThreeScene({ place }: { place: string }) {
     // 画面サイズやカメラの設定
     const sizes = { width: window.innerWidth, height: window.innerHeight };
     const camera = new THREE.PerspectiveCamera(
-      75,
-      sizes.width / sizes.height,
-      0.000001,
-      3000
+      75, // 視野角
+      sizes.width / sizes.height, // アスペクト比
+      0.000001, // 近づいた時に非表示にする距離
+      3000 // 遠ざかった時に非表示にする距離
     );
     const canvas = document.createElement("canvas");
     const mapControls = new MapControls(camera, canvas);
@@ -82,8 +106,14 @@ export default function ThreeScene({ place }: { place: string }) {
     containerRef.current.appendChild(canvas);
 
     // シーン, カメラ, レンダラーの設定
-    camera.position.set(200, 200, 200);
-    camera.lookAt(new THREE.Vector3(0, 0, 0));
+    camera.position.set(
+      startCoordinate.x,
+      startCoordinate.y,
+      startCoordinate.z
+    );
+    camera.lookAt(
+      new THREE.Vector3(startLookAt.x, startLookAt.y, startLookAt.z)
+    );
     scene.add(camera);
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -91,7 +121,7 @@ export default function ThreeScene({ place }: { place: string }) {
     // コントローラ設定
     mapControls.enableDamping = true;
     mapControls.enableZoom = false;
-    mapControls.maxDistance = 1000;
+    mapControls.maxDistance = 2000;
     zoomControls.noPan = true;
     zoomControls.noRotate = true;
     zoomControls.noZoom = false;
@@ -99,12 +129,9 @@ export default function ThreeScene({ place }: { place: string }) {
 
     // geojsonファイルの読み込み
     geoFile.forEach((f) => {
-      const floorNumber = getFloorNumber(f);
+      const floorNumber = getFloorNumber(f) ?? 0;
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
-      if (floorNumber === null) {
-        console.log("Couldn't get floor number in", f);
-      }
       loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
 
       // floorListに無い場合は追加
@@ -130,11 +157,13 @@ export default function ThreeScene({ place }: { place: string }) {
     // 描画
     const animate = () => {
       requestAnimationFrame(animate);
-      const target = mapControls.target;
       mapControls.update();
+      const target = mapControls.target;
       zoomControls.target.set(target.x, target.y, target.z);
       zoomControls.update();
       renderer.render(scene, camera);
+
+      // console.log("Position:", camera.position);
     };
     animate();
 

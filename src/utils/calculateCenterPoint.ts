@@ -19,17 +19,29 @@ export const calculateCenterPoint = async (
     data.features.forEach((feature: Feature) => {
       const geometry = feature.geometry;
 
-      if (!geometry || geometry.type !== "Polygon") {
+      if (!geometry) {
         return;
       }
 
-      geometry.coordinates.forEach((coordinates: Position[]) => {
-        const validCoordinates = coordinates.map(
-          (coord) => [coord[0], coord[1]] as [number, number]
-        );
-        const center = d3.polygonCentroid(validCoordinates);
-        polygons.push(center);
-      });
+      if (geometry.type === "Polygon") {
+        geometry.coordinates.forEach((coordinates: Position[]) => {
+          const validCoordinates = coordinates.map(
+            (coord) => [coord[0], coord[1]] as [number, number]
+          );
+          const center = d3.polygonCentroid(validCoordinates);
+          polygons.push(center);
+        });
+      } else if (geometry.type === "MultiPolygon") {
+        geometry.coordinates.forEach((polygon: Position[][]) => {
+          polygon.forEach((coordinates: Position[]) => {
+            const validCoordinates = coordinates.map(
+              (coord) => [coord[0], coord[1]] as [number, number]
+            );
+            const center = d3.polygonCentroid(validCoordinates);
+            polygons.push(center);
+          });
+        });
+      }
     });
   }
 
