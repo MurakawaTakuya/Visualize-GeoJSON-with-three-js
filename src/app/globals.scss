@@ -8,3 +8,9 @@ body {
   overflow: hidden;
   background: #101010;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
