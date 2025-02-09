@@ -1,5 +1,4 @@
 import { FileStructure } from "../types/types";
-import { Prefectures } from "./Japan";
 import { NagoyaCentralPark } from "./NagoyaCentralPark";
 import { NagoyaUnimall } from "./NagoyaUnimall";
 import { NaritaAirport } from "./NaritaAirport";
@@ -10,7 +9,6 @@ import { TokyoStation } from "./TokyoStation";
 
 // ファイルパス
 export const data: Record<string, FileStructure> = {
-  ...Prefectures,
   ...NagoyaUnimall,
   ...ShinjukuTerminal,
   ...NaritaAirport,
