@@ -6,7 +6,7 @@ export const NaritaAirport = {
       node: "nrt_node.geojson",
       link: "nrt_link.geojson",
     },
-    geoFile: [
+    geoFiles: [
       "NRT1_0_Facility.geojson",
       "NRT1_0_Fixture.geojson",
       "NRT1_0_Floor.geojson",

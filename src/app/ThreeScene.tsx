@@ -13,6 +13,21 @@ import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
 
+interface ThreeSceneProps {
+  place: string;
+  startCoordinate?: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  startLookAt?: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  onLoadComplete: () => void;
+}
+
 export default function ThreeScene({
   place,
   startCoordinate = {
@@ -25,19 +40,8 @@ export default function ThreeScene({
     y: 0,
     z: 0,
   },
-}: {
-  place: string;
-  startCoordinate?: {
-    x: number;
-    y: number;
-    z: number;
-  };
-  startLookAt?: {
-    x: number;
-    y: number;
-    z: number;
-  };
-}) {
+  onLoadComplete,
+}: ThreeSceneProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
 
@@ -54,7 +58,8 @@ export default function ThreeScene({
     selectedData && selectedData.terrainFile
       ? rootPath + selectedData.terrainFile
       : undefined;
-  const geoFile = selectedData && selectedData.geoFile.map((f) => rootPath + f);
+  const geoFiles =
+    selectedData && selectedData.geoFiles.map((f) => rootPath + f);
 
   const loader = new THREE.FileLoader().setResponseType("json");
   const scene = new THREE.Scene();
@@ -72,7 +77,7 @@ export default function ThreeScene({
     }
     // centerを計算
     (async () => {
-      const center = await calculateCenterPoint(geoFile);
+      const center = await calculateCenterPoint(geoFiles);
       setCenter(center);
       console.log("Center is at", center);
     })();
@@ -128,7 +133,7 @@ export default function ThreeScene({
     zoomControls.zoomSpeed = 0.5;
 
     // geojsonファイルの読み込み
-    geoFile.forEach((f) => {
+    geoFiles.forEach((f) => {
       const floorNumber = getFloorNumber(f) ?? 0;
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
@@ -193,6 +198,31 @@ export default function ThreeScene({
       gui.destroy();
     };
   }, [center]);
+
+  // geoJSONファイルを読み込み
+  useEffect(() => {
+    async function loadGeoJSON() {
+      const promises = geoFiles.map((f) => {
+        const floorNumber = getFloorNumber(f) ?? 0;
+        const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
+        return loadAndAddToScene(
+          f,
+          center,
+          floorNumber,
+          depth,
+          loader,
+          scene
+        ).then(() => {
+          if (floorNumber !== null && !floorList.includes(floorNumber)) {
+            floorList.push(floorNumber);
+          }
+        });
+      });
+      await Promise.all(promises);
+      onLoadComplete();
+    }
+    loadGeoJSON();
+  }, [onLoadComplete]);
 
   return (
     <>

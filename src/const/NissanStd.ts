@@ -6,7 +6,7 @@ export const NissanStd = {
       node: "NissanStd_node.geojson",
       link: "NissanStd_link.geojson",
     },
-    geoFile: [
+    geoFiles: [
       "NissanStd_0_Drawing.geojson",
       "NissanStd_0_Facility.geojson",
       "NissanStd_0_Floor.geojson",

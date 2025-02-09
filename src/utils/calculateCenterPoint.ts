@@ -4,15 +4,15 @@ import { Feature, Position } from "geojson";
 /**
  * 中心点を計算する
  *
- * @param {string[]} geoFile
+ * @param {string[]} geoFiles
  * @return {*}  {Promise<[number, number]>}
  */
 export const calculateCenterPoint = async (
-  geoFile: string[]
+  geoFiles: string[]
 ): Promise<[number, number]> => {
   const polygons: [number, number][] = [];
 
-  for (const file of geoFile) {
+  for (const file of geoFiles) {
     const response = await fetch(file);
     const data = await response.json();
 

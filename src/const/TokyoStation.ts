@@ -6,7 +6,7 @@ export const TokyoStation = {
       node: "Tokyo_node.geojson",
       link: "Tokyo_link.geojson",
     },
-    geoFile: [
+    geoFiles: [
       "BRICK_1_Drawing.geojson",
       "BRICK_1_Facility.geojson",
       "BRICK_1_Fixture.geojson",

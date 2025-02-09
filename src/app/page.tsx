@@ -1,4 +1,5 @@
 "use client";
+import GeoFilesLoader from "@/components/GeoFilesLoader";
 import PlaceSelection from "@/components/PlaceSelection";
 import { Prefectures } from "@/const/Prefectures";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
@@ -18,10 +19,12 @@ export default function Page() {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
+  const [loading, setLoading] = useState(true);
 
   const selectedData = Prefectures.Prefectures;
   const rootPath = selectedData && selectedData.rootPath;
-  const geoFile = selectedData && selectedData.geoFile.map((f) => rootPath + f);
+  const geoFiles =
+    selectedData && selectedData.geoFiles.map((f) => rootPath + f);
 
   const loader = new THREE.FileLoader().setResponseType("json");
   const scene = new THREE.Scene();
@@ -38,7 +41,7 @@ export default function Page() {
     }
     // centerを計算
     (async () => {
-      const center = await calculateCenterPoint(geoFile);
+      const center = await calculateCenterPoint(geoFiles);
       setCenter(center);
       console.log("Center is at", center);
     })();
@@ -98,11 +101,15 @@ export default function Page() {
     zoomControls.noRotate = true;
     zoomControls.noZoom = true;
 
-    // geojsonファイルの読み込み
-    geoFile.forEach((f) => {
-      const depth = 0.001;
-      loadAndAddToScene(f, center, 0, depth, loader, scene);
-    });
+    // geoJSONファイルを読み込み
+    (async () => {
+      const promises = geoFiles.map((f) => {
+        const depth = 0.001;
+        return loadAndAddToScene(f, center, 0, depth, loader, scene);
+      });
+      await Promise.all(promises);
+      setLoading(false);
+    })();
 
     // 描画
     const animate = () => {
@@ -143,6 +150,7 @@ export default function Page() {
 
   return (
     <>
+      {loading && <GeoFilesLoader />}
       {selectedData ? (
         <div ref={containerRef} />
       ) : (

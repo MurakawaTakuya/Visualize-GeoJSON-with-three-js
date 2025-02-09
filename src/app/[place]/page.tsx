@@ -1,13 +1,27 @@
 "use client";
-import { use } from "react";
+import GeoFilesLoader from "@/components/GeoFilesLoader";
+import { use, useState } from "react";
 import ThreeScene from "../ThreeScene";
-
 interface Params {
   place: string;
 }
 
 export default function Page({ params }: { params: Promise<Params> }) {
   const { place } = use(params);
+  const [loading, setLoading] = useState(true);
 
-  return <ThreeScene place={place} key={place} />;
+  const handleLoadComplete = () => {
+    setLoading(false);
+  };
+
+  return (
+    <>
+      {loading && <GeoFilesLoader />}
+      <ThreeScene
+        place={place}
+        onLoadComplete={handleLoadComplete}
+        key={place}
+      />
+    </>
+  );
 }

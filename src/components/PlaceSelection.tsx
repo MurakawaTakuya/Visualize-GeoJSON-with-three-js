@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -34,15 +34,18 @@ export default function PlaceSelection() {
                   backgroundColor: "black",
                 }}
               >
-                <CardContent
-                  className="flex items-center justify-center p-4"
-                  style={{ flexDirection: "column" }}
+                <a
+                  href={data[key].rootPath}
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: "16px",
+                  }}
                 >
                   <p className="text-2xl font-semibold">{data[key].name}</p>
-                  <p>
-                    <a href={data[key].rootPath}>3Dで見に行く</a>
-                  </p>
-                </CardContent>
+                  <p>3Dで見に行く</p>
+                </a>
               </Card>
             </div>
           </CarouselItem>

@@ -6,7 +6,7 @@ export const NagoyaUnimall = {
       node: "UniMall_B1_Node.geojson",
       link: "UniMall_B1_Link.geojson",
     },
-    geoFile: [
+    geoFiles: [
       "UniMall_B1_Build_Connect.geojson",
       "UniMall_B1_Building.geojson",
       "UniMall_B1_Drawing.geojson",

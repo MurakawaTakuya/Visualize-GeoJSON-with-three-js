@@ -22,7 +22,7 @@ export interface FileStructure {
   rootPath: string;
   networkFile?: { node: string; link: string };
   terrainFile?: string;
-  geoFile: string[];
+  geoFiles: string[];
   center?: [number, number];
 }
 
