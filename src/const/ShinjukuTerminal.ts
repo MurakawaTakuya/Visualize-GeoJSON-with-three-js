@@ -7,7 +7,7 @@ export const ShinjukuTerminal = {
       link: "Shinjuku_link.geojson",
     },
     terrainFile: "ShinjukuTerminal_Terrain.geojson",
-    geoFile: [
+    geoFiles: [
       "ShinjukuTerminal_0_Drawing.geojson",
       "ShinjukuTerminal_0_Facility.geojson",
       "ShinjukuTerminal_0_Fixture.geojson",

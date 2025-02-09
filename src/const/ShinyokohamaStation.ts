@@ -6,7 +6,7 @@ export const ShinyokohamaStation = {
       node: "ShinyokohamaSt_node.geojson",
       link: "ShinyokohamaSt_link.geojson",
     },
-    geoFile: [
+    geoFiles: [
       "BLShinyoko_0_Drawing.geojson",
       "BLShinyoko_0_Facility.geojson",
       "BLShinyoko_0_Floor.geojson",
