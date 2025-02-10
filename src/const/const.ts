@@ -9,13 +9,13 @@ import { TokyoStation } from "./TokyoStation";
 
 // ファイルパス
 export const data: Record<string, FileStructure> = {
-  ...NagoyaUnimall,
-  ...ShinjukuTerminal,
-  ...NaritaAirport,
-  ...NagoyaCentralPark,
-  ...TokyoStation,
-  ...ShinyokohamaStation,
   ...NissanStd,
+  ...TokyoStation,
+  ...ShinjukuTerminal,
+  ...NagoyaCentralPark,
+  ...NagoyaUnimall,
+  ...NaritaAirport,
+  ...ShinyokohamaStation,
 };
 
 export const verticalOffset = 10;
