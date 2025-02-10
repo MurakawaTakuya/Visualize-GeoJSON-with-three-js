@@ -1,15 +1,138 @@
 {
-"type": "FeatureCollection",
-"name": "FORUM_0_TWSI_Point",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "385f7c14b0dd479bbab2cc681fb57ca1", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "4", "name": null, "lat": "35.675800857121509", "lon": "139.763350427068250", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6335.008770771162744, -35965.986433379774098 ] } },
-{ "type": "Feature", "properties": { "id": "be5c98cdde5646848b3a061b5970fc9e", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.677537385288559", "lon": "139.764402892250160", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6239.602086544465237, -35773.399969377678644 ] } },
-{ "type": "Feature", "properties": { "id": "b9b6bc1a214441b38b033992e1b9c2fa", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.675964062818004", "lon": "139.763641043922600", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6308.688636405028774, -35947.898778371723893 ] } },
-{ "type": "Feature", "properties": { "id": "1d632ed06d1c4b6faa0ebd525f1b061c", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.675941351875942", "lon": "139.763592870723040", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6313.051162283191843, -35950.415279761735292 ] } },
-{ "type": "Feature", "properties": { "id": "95527a7dc99a439e893bb22aff32ed45", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.677322462971375", "lon": "139.764763493829780", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6206.976972034185565, -35797.266716383572202 ] } },
-{ "type": "Feature", "properties": { "id": "ee4362a1db1d47a997d528f4aa78f687", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.677343763276582", "lon": "139.764748202743680", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6208.359479425937025, -35794.90265253571124 ] } },
-{ "type": "Feature", "properties": { "id": "7409d1118b8143fa9b60bcb28f59913d", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "1", "name": null, "lat": "35.677432178161709", "lon": "139.764777086814010", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6205.738033801251731, -35785.095556681182643 ] } },
-{ "type": "Feature", "properties": { "id": "45387cb5851144efb1191d58e7efe08b", "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9", "category": "6", "name": null, "lat": "35.677516092196598", "lon": "139.764396438420190", "source": "2" }, "geometry": { "type": "Point", "coordinates": [ -6240.187946734234174, -35775.761856907753099 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "FORUM_0_TWSI_Point",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "385f7c14b0dd479bbab2cc681fb57ca1",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "4",
+        "name": null,
+        "lat": "35.675800857121509",
+        "lon": "139.763350427068250",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6335.008770771162744, -35965.986433379774098]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "be5c98cdde5646848b3a061b5970fc9e",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.677537385288559",
+        "lon": "139.764402892250160",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6239.602086544465237, -35773.399969377678644]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b9b6bc1a214441b38b033992e1b9c2fa",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.675964062818004",
+        "lon": "139.763641043922600",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6308.688636405028774, -35947.898778371723893]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1d632ed06d1c4b6faa0ebd525f1b061c",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.675941351875942",
+        "lon": "139.763592870723040",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6313.051162283191843, -35950.415279761735292]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "95527a7dc99a439e893bb22aff32ed45",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.677322462971375",
+        "lon": "139.764763493829780",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6206.976972034185565, -35797.266716383572202]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ee4362a1db1d47a997d528f4aa78f687",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.677343763276582",
+        "lon": "139.764748202743680",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6208.359479425937025, -35794.90265253571124]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7409d1118b8143fa9b60bcb28f59913d",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "1",
+        "name": null,
+        "lat": "35.677432178161709",
+        "lon": "139.764777086814010",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6205.738033801251731, -35785.095556681182643]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "45387cb5851144efb1191d58e7efe08b",
+        "floor_id": "714e8aeb4d7141a3b548ab1521d32dd9",
+        "category": "6",
+        "name": null,
+        "lat": "35.677516092196598",
+        "lon": "139.764396438420190",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6240.187946734234174, -35775.761856907753099]
+      }
+    }
+  ]
 }

@@ -1,12 +1,90 @@
 {
-"type": "FeatureCollection",
-"name": "Yurakucho_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "e0b99b7eb7404a788a67cac3419f6e82", "floor_id": "4c7ea227e14441b0a5d146c8e616a60a", "name": "ＪＲ有楽町駅方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6324.905145682117109, -35976.079154076025588 ], [ -6326.427844642168566, -35981.596080665221962 ] ] } },
-{ "type": "Feature", "properties": { "id": "6ee6ee37ea0e4b8ca89e133e754b5ff4", "floor_id": "49c9e37ad9744f21a0421cc88e51bafd", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6356.181999608304977, -35967.833095037545718 ], [ -6357.681981951900525, -35973.356850518699503 ] ] } },
-{ "type": "Feature", "properties": { "id": "71d673f7660547a2a241abac4a989c9b", "floor_id": "f40b91f163514b688a5f8b83a2eb26fa", "name": "エレベーター専用改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6472.469347030554673, -35938.562497955077561 ], [ -6472.836231252245852, -35939.91357015245012 ] ] } },
-{ "type": "Feature", "properties": { "id": "343251aa3ae441f9a59d74cb67e6393e", "floor_id": "de00471501b24794b1cb28eefd7c00d7", "name": "日比谷方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6581.283900065185662, -35907.593967106527998 ], [ -6580.751439730499442, -35905.633172780522727 ] ] } },
-{ "type": "Feature", "properties": { "id": "a9ac17672d4a48a190f1fad61294b3ca", "floor_id": "de00471501b24794b1cb28eefd7c00d7", "name": "日比谷方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6589.449680439466647, -35903.271154588284844 ], [ -6591.457845816265944, -35910.635408366761112 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "Yurakucho_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e0b99b7eb7404a788a67cac3419f6e82",
+        "floor_id": "4c7ea227e14441b0a5d146c8e616a60a",
+        "name": "ＪＲ有楽町駅方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6324.905145682117109, -35976.079154076025588],
+          [-6326.427844642168566, -35981.596080665221962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6ee6ee37ea0e4b8ca89e133e754b5ff4",
+        "floor_id": "49c9e37ad9744f21a0421cc88e51bafd",
+        "name": "中央改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6356.181999608304977, -35967.833095037545718],
+          [-6357.681981951900525, -35973.356850518699503]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "71d673f7660547a2a241abac4a989c9b",
+        "floor_id": "f40b91f163514b688a5f8b83a2eb26fa",
+        "name": "エレベーター専用改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6472.469347030554673, -35938.562497955077561],
+          [-6472.836231252245852, -35939.91357015245012]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "343251aa3ae441f9a59d74cb67e6393e",
+        "floor_id": "de00471501b24794b1cb28eefd7c00d7",
+        "name": "日比谷方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6581.283900065185662, -35907.593967106527998],
+          [-6580.751439730499442, -35905.633172780522727]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a9ac17672d4a48a190f1fad61294b3ca",
+        "floor_id": "de00471501b24794b1cb28eefd7c00d7",
+        "name": "日比谷方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6589.449680439466647, -35903.271154588284844],
+          [-6591.457845816265944, -35910.635408366761112]
+        ]
+      }
+    }
+  ]
 }

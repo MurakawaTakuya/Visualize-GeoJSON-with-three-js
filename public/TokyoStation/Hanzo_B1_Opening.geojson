@@ -1,9 +1,42 @@
 {
-"type": "FeatureCollection",
-"name": "Hanzo_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "9fb22891c7c0433aa6e1547c0392cf32", "floor_id": "9bebdce6a5764bceb5a8f8d1cd5fb2ac", "name": "皇居方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6268.40111759084084, -34736.796654851830681 ], [ -6269.196877717053212, -34740.680981137331401 ] ] } },
-{ "type": "Feature", "properties": { "id": "1ff32c7b252f48318c83a0fd58355e40", "floor_id": "7583f524c84d4313b3c4d7afca00c71a", "name": "サンケイ前交差点方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6137.376002630499897, -34761.041177947881806 ], [ -6138.640388225701827, -34767.212995262358163 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "Hanzo_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9fb22891c7c0433aa6e1547c0392cf32",
+        "floor_id": "9bebdce6a5764bceb5a8f8d1cd5fb2ac",
+        "name": "皇居方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6268.40111759084084, -34736.796654851830681],
+          [-6269.196877717053212, -34740.680981137331401]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1ff32c7b252f48318c83a0fd58355e40",
+        "floor_id": "7583f524c84d4313b3c4d7afca00c71a",
+        "name": "サンケイ前交差点方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6137.376002630499897, -34761.041177947881806],
+          [-6138.640388225701827, -34767.212995262358163]
+        ]
+      }
+    }
+  ]
 }

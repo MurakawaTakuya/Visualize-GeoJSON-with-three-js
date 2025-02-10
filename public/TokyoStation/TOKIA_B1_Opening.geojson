@@ -1,12 +1,90 @@
 {
-"type": "FeatureCollection",
-"name": "TOKIA_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "fea7d71bd2854d628cdd1ccebd56f586", "floor_id": "d923085e58904fcc823636c6e5247910", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6200.786482059015725, -35705.28649985400989 ], [ -6201.778050145690941, -35708.876660451031057 ] ] } },
-{ "type": "Feature", "properties": { "id": "ae5339e7e1af43caa6e7ba90fa637dc7", "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6198.554162355699191, -35702.701648428359476 ], [ -6196.579219136783649, -35703.316051414709364 ] ] } },
-{ "type": "Feature", "properties": { "id": "2d6bd5db281a401eaff75d334114cd60", "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6196.505940871160419, -35678.328120758851583 ], [ -6197.060528021511345, -35680.275100942664722 ] ] } },
-{ "type": "Feature", "properties": { "id": "1d8f2fb076ff47df9ddeea287b6c693c", "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6182.408670608656394, -35637.013785315313726 ], [ -6183.121023896308543, -35639.341912000039883 ] ] } },
-{ "type": "Feature", "properties": { "id": "1cdb33ab4bee499b81c49065334751f6", "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6170.614481456911562, -35601.0260934794278 ], [ -6167.982822957447752, -35601.767249252625334 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "TOKIA_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fea7d71bd2854d628cdd1ccebd56f586",
+        "floor_id": "d923085e58904fcc823636c6e5247910",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6200.786482059015725, -35705.28649985400989],
+          [-6201.778050145690941, -35708.876660451031057]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ae5339e7e1af43caa6e7ba90fa637dc7",
+        "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6198.554162355699191, -35702.701648428359476],
+          [-6196.579219136783649, -35703.316051414709364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2d6bd5db281a401eaff75d334114cd60",
+        "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6196.505940871160419, -35678.328120758851583],
+          [-6197.060528021511345, -35680.275100942664722]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1d8f2fb076ff47df9ddeea287b6c693c",
+        "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6182.408670608656394, -35637.013785315313726],
+          [-6183.121023896308543, -35639.341912000039883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1cdb33ab4bee499b81c49065334751f6",
+        "floor_id": "ef73ecbdbc0a4421a0b6b79d3a4ec7f7",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6170.614481456911562, -35601.0260934794278],
+          [-6167.982822957447752, -35601.767249252625334]
+        ]
+      }
+    }
+  ]
 }

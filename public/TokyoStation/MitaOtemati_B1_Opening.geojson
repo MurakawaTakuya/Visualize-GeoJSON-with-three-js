@@ -1,10 +1,58 @@
 {
-"type": "FeatureCollection",
-"name": "MitaOtemati_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "e9ff669f1bc049648f7af1fda7b2595d", "floor_id": "c9c50764345d47b5bdf18a001d0d0230", "name": "大手町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6355.112076370523937, -34937.022656742337858 ], [ -6356.314023161912701, -34944.823996890037961 ] ] } },
-{ "type": "Feature", "properties": { "id": "c38f237ab14a441d9496d88faca3827a", "floor_id": "5bd4392db59846f987e1f3258058f2df", "name": "丸の内方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6379.363989749045686, -35039.787001690528996 ], [ -6380.058625466460398, -35042.705474102054723 ] ] } },
-{ "type": "Feature", "properties": { "id": "b97df327c51d4be29a41942de25d9724", "floor_id": "692673e7b4754349baaf88b857d6f4f3", "name": "行幸通り方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6402.360028939823678, -35142.689825145505893 ], [ -6402.850325967807294, -35144.499586918936984 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MitaOtemati_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e9ff669f1bc049648f7af1fda7b2595d",
+        "floor_id": "c9c50764345d47b5bdf18a001d0d0230",
+        "name": "大手町方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6355.112076370523937, -34937.022656742337858],
+          [-6356.314023161912701, -34944.823996890037961]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c38f237ab14a441d9496d88faca3827a",
+        "floor_id": "5bd4392db59846f987e1f3258058f2df",
+        "name": "丸の内方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6379.363989749045686, -35039.787001690528996],
+          [-6380.058625466460398, -35042.705474102054723]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b97df327c51d4be29a41942de25d9724",
+        "floor_id": "692673e7b4754349baaf88b857d6f4f3",
+        "name": "行幸通り方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6402.360028939823678, -35142.689825145505893],
+          [-6402.850325967807294, -35144.499586918936984]
+        ]
+      }
+    }
+  ]
 }

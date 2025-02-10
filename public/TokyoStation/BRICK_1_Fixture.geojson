@@ -1,8 +1,31 @@
 {
-"type": "FeatureCollection",
-"name": "BRICK_1_Fixture",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "0575426314b9449d98f8f3fb041a7814", "category": "C010", "floor_id": "eeab4a989e7a49eab53054cf4995803d", "source": "1" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -6389.419295789048192, -35668.174574936929275 ], [ -6386.778483264440183, -35668.886617892858339 ], [ -6386.834062885824096, -35669.105794748036715 ], [ -6389.478154634567545, -35668.392870633775601 ], [ -6389.419295789048192, -35668.174574936929275 ] ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "BRICK_1_Fixture",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0575426314b9449d98f8f3fb041a7814",
+        "category": "C010",
+        "floor_id": "eeab4a989e7a49eab53054cf4995803d",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-6389.419295789048192, -35668.174574936929275],
+            [-6386.778483264440183, -35668.886617892858339],
+            [-6386.834062885824096, -35669.105794748036715],
+            [-6389.478154634567545, -35668.392870633775601],
+            [-6389.419295789048192, -35668.174574936929275]
+          ]
+        ]
+      }
+    }
+  ]
 }

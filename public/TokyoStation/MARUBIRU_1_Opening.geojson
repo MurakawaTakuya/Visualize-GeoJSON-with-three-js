@@ -1,21 +1,234 @@
 {
-"type": "FeatureCollection",
-"name": "MARUBIRU_1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "95d9ec49264e4be2b35cf8ffdf228f56", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6272.179047101893048, -35385.166944641649025 ], [ -6269.40488060905318, -35385.841138976618822 ] ] } },
-{ "type": "Feature", "properties": { "id": "2eaaa4ce108643eba4be0b892daacb59", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": "大名小路東京駅側", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6260.604614484614103, -35413.333433307518135 ], [ -6261.335605010317522, -35416.020379083194712 ] ] } },
-{ "type": "Feature", "properties": { "id": "cd28186ad53045eeae15b996c1fda284", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6318.365720125666485, -35385.258313777267176 ], [ -6316.050066529229298, -35385.884175157218124 ] ] } },
-{ "type": "Feature", "properties": { "id": "473c6815e12044068efd8d6c46fbb94b", "floor_id": "11496d021bac42539e3612f986455f99", "name": "丸の内仲通り皇居側", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6334.925213288010127, -35388.529141701001208 ], [ -6335.664249851924978, -35391.449058580248675 ] ] } },
-{ "type": "Feature", "properties": { "id": "d2f8aa70bd8a4a80a19d98dcbd4c29d5", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6331.106356674427843, -35389.514649579316028 ], [ -6331.845392152099521, -35392.434566747469944 ] ] } },
-{ "type": "Feature", "properties": { "id": "296a6538c93f49d4b1916bad803f87c1", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": "大名小路東京駅側", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6259.380275074993733, -35408.833049844695779 ], [ -6260.111219603255449, -35411.519832660342217 ] ] } },
-{ "type": "Feature", "properties": { "id": "711a4c8dea424680b5aee860ebfbeadf", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6263.679110810224302, -35412.492898001233698 ], [ -6264.401569752242722, -35415.176717695721891 ] ] } },
-{ "type": "Feature", "properties": { "id": "75887190703e4b519f68131da36c0673", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6262.466023278908324, -35407.986467608425301 ], [ -6263.190329968969309, -35410.6771542143033 ] ] } },
-{ "type": "Feature", "properties": { "id": "12ddee7523184a8cbe2d1684503304bd", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6294.289806984182178, -35379.67228127954877 ], [ -6292.630003992670026, -35380.108122720899701 ] ] } },
-{ "type": "Feature", "properties": { "id": "49f382ab018d4259bd0c634a665370c9", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6291.362948239709112, -35380.440833899498102 ], [ -6289.70314496229912, -35380.87667479418451 ] ] } },
-{ "type": "Feature", "properties": { "id": "9e38a80ae2184e929539483d2458b24b", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6293.487652936134509, -35376.563876689710014 ], [ -6291.827848848874964, -35376.99971162701695 ] ] } },
-{ "type": "Feature", "properties": { "id": "6cacf77407bb4c3493e775e6d437890b", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6290.560792255379056, -35377.332417843856092 ], [ -6288.96152295117281, -35377.752356833356316 ] ] } },
-{ "type": "Feature", "properties": { "id": "4519cadb049044c5bdbe7d9957fc3c56", "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6332.540607925135191, -35395.18135115334735 ], [ -6333.279644342102984, -35398.101268178463215 ] ] } },
-{ "type": "Feature", "properties": { "id": "49e3f4d454dd42e89ceab7befe71611c", "floor_id": "11496d021bac42539e3612f986455f99", "name": "丸の内仲通り皇居側", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6336.359466641606559, -35394.195842716333573 ], [ -6337.098504142511047, -35397.115759454667568 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MARUBIRU_1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "95d9ec49264e4be2b35cf8ffdf228f56",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6272.179047101893048, -35385.166944641649025],
+          [-6269.40488060905318, -35385.841138976618822]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2eaaa4ce108643eba4be0b892daacb59",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": "大名小路東京駅側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6260.604614484614103, -35413.333433307518135],
+          [-6261.335605010317522, -35416.020379083194712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cd28186ad53045eeae15b996c1fda284",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6318.365720125666485, -35385.258313777267176],
+          [-6316.050066529229298, -35385.884175157218124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "473c6815e12044068efd8d6c46fbb94b",
+        "floor_id": "11496d021bac42539e3612f986455f99",
+        "name": "丸の内仲通り皇居側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6334.925213288010127, -35388.529141701001208],
+          [-6335.664249851924978, -35391.449058580248675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d2f8aa70bd8a4a80a19d98dcbd4c29d5",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6331.106356674427843, -35389.514649579316028],
+          [-6331.845392152099521, -35392.434566747469944]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "296a6538c93f49d4b1916bad803f87c1",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": "大名小路東京駅側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6259.380275074993733, -35408.833049844695779],
+          [-6260.111219603255449, -35411.519832660342217]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "711a4c8dea424680b5aee860ebfbeadf",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6263.679110810224302, -35412.492898001233698],
+          [-6264.401569752242722, -35415.176717695721891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "75887190703e4b519f68131da36c0673",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6262.466023278908324, -35407.986467608425301],
+          [-6263.190329968969309, -35410.6771542143033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12ddee7523184a8cbe2d1684503304bd",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6294.289806984182178, -35379.67228127954877],
+          [-6292.630003992670026, -35380.108122720899701]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "49f382ab018d4259bd0c634a665370c9",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6291.362948239709112, -35380.440833899498102],
+          [-6289.70314496229912, -35380.87667479418451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9e38a80ae2184e929539483d2458b24b",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6293.487652936134509, -35376.563876689710014],
+          [-6291.827848848874964, -35376.99971162701695]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6cacf77407bb4c3493e775e6d437890b",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6290.560792255379056, -35377.332417843856092],
+          [-6288.96152295117281, -35377.752356833356316]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4519cadb049044c5bdbe7d9957fc3c56",
+        "floor_id": "f1ddda8aa2b74d5e872f88adc8b4ce28",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6332.540607925135191, -35395.18135115334735],
+          [-6333.279644342102984, -35398.101268178463215]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "49e3f4d454dd42e89ceab7befe71611c",
+        "floor_id": "11496d021bac42539e3612f986455f99",
+        "name": "丸の内仲通り皇居側",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6336.359466641606559, -35394.195842716333573],
+          [-6337.098504142511047, -35397.115759454667568]
+        ]
+      }
+    }
+  ]
 }

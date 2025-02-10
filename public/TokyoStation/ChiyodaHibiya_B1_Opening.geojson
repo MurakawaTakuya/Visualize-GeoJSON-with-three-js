@@ -1,10 +1,58 @@
 {
-"type": "FeatureCollection",
-"name": "ChiyodaHibiya_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "703af754151845f7845983ddaec0f655", "floor_id": "56a08ed1f8014f2eaa52d8a0900d7218", "name": "内幸町方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6831.00441517029958, -36244.589379201235715 ], [ -6826.092243740424237, -36248.141097826119221 ] ] } },
-{ "type": "Feature", "properties": { "id": "1870eab47633433c9780f6912adb3794", "floor_id": "a39ca46ee4b74557b92929f5b713ce34", "name": "日比谷交差点方面改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6714.049974532038505, -36103.035036508925259 ], [ -6718.031218593733684, -36100.000801320478786 ] ] } },
-{ "type": "Feature", "properties": { "id": "3aae20dc83294bcaaa58a10d858fe248", "floor_id": "a39ca46ee4b74557b92929f5b713ce34", "name": "日比谷交差点方面改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6710.893488776955564, -36105.440693898730387 ], [ -6713.713670957703471, -36109.01293620915385 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "ChiyodaHibiya_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "703af754151845f7845983ddaec0f655",
+        "floor_id": "56a08ed1f8014f2eaa52d8a0900d7218",
+        "name": "内幸町方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6831.00441517029958, -36244.589379201235715],
+          [-6826.092243740424237, -36248.141097826119221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1870eab47633433c9780f6912adb3794",
+        "floor_id": "a39ca46ee4b74557b92929f5b713ce34",
+        "name": "日比谷交差点方面改札",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6714.049974532038505, -36103.035036508925259],
+          [-6718.031218593733684, -36100.000801320478786]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3aae20dc83294bcaaa58a10d858fe248",
+        "floor_id": "a39ca46ee4b74557b92929f5b713ce34",
+        "name": "日比谷交差点方面改札",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6710.893488776955564, -36105.440693898730387],
+          [-6713.713670957703471, -36109.01293620915385]
+        ]
+      }
+    }
+  ]
 }

@@ -1,8 +1,24 @@
 {
-"type": "FeatureCollection",
-"name": "MITSUBISHISHOJI_B2_Facility",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "8eff0dc8c8db4e5399a814fa696c5a49", "category": "F012", "floor_id": "b2f44dc5fcbb401885d5139b71eed0e7", "name": null, "source": "1" }, "geometry": { "type": "Point", "coordinates": [ -6444.046564373365982, -35396.858404152510047 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "MITSUBISHISHOJI_B2_Facility",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8eff0dc8c8db4e5399a814fa696c5a49",
+        "category": "F012",
+        "floor_id": "b2f44dc5fcbb401885d5139b71eed0e7",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6444.046564373365982, -35396.858404152510047]
+      }
+    }
+  ]
 }
