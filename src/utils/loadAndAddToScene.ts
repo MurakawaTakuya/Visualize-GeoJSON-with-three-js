@@ -1,5 +1,6 @@
 import { verticalOffset } from "@/const/const";
 import { Feature, FeatureCollection } from "geojson";
+import { Dispatch } from "react";
 import * as THREE from "three";
 import { createExtrudedGeometry } from "./createExtrudedGeometry";
 
@@ -16,88 +17,120 @@ export const loadAndAddToScene = (
   floorNumber: number,
   depth: number,
   loader: THREE.FileLoader,
-  scene: THREE.Scene
-): Promise<void> => {
-  return new Promise((resolve) => {
-    loader.load(geojson, (data: unknown) => {
-      const geoData = data as FeatureCollection<
-        GeoJSON.Geometry,
-        Record<string, unknown>
-      >;
-      geoData.features
-        .filter(
-          (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) =>
-            feature.geometry !== null
-        )
-        .forEach(
-          (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) => {
-            switch (feature.geometry.type) {
-              case "Point": {
-                const [longitude, latitude] = feature.geometry.coordinates;
-                // 球体で点を表現
-                const pointGeometry = new THREE.SphereGeometry(0.1, 32, 32);
-                const pointMaterial = new THREE.MeshBasicMaterial({
-                  color: "rgb(255, 0, 0)",
-                });
-                // 球体の中心を(longitude - center[0], latitude - center[1])へ平行移動
-                pointGeometry.translate(
-                  longitude - center[0],
-                  latitude - center[1],
-                  0
-                );
-                // -90度回転
-                const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
-                pointGeometry.applyMatrix4(matrix);
-                // マテリアルとメッシュ生成
-                const pointMesh = new THREE.Mesh(pointGeometry, pointMaterial);
-                pointMesh.position.y += floorNumber * verticalOffset - 1;
+  scene: THREE.Scene,
+  setLoadFileRemaining: Dispatch<React.SetStateAction<number>>
+): void => {
+  loader.load(geojson, (data: unknown) => {
+    const geoData = data as FeatureCollection<
+      GeoJSON.Geometry,
+      Record<string, unknown>
+    >;
+    geoData.features
+      .filter(
+        (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) =>
+          feature.geometry !== null
+      )
+      .forEach(
+        (feature: Feature<GeoJSON.Geometry, Record<string, unknown>>) => {
+          switch (feature.geometry.type) {
+            case "Point": {
+              const [longitude, latitude] = feature.geometry.coordinates;
+              // 球体で点を表現
+              const pointGeometry = new THREE.SphereGeometry(0.1, 32, 32);
+              const pointMaterial = new THREE.MeshBasicMaterial({
+                color: "rgb(255, 0, 0)",
+              });
+              // 球体の中心を(longitude - center[0], latitude - center[1])へ平行移動
+              pointGeometry.translate(
+                longitude - center[0],
+                latitude - center[1],
+                0
+              );
+              // -90度回転
+              const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
+              pointGeometry.applyMatrix4(matrix);
+              // マテリアルとメッシュ生成
+              const pointMesh = new THREE.Mesh(pointGeometry, pointMaterial);
+              pointMesh.position.y += floorNumber * verticalOffset - 1;
 
-                const group = scene.getObjectByName("Point");
-                if (group) {
-                  group.add(pointMesh);
-                } else {
-                  const group = new THREE.Group();
-                  group.name = "Point";
-                  group.add(pointMesh);
-                  scene.add(group);
-                }
-                break;
+              const group = scene.getObjectByName("Point");
+              if (group) {
+                group.add(pointMesh);
+              } else {
+                const group = new THREE.Group();
+                group.name = "Point";
+                group.add(pointMesh);
+                scene.add(group);
               }
-              case "LineString": {
-                // 線を作成
-                const lineGeometry = new THREE.BufferGeometry().setFromPoints(
-                  feature.geometry.coordinates.map(([longitude, latitude]) => {
-                    return new THREE.Vector3(
-                      longitude - center[0],
-                      latitude - center[1],
-                      0
-                    );
-                  })
-                );
-                const lineMaterial = new THREE.LineBasicMaterial({
-                  color: "rgb(98, 232, 255)",
-                });
-                // -90度回転
-                const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
-                lineGeometry.applyMatrix4(matrix);
-                const line = new THREE.Line(lineGeometry, lineMaterial);
-                line.position.y += floorNumber * verticalOffset - 1;
+              break;
+            }
+            case "LineString": {
+              // 線を作成
+              const lineGeometry = new THREE.BufferGeometry().setFromPoints(
+                feature.geometry.coordinates.map(([longitude, latitude]) => {
+                  return new THREE.Vector3(
+                    longitude - center[0],
+                    latitude - center[1],
+                    0
+                  );
+                })
+              );
+              const lineMaterial = new THREE.LineBasicMaterial({
+                color: "rgb(98, 232, 255)",
+              });
+              // -90度回転
+              const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
+              lineGeometry.applyMatrix4(matrix);
+              const line = new THREE.Line(lineGeometry, lineMaterial);
+              line.position.y += floorNumber * verticalOffset - 1;
 
-                const group = scene.getObjectByName("LineString");
-                if (group) {
-                  group.add(line);
-                } else {
-                  const group = new THREE.Group();
-                  group.name = "LineString";
-                  group.add(line);
-                  scene.add(group);
-                }
-                break;
+              const group = scene.getObjectByName("LineString");
+              if (group) {
+                group.add(line);
+              } else {
+                const group = new THREE.Group();
+                group.name = "LineString";
+                group.add(line);
+                scene.add(group);
               }
-              case "Polygon": {
-                // ポリゴンを作成
+              break;
+            }
+            case "Polygon": {
+              // ポリゴンを作成
+              const geometry = createExtrudedGeometry(
+                feature.geometry.coordinates,
+                depth,
+                center
+              );
+              const lineMaterial = new THREE.LineBasicMaterial({
+                color: "rgb(255, 255, 255)",
+                transparent: true,
+                opacity: 0.9,
+              });
+              // -90度回転
+              const matrix = new THREE.Matrix4().makeRotationX(Math.PI / -2);
+              geometry.applyMatrix4(matrix);
+              // エッジ抽出してLineを作成
+              const edges = new THREE.EdgesGeometry(geometry);
+              const line = new THREE.LineSegments(edges, lineMaterial);
+              line.position.y += floorNumber * verticalOffset - 1;
+
+              const group = scene.getObjectByName(`group${floorNumber}`);
+              if (group) {
+                group.add(line);
+              } else {
+                const group = new THREE.Group();
+                group.name = `group${floorNumber}`;
+                group.add(line);
+                scene.add(group);
+              }
+              break;
+            }
+            case "MultiPolygon": {
+              // マルチポリゴンを作成
+              feature.geometry.coordinates.forEach((coordinates) => {
                 const geometry = createExtrudedGeometry(
-                  feature.geometry.coordinates,
+                  coordinates,
                   depth,
                   center
                 );
@@ -123,47 +156,13 @@ export const loadAndAddToScene = (
                   group.add(line);
                   scene.add(group);
                 }
-                break;
-              }
-              case "MultiPolygon": {
-                // マルチポリゴンを作成
-                feature.geometry.coordinates.forEach((coordinates) => {
-                  const geometry = createExtrudedGeometry(
-                    coordinates,
-                    depth,
-                    center
-                  );
-                  const lineMaterial = new THREE.LineBasicMaterial({
-                    color: "rgb(255, 255, 255)",
-                    transparent: true,
-                    opacity: 0.9,
-                  });
-                  // -90度回転
-                  const matrix = new THREE.Matrix4().makeRotationX(
-                    Math.PI / -2
-                  );
-                  geometry.applyMatrix4(matrix);
-                  // エッジ抽出してLineを作成
-                  const edges = new THREE.EdgesGeometry(geometry);
-                  const line = new THREE.LineSegments(edges, lineMaterial);
-                  line.position.y += floorNumber * verticalOffset - 1;
-
-                  const group = scene.getObjectByName(`group${floorNumber}`);
-                  if (group) {
-                    group.add(line);
-                  } else {
-                    const group = new THREE.Group();
-                    group.name = `group${floorNumber}`;
-                    group.add(line);
-                    scene.add(group);
-                  }
-                });
-                break;
-              }
+              });
+              break;
             }
           }
-        );
-      resolve();
-    });
+        }
+      );
+
+    setLoadFileRemaining((prev) => prev - 1);
   });
 };

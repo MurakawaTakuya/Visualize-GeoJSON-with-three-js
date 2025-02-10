@@ -1,5 +1,6 @@
 import { NodeProperties } from "@/types/types";
 import { Feature, FeatureCollection, Point } from "geojson";
+import { Dispatch } from "react";
 import * as THREE from "three";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
 import { createNetworkLink } from "./createNetworkLink";
@@ -20,7 +21,8 @@ export const loadNetworkFile = (
   loader: THREE.FileLoader,
   networkFile: { node: string; link: string },
   meshLines: THREE.BufferGeometry[],
-  center: [number, number]
+  center: [number, number],
+  setLoadFileRemaining: Dispatch<React.SetStateAction<number>>
 ) => {
   loader.load(networkFile.node, (data: unknown) => {
     const nodeData = data as FeatureCollection<Point, NodeProperties>;
@@ -29,7 +31,15 @@ export const loadNetworkFile = (
         node_id: feature.properties.node_id,
         ordinal: feature.properties.ordinal,
       }));
-    createNetworkLink(nodeIds, center, loader, scene, meshLines, networkFile);
+    createNetworkLink(
+      nodeIds,
+      center,
+      loader,
+      scene,
+      meshLines,
+      setLoadFileRemaining,
+      networkFile
+    );
   });
 
   gui

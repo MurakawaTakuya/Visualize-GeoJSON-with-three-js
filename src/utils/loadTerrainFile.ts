@@ -1,4 +1,5 @@
 import { Feature, FeatureCollection, Polygon } from "geojson";
+import { Dispatch } from "react";
 import * as THREE from "three";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
 
@@ -15,7 +16,8 @@ export const loadTerrainFile = (
   terrainFile: string,
   center: [number, number],
   scene: THREE.Scene,
-  gui: GUI
+  gui: GUI,
+  setLoadFileRemaining: Dispatch<React.SetStateAction<number>>
 ) => {
   loader.load(terrainFile, (data: unknown) => {
     const fgData = data as FeatureCollection<Polygon, Record<string, unknown>>;
@@ -57,5 +59,7 @@ export const loadTerrainFile = (
         }
       }
     );
+
+    setLoadFileRemaining((prev) => prev - 1);
   });
 };

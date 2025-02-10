@@ -1,4 +1,5 @@
 "use client";
+import GeoFilesLoader from "@/components/GeoFilesLoader";
 import { data } from "@/const/const";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { getFloorNumber } from "@/utils/getFloorNumber";
@@ -25,7 +26,6 @@ interface ThreeSceneProps {
     y: number;
     z: number;
   };
-  onLoadComplete: () => void;
 }
 
 export default function ThreeScene({
@@ -40,7 +40,6 @@ export default function ThreeScene({
     y: 0,
     z: 0,
   },
-  onLoadComplete,
 }: ThreeSceneProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
@@ -66,6 +65,10 @@ export default function ThreeScene({
   const meshLines: THREE.BufferGeometry[] = [];
   const floorList: number[] = [];
 
+  const totalFileCount =
+    geoFiles.length + (networkFile ? 1 : 0) + (terrainFile ? 1 : 0);
+  const [loadFileRemaining, setLoadFileRemaining] = useState(totalFileCount);
+
   useEffect(() => {
     if (!selectedData) {
       return;
@@ -84,10 +87,7 @@ export default function ThreeScene({
   }, []);
 
   useEffect(() => {
-    if (!selectedData) {
-      return;
-    }
-    if (!containerRef.current) {
+    if (!selectedData || !setLoadFileRemaining || !containerRef.current) {
       return;
     }
     // centerは更新されていない場合はスキップ
@@ -137,7 +137,15 @@ export default function ThreeScene({
       const floorNumber = getFloorNumber(f) ?? 0;
       // 床データはdepthを浅くする
       const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
-      loadAndAddToScene(f, center, floorNumber ?? 0, depth, loader, scene);
+      loadAndAddToScene(
+        f,
+        center,
+        floorNumber ?? 0,
+        depth,
+        loader,
+        scene,
+        setLoadFileRemaining
+      );
 
       // floorListに無い場合は追加
       if (floorNumber !== null && !floorList.includes(floorNumber)) {
@@ -151,12 +159,27 @@ export default function ThreeScene({
 
     // 歩行者ネットワークの読み込み
     if (networkFile) {
-      loadNetworkFile(gui, scene, loader, networkFile, meshLines, center);
+      loadNetworkFile(
+        gui,
+        scene,
+        loader,
+        networkFile,
+        meshLines,
+        center,
+        setLoadFileRemaining
+      );
     }
 
     // 地表データの読み込み
     if (terrainFile) {
-      loadTerrainFile(loader, terrainFile, center, scene, gui);
+      loadTerrainFile(
+        loader,
+        terrainFile,
+        center,
+        scene,
+        gui,
+        setLoadFileRemaining
+      );
     }
 
     // 描画
@@ -197,35 +220,14 @@ export default function ThreeScene({
       resetScene(scene);
       gui.destroy();
     };
-  }, [center]);
-
-  // geoJSONファイルを読み込み
-  useEffect(() => {
-    async function loadGeoJSON() {
-      const promises = geoFiles.map((f) => {
-        const floorNumber = getFloorNumber(f) ?? 0;
-        const depth = f.endsWith("_Floor.geojson") ? 0.5 : 7;
-        return loadAndAddToScene(
-          f,
-          center,
-          floorNumber,
-          depth,
-          loader,
-          scene
-        ).then(() => {
-          if (floorNumber !== null && !floorList.includes(floorNumber)) {
-            floorList.push(floorNumber);
-          }
-        });
-      });
-      await Promise.all(promises);
-      onLoadComplete();
-    }
-    loadGeoJSON();
-  }, [onLoadComplete]);
+  }, [center, setLoadFileRemaining]);
 
   return (
     <>
+      <GeoFilesLoader
+        loadFileRemaining={loadFileRemaining}
+        totalFileCount={totalFileCount}
+      />
       <p
         style={{
           position: "absolute",

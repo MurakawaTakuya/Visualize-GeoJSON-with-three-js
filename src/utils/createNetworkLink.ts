@@ -1,6 +1,7 @@
 import { verticalOffset } from "@/const/const";
 import { LinkProperties } from "@/types/types";
 import { Feature, FeatureCollection, LineString } from "geojson";
+import { Dispatch } from "react";
 import * as THREE from "three";
 import { MeshLine, MeshLineMaterial } from "three.meshline";
 import { BufferGeometryUtils } from "three/examples/jsm/Addons.js";
@@ -16,6 +17,7 @@ export const createNetworkLink = (
   loader: THREE.FileLoader,
   scene: THREE.Scene,
   meshLines: THREE.BufferGeometry[],
+  setLoadFileRemaining: Dispatch<React.SetStateAction<number>>,
   networkFile?: { link: string; node: string }
 ): void => {
   if (!networkFile) {
@@ -104,5 +106,7 @@ export const createNetworkLink = (
     const linkGeometry = new THREE.Mesh(mergedGeometry, linkMaterial);
     linkGeometry.name = "link";
     scene.add(linkGeometry);
+
+    setLoadFileRemaining((prev) => prev - 1);
   });
 };

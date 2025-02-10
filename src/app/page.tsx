@@ -19,7 +19,6 @@ export default function Page() {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const [center, setCenter] = useState<[number, number]>([0, 0]);
-  const [loading, setLoading] = useState(true);
 
   const selectedData = Prefectures.Prefectures;
   const rootPath = selectedData && selectedData.rootPath;
@@ -29,6 +28,8 @@ export default function Page() {
   const loader = new THREE.FileLoader().setResponseType("json");
   const scene = new THREE.Scene();
   const meshLines: THREE.BufferGeometry[] = [];
+
+  const [loadFileRemaining, setLoadFileRemaining] = useState(geoFiles.length);
 
   useEffect(() => {
     if (!selectedData) {
@@ -101,15 +102,19 @@ export default function Page() {
     zoomControls.noRotate = true;
     zoomControls.noZoom = true;
 
-    // geoJSONファイルを読み込み
-    (async () => {
-      const promises = geoFiles.map((f) => {
-        const depth = 0.001;
-        return loadAndAddToScene(f, center, 0, depth, loader, scene);
-      });
-      await Promise.all(promises);
-      setLoading(false);
-    })();
+    // geoJSONファイルの読み込み
+    geoFiles.map((f) => {
+      const depth = 0.001;
+      return loadAndAddToScene(
+        f,
+        center,
+        0,
+        depth,
+        loader,
+        scene,
+        setLoadFileRemaining
+      );
+    });
 
     // 描画
     const animate = () => {
@@ -150,7 +155,10 @@ export default function Page() {
 
   return (
     <>
-      {loading && <GeoFilesLoader />}
+      <GeoFilesLoader
+        loadFileRemaining={loadFileRemaining}
+        totalFileCount={geoFiles.length}
+      />
       {selectedData ? (
         <div ref={containerRef} />
       ) : (
