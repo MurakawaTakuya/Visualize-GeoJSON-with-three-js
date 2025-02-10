@@ -1,6 +1,6 @@
 "use client";
+import ThreeScene from "@/components/ThreeScene/ThreeScene";
 import { use } from "react";
-import ThreeScene from "../ThreeScene";
 interface Params {
   place: string;
 }

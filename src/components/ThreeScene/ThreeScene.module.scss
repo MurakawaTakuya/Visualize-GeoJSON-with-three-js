@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.pageTopLink {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: white;
+  @include phone {
+    top: 10px;
+    left: 10px;
+  }
+}

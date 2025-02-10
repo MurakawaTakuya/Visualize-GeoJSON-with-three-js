@@ -1,4 +1,4 @@
-import PlaceSelection from "@/components/PlaceSelection";
+import PlaceSelection from "@/components/PlaceSelection/PlaceSelection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";

@@ -1,5 +1,5 @@
 "use client";
-import GeoFilesLoader from "@/components/GeoFilesLoader";
+import GeoFilesLoader from "@/components/GeoFilesLoader/GeoFilesLoader";
 import { data } from "@/const/const";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { getFloorNumber } from "@/utils/getFloorNumber";
@@ -13,6 +13,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
+import styles from "./ThreeScene.module.scss";
 
 interface ThreeSceneProps {
   place: string;
@@ -228,17 +229,9 @@ export default function ThreeScene({
         loadFileRemaining={loadFileRemaining}
         totalFileCount={totalFileCount}
       />
-      <p
-        style={{
-          position: "absolute",
-          top: "20px",
-          left: "20px",
-          color: "white",
-          fontWeight: "bold",
-        }}
-      >
-        <Link href="/">トップに戻る</Link>
-      </p>
+      <Link href="/" className={styles.pageTopLink}>
+        トップに戻る
+      </Link>
       {selectedData ? (
         <div ref={containerRef} />
       ) : (

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.selectionWrap {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 auto;
+  color: white;
+  transform: translateX(-50%);
+  @include phone {
+    top: 40px;
+  }
+}
+
+.selectionArrow {
+  cursor: pointer;
+  zoom: 1.2;
+  background-color: black;
+  @include phone {
+    display: none;
+  }
+}
+
+.selectionCard {
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
+  border: thin solid white;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+}

@@ -1,5 +1,5 @@
 "use client";
-import GeoFilesLoader from "@/components/GeoFilesLoader";
+import GeoFilesLoader from "@/components/GeoFilesLoader/GeoFilesLoader";
 import { Prefectures } from "@/const/Prefectures";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
@@ -102,7 +102,7 @@ export default function Page() {
     zoomControls.noZoom = true;
 
     // geoJSONファイルの読み込み
-    geoFiles.map((f) => {
+    geoFiles.forEach((f) => {
       const depth = 0.001;
       return loadAndAddToScene(
         f,

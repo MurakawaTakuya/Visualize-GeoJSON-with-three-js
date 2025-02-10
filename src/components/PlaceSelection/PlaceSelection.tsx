@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { data } from "@/const/const";
 import { useEffect, useState } from "react";
+import styles from "./PlaceSelection.module.scss";
 
 export default function PlaceSelection() {
   const [api, setApi] = useState<CarouselApi>();
@@ -30,16 +31,7 @@ export default function PlaceSelection() {
   }, [api]);
 
   return (
-    <div
-      style={{
-        margin: "0 auto",
-        color: "white",
-        position: "absolute",
-        top: "2%",
-        left: "50%",
-        transform: "translateX(-50%)",
-      }}
-    >
+    <div className={styles.selectionWrap}>
       <Carousel
         setApi={setApi}
         opts={{
@@ -52,24 +44,14 @@ export default function PlaceSelection() {
             <CarouselItem key={index}>
               <div className="p-1">
                 <Card
+                  className={styles.selectionCard}
                   style={{
-                    border: "thin solid white",
-                    background: `linear-gradient(rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)), url(/PlaceImages/${key}.webp)`,
-                    backgroundSize: "cover",
+                    background: `linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.2)), url(/PlaceImages/${key}.webp)`,
                     backgroundPosition: "center",
-                    textShadow: "0px 0px 5px black",
-                    fontWeight: "bold",
+                    backgroundSize: "cover",
                   }}
                 >
-                  <a
-                    href={data[key].rootPath}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      padding: "16px",
-                    }}
-                  >
+                  <a href={data[key].rootPath}>
                     <p className="text-2xl font-semibold">{data[key].name}</p>
                     <p>3Dで見に行く</p>
                   </a>
@@ -78,20 +60,8 @@ export default function PlaceSelection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious
-          style={{
-            cursor: "pointer",
-            backgroundColor: "black",
-            zoom: 1.2,
-          }}
-        />
-        <CarouselNext
-          style={{
-            cursor: "pointer",
-            backgroundColor: "black",
-            zoom: 1.2,
-          }}
-        />
+        <CarouselPrevious className={styles.selectionArrow} />
+        <CarouselNext className={styles.selectionArrow} />
       </Carousel>
       {current != 0 && count != 0 && (
         <p style={{ paddingTop: "3px", textAlign: "center" }}>

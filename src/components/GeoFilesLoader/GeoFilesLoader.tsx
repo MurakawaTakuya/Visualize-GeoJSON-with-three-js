@@ -1,4 +1,5 @@
 import CircularProgress from "@mui/joy/CircularProgress";
+import styles from "./GeoFilesLoader.module.scss";
 
 export default function GeoFilesLoader({
   loadFileRemaining,
@@ -10,14 +11,7 @@ export default function GeoFilesLoader({
   return (
     <>
       {loadFileRemaining > 0 && (
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
+        <div className={styles.loaderWrapper}>
           <CircularProgress size="lg" variant="plain" />
           <p style={{ color: "white", textAlign: "center", marginTop: "3px" }}>
             {totalFileCount - loadFileRemaining} / {totalFileCount}
