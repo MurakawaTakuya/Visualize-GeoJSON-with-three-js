@@ -1,11 +1,74 @@
 {
-"type": "FeatureCollection",
-"name": "ChiyodaNiju_B1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "ba7e037e39604c7eb74fa7cc97444f7f", "floor_id": "0dff2dcf23134736b03cbe53a8fe805d", "name": "皇居・二重橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6522.701612036196821, -35587.918329594096576 ], [ -6518.899931654139436, -35588.89396355298959 ] ] } },
-{ "type": "Feature", "properties": { "id": "942a88f0ee9d4bb28c5dddca5e1d7445", "floor_id": "0dff2dcf23134736b03cbe53a8fe805d", "name": "皇居・二重橋方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6515.591663950554903, -35583.200611470310832 ], [ -6516.399023084921282, -35585.640506029230892 ] ] } },
-{ "type": "Feature", "properties": { "id": "a77f2430efca4711a455bf3c07f93913", "floor_id": "3cef79a5fbd24fd68f06a4a821038ccf", "name": "ＪＲ東京駅方面改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6448.927200930936124, -35334.390520423061389 ], [ -6453.228629954272947, -35333.153069666426745 ] ] } },
-{ "type": "Feature", "properties": { "id": "2f1cd28f80184af8ba4ed892402047f9", "floor_id": "eca4fb0b023a4769b5a9279a964a4e48", "name": "エレベーター専用改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6459.273088024922799, -35380.859247308777412 ], [ -6459.657259826608424, -35382.267948251057533 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "ChiyodaNiju_B1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ba7e037e39604c7eb74fa7cc97444f7f",
+        "floor_id": "0dff2dcf23134736b03cbe53a8fe805d",
+        "name": "皇居・二重橋方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6522.701612036196821, -35587.918329594096576],
+          [-6518.899931654139436, -35588.89396355298959]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "942a88f0ee9d4bb28c5dddca5e1d7445",
+        "floor_id": "0dff2dcf23134736b03cbe53a8fe805d",
+        "name": "皇居・二重橋方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6515.591663950554903, -35583.200611470310832],
+          [-6516.399023084921282, -35585.640506029230892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a77f2430efca4711a455bf3c07f93913",
+        "floor_id": "3cef79a5fbd24fd68f06a4a821038ccf",
+        "name": "ＪＲ東京駅方面改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6448.927200930936124, -35334.390520423061389],
+          [-6453.228629954272947, -35333.153069666426745]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2f1cd28f80184af8ba4ed892402047f9",
+        "floor_id": "eca4fb0b023a4769b5a9279a964a4e48",
+        "name": "エレベーター専用改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6459.273088024922799, -35380.859247308777412],
+          [-6459.657259826608424, -35382.267948251057533]
+        ]
+      }
+    }
+  ]
 }

@@ -1,8 +1,26 @@
 {
-"type": "FeatureCollection",
-"name": "TEKKOU_B2_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "cb69f6693ed64e7dad6a2a921807a827", "floor_id": "599c3f337eb44055b12be375d2ff3d67", "name": null, "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5706.932952301843216, -35102.604621923979721 ], [ -5712.843316717568996, -35101.028760773195245 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "TEKKOU_B2_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "cb69f6693ed64e7dad6a2a921807a827",
+        "floor_id": "599c3f337eb44055b12be375d2ff3d67",
+        "name": null,
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5706.932952301843216, -35102.604621923979721],
+          [-5712.843316717568996, -35101.028760773195245]
+        ]
+      }
+    }
+  ]
 }

@@ -1,16 +1,154 @@
 {
-"type": "FeatureCollection",
-"name": "Tozai_B2_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "2f21365fc3d745e3bdb9c65e929b7c17", "floor_id": "ea196d9a017d498cbd52a41882aeacde", "name": "西改札（丸の内仲通り）", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6225.883570575945669, -34955.226276673740358 ], [ -6226.657486217600308, -34957.930550950200995 ] ] } },
-{ "type": "Feature", "properties": { "id": "818615b005b44940924728637160078f", "floor_id": "ea196d9a017d498cbd52a41882aeacde", "name": "西改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6166.959663391543472, -34961.158853473287309 ], [ -6165.190676719261319, -34961.665100589620124 ] ] } },
-{ "type": "Feature", "properties": { "id": "83e364e769a74146952f5438f0d96481", "floor_id": "ea196d9a017d498cbd52a41882aeacde", "name": "西改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6163.171724532606277, -34962.242882624683261 ], [ -6158.071466754349785, -34963.70247009749437 ] ] } },
-{ "type": "Feature", "properties": { "id": "b39d5d2ebe344e1db591b455ff4d8f55", "floor_id": "4cf750c8616f456786429d70d1c32e49", "name": "西改札", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6150.744958278281047, -34972.550385074137012 ], [ -6151.364425872155152, -34974.714995647045725 ] ] } },
-{ "type": "Feature", "properties": { "id": "2e39971bb3e44e17b4c8929d034aa1be", "floor_id": "2a84fb00a53d40718a24b55cb6ec106c", "name": "中央改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -6064.067733209637481, -34990.256125714324298 ], [ -6061.375796964142864, -34991.026501754233323 ] ] } },
-{ "type": "Feature", "properties": { "id": "fcb753722a274c65b9b363b40766cd49", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5954.830107193196454, -35030.618625681272533 ], [ -5953.246361844740022, -35031.071860524309159 ] ] } },
-{ "type": "Feature", "properties": { "id": "de3eec0b4a9e40e087ab0c758fc03577", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5951.865096047557927, -35030.882589093482238 ], [ -5949.413511240581101, -35031.584181555481337 ] ] } },
-{ "type": "Feature", "properties": { "id": "f0097ef474ea40e58f782b570822d187", "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b", "name": "東改札", "source": "2" }, "geometry": { "type": "LineString", "coordinates": [ [ -5948.918323904700628, -35022.948122831636283 ], [ -5947.668496352133843, -35023.305797418230213 ] ] } },
-{ "type": "Feature", "properties": { "id": "21ed102ad0b941de9a2d4b7968cdb625", "floor_id": "f9b1600ff04849d19addd3bb5ec831e7", "name": "西改札（丸の内仲通り）", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6225.913600817377301, -34961.802657884232758 ], [ -6223.822589696778778, -34962.329684628057294 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "Tozai_B2_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2f21365fc3d745e3bdb9c65e929b7c17",
+        "floor_id": "ea196d9a017d498cbd52a41882aeacde",
+        "name": "西改札（丸の内仲通り）",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6225.883570575945669, -34955.226276673740358],
+          [-6226.657486217600308, -34957.930550950200995]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "818615b005b44940924728637160078f",
+        "floor_id": "ea196d9a017d498cbd52a41882aeacde",
+        "name": "西改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6166.959663391543472, -34961.158853473287309],
+          [-6165.190676719261319, -34961.665100589620124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "83e364e769a74146952f5438f0d96481",
+        "floor_id": "ea196d9a017d498cbd52a41882aeacde",
+        "name": "西改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6163.171724532606277, -34962.242882624683261],
+          [-6158.071466754349785, -34963.70247009749437]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b39d5d2ebe344e1db591b455ff4d8f55",
+        "floor_id": "4cf750c8616f456786429d70d1c32e49",
+        "name": "西改札",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6150.744958278281047, -34972.550385074137012],
+          [-6151.364425872155152, -34974.714995647045725]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2e39971bb3e44e17b4c8929d034aa1be",
+        "floor_id": "2a84fb00a53d40718a24b55cb6ec106c",
+        "name": "中央改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6064.067733209637481, -34990.256125714324298],
+          [-6061.375796964142864, -34991.026501754233323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fcb753722a274c65b9b363b40766cd49",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5954.830107193196454, -35030.618625681272533],
+          [-5953.246361844740022, -35031.071860524309159]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "de3eec0b4a9e40e087ab0c758fc03577",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5951.865096047557927, -35030.882589093482238],
+          [-5949.413511240581101, -35031.584181555481337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f0097ef474ea40e58f782b570822d187",
+        "floor_id": "c7699f2015a04cf182f7b4e1d9eafc7b",
+        "name": "東改札",
+        "source": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-5948.918323904700628, -35022.948122831636283],
+          [-5947.668496352133843, -35023.305797418230213]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21ed102ad0b941de9a2d4b7968cdb625",
+        "floor_id": "f9b1600ff04849d19addd3bb5ec831e7",
+        "name": "西改札（丸の内仲通り）",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6225.913600817377301, -34961.802657884232758],
+          [-6223.822589696778778, -34962.329684628057294]
+        ]
+      }
+    }
+  ]
 }

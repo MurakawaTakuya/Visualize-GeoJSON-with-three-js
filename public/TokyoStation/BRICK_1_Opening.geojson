@@ -1,17 +1,170 @@
 {
-"type": "FeatureCollection",
-"name": "BRICK_1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "1697f3a1a1da474487050042522b5d4e", "floor_id": "eeab4a989e7a49eab53054cf4995803d", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6385.450431205365931, -35669.244696673173166 ], [ -6384.143071153644996, -35669.597198656934779 ] ] } },
-{ "type": "Feature", "properties": { "id": "8faea74918a447f28027ad89a166e6a7", "floor_id": "91505b79054342e581353b08e706ccb6", "name": "ショップ＆レストラン入口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6385.392100013425988, -35646.86667025902716 ], [ -6383.863649564555089, -35647.273141504381783 ] ] } },
-{ "type": "Feature", "properties": { "id": "05e66e874d6e41eb90dea44fb1419138", "floor_id": "91505b79054342e581353b08e706ccb6", "name": "ショップ＆レストラン入口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6397.962495070845762, -35622.595899713654944 ], [ -6398.982544967998365, -35626.070048374123871 ] ] } },
-{ "type": "Feature", "properties": { "id": "579a6a6a43b94a8ca0543bf3d83ba978", "floor_id": "91505b79054342e581353b08e706ccb6", "name": "ショップ＆レストラン入口", "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6363.883338709332747, -35635.568564984627301 ], [ -6364.333739466864245, -35637.155458292370895 ] ] } },
-{ "type": "Feature", "properties": { "id": "818abb011d57476d9951c477e138d09b", "floor_id": "91505b79054342e581353b08e706ccb6", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6357.891024415426728, -35635.225307015469298 ], [ -6358.16831724677013, -35636.202292366680922 ] ] } },
-{ "type": "Feature", "properties": { "id": "f85dc31d69d44268b8eb121f37554690", "floor_id": "91505b79054342e581353b08e706ccb6", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6358.824271826472796, -35634.075667347264243 ], [ -6359.994279121646287, -35633.760205281912931 ] ] } },
-{ "type": "Feature", "properties": { "id": "796073e0b7834cfc96b9d6dd80ef7f19", "floor_id": "91505b79054342e581353b08e706ccb6", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6395.013673110540367, -35623.391011151215935 ], [ -6396.033721945214893, -35626.865160145913251 ] ] } },
-{ "type": "Feature", "properties": { "id": "f60f2fa3c1de4437806ca78d3978a858", "floor_id": "91505b79054342e581353b08e706ccb6", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6366.508666803872984, -35634.860711728331808 ], [ -6366.959065031055616, -35636.447596061414515 ] ] } },
-{ "type": "Feature", "properties": { "id": "babfbce5172e4b5499aa8e6781646529", "floor_id": "91505b79054342e581353b08e706ccb6", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6384.774729170540922, -35644.68728762234241 ], [ -6383.247764507991633, -35645.099002536284388 ] ] } },
-{ "type": "Feature", "properties": { "id": "6f6c8aa3eab8419c8307c86555662030", "floor_id": "eeab4a989e7a49eab53054cf4995803d", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6385.450431205365931, -35669.244696673173166 ], [ -6386.778483264440183, -35668.886617892858339 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "BRICK_1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1697f3a1a1da474487050042522b5d4e",
+        "floor_id": "eeab4a989e7a49eab53054cf4995803d",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6385.450431205365931, -35669.244696673173166],
+          [-6384.143071153644996, -35669.597198656934779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8faea74918a447f28027ad89a166e6a7",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": "ショップ＆レストラン入口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6385.392100013425988, -35646.86667025902716],
+          [-6383.863649564555089, -35647.273141504381783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "05e66e874d6e41eb90dea44fb1419138",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": "ショップ＆レストラン入口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6397.962495070845762, -35622.595899713654944],
+          [-6398.982544967998365, -35626.070048374123871]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "579a6a6a43b94a8ca0543bf3d83ba978",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": "ショップ＆レストラン入口",
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6363.883338709332747, -35635.568564984627301],
+          [-6364.333739466864245, -35637.155458292370895]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "818abb011d57476d9951c477e138d09b",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6357.891024415426728, -35635.225307015469298],
+          [-6358.16831724677013, -35636.202292366680922]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f85dc31d69d44268b8eb121f37554690",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6358.824271826472796, -35634.075667347264243],
+          [-6359.994279121646287, -35633.760205281912931]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "796073e0b7834cfc96b9d6dd80ef7f19",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6395.013673110540367, -35623.391011151215935],
+          [-6396.033721945214893, -35626.865160145913251]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f60f2fa3c1de4437806ca78d3978a858",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6366.508666803872984, -35634.860711728331808],
+          [-6366.959065031055616, -35636.447596061414515]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "babfbce5172e4b5499aa8e6781646529",
+        "floor_id": "91505b79054342e581353b08e706ccb6",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6384.774729170540922, -35644.68728762234241],
+          [-6383.247764507991633, -35645.099002536284388]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6f6c8aa3eab8419c8307c86555662030",
+        "floor_id": "eeab4a989e7a49eab53054cf4995803d",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6385.450431205365931, -35669.244696673173166],
+          [-6386.778483264440183, -35668.886617892858339]
+        ]
+      }
+    }
+  ]
 }

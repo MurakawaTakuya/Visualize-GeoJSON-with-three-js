@@ -1,15 +1,139 @@
 {
-"type": "FeatureCollection",
-"name": "OAZO_1_Opening",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6677" } },
-"features": [
-{ "type": "Feature", "properties": { "id": "e29c4a58649649bf8039711eb5244106", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6060.817892363155806, -35129.109187743495568 ], [ -6059.431575139054075, -35129.499417219405586 ] ] } },
-{ "type": "Feature", "properties": { "id": "6983d907ec9c4bd6b6667ef9ddaf4e60", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6057.929867261427717, -35129.922127598598308 ], [ -6056.591886375848844, -35130.298751051697764 ] ] } },
-{ "type": "Feature", "properties": { "id": "9444b28df6b548d7b42dcec9e2dc59ed", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6089.150278709597842, -35092.619370280277508 ], [ -6089.364780049744695, -35092.966916140605463 ], [ -6089.923302490117749, -35094.076147927589773 ] ] } },
-{ "type": "Feature", "properties": { "id": "03c4566a5c8f48178de5d8fbf3210168", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6036.057232274514718, -35083.689279609723599 ], [ -6036.815032278819672, -35086.381416568467102 ] ] } },
-{ "type": "Feature", "properties": { "id": "84bef16d04db42c1ae2f781149e2b8c3", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6039.185253216443016, -35082.70210725859215 ], [ -6040.001109571509915, -35085.60049342714774 ] ] } },
-{ "type": "Feature", "properties": { "id": "26de9335438143a08b0f36512edc4c81", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6052.807835967234496, -35078.018263396166731 ], [ -6053.732972259492271, -35081.304870865562407 ] ] } },
-{ "type": "Feature", "properties": { "id": "a91f371f0b1e420daeded759c48ce261", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6031.418676198861249, -35028.175045569769281 ], [ -6029.230542981409599, -35028.790975368458021 ] ] } },
-{ "type": "Feature", "properties": { "id": "f20c27cfbcea450ea3d40cfbce484128", "floor_id": "62740e6d344549d0b511a4518f53bc1c", "name": null, "source": "1" }, "geometry": { "type": "LineString", "coordinates": [ [ -6048.347166073878725, -35070.449563775422575 ], [ -6048.948542277080378, -35072.585998474016378 ] ] } }
-]
+  "type": "FeatureCollection",
+  "name": "OAZO_1_Opening",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:EPSG::6677" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e29c4a58649649bf8039711eb5244106",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6060.817892363155806, -35129.109187743495568],
+          [-6059.431575139054075, -35129.499417219405586]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6983d907ec9c4bd6b6667ef9ddaf4e60",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6057.929867261427717, -35129.922127598598308],
+          [-6056.591886375848844, -35130.298751051697764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9444b28df6b548d7b42dcec9e2dc59ed",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6089.150278709597842, -35092.619370280277508],
+          [-6089.364780049744695, -35092.966916140605463],
+          [-6089.923302490117749, -35094.076147927589773]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "03c4566a5c8f48178de5d8fbf3210168",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6036.057232274514718, -35083.689279609723599],
+          [-6036.815032278819672, -35086.381416568467102]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "84bef16d04db42c1ae2f781149e2b8c3",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6039.185253216443016, -35082.70210725859215],
+          [-6040.001109571509915, -35085.60049342714774]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "26de9335438143a08b0f36512edc4c81",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6052.807835967234496, -35078.018263396166731],
+          [-6053.732972259492271, -35081.304870865562407]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a91f371f0b1e420daeded759c48ce261",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6031.418676198861249, -35028.175045569769281],
+          [-6029.230542981409599, -35028.790975368458021]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "f20c27cfbcea450ea3d40cfbce484128",
+        "floor_id": "62740e6d344549d0b511a4518f53bc1c",
+        "name": null,
+        "source": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6048.347166073878725, -35070.449563775422575],
+          [-6048.948542277080378, -35072.585998474016378]
+        ]
+      }
+    }
+  ]
 }
