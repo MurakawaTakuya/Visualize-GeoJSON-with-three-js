@@ -1,3 +1,4 @@
+"use client";
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
@@ -53,7 +54,11 @@ export default function PlaceSelection() {
                 <Card
                   style={{
                     border: "thin solid white",
-                    backgroundColor: "black",
+                    background: `linear-gradient(rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25)), url(/PlaceImages/${key}.webp)`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    textShadow: "0px 0px 5px black",
+                    fontWeight: "bold",
                   }}
                 >
                   <a

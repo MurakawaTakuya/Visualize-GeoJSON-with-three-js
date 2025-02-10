@@ -1,6 +1,5 @@
 "use client";
 import GeoFilesLoader from "@/components/GeoFilesLoader";
-import PlaceSelection from "@/components/PlaceSelection";
 import { Prefectures } from "@/const/Prefectures";
 import { calculateCenterPoint } from "@/utils/calculateCenterPoint";
 import { loadAndAddToScene } from "@/utils/loadAndAddToScene";
@@ -166,8 +165,6 @@ export default function Page() {
           データが見つかりません
         </p>
       )}
-
-      <PlaceSelection />
     </>
   );
 }

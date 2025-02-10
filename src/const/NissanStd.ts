@@ -1,6 +1,6 @@
 export const NissanStd = {
   NissanStd: {
-    name: "日産スタジアム",
+    name: "横浜国際総合競技場",
     rootPath: "/NissanStd/",
     networkFile: {
       node: "NissanStd_node.geojson",

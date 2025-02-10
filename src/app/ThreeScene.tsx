@@ -231,9 +231,10 @@ export default function ThreeScene({
       <p
         style={{
           position: "absolute",
-          top: "0",
+          top: "20px",
           left: "20px",
           color: "white",
+          fontWeight: "bold",
         }}
       >
         <Link href="/">トップに戻る</Link>

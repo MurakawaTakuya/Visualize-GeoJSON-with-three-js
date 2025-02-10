@@ -1,3 +1,4 @@
+import PlaceSelection from "@/components/PlaceSelection";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -20,6 +21,7 @@ export default function RootLayout({
           {children}
           <SpeedInsights />
           <Analytics />
+          <PlaceSelection />
         </main>
       </body>
     </html>
