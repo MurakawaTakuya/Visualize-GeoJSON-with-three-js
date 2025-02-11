@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Visualize GeoJSON with Three.js
+This app visualizes GeoJSON data with Three.js. GeoJSON data is generated with [convert-shp-to-geojson](https://github.com/MurakawaTakuya/convert-shp-to-geojson) using shp files.
+## Tech Stack
+- Next.js
+- Three.js
 
-## Getting Started
+## Data Source
+3Dデータ: [国土交通省 G空間情報センター](https://www.geospatial.jp/ckan/organization/seisakutokatsu)
+- `ShinjukuTerminal`: [新宿駅周辺屋内地図オープンデータ（令和2年度更新版）](https://www.geospatial.jp/ckan/dataset/mlit-indoor-shinjuku-r2)
+- `NagoyaUnimall`: [ユニモール地下街 屋内地図オープンデータ](https://www.geospatial.jp/ckan/dataset/city-nagoya-indoor-unimall)
+- `NagoyaCentralPark`: [セントラルパーク地下街 屋内地図オープンデータ](https://www.geospatial.jp/ckan/dataset/city-nagoya-indoor-centralpark?resource_id=f803f525-bd47-44f3-8a99-9ad1a01205f8)
+- `NaritaAirport`: [成田国際空港屋内地図オープンデータ（令和２年度更新版）](https://www.geospatial.jp/ckan/dataset/mlit-indoor-narita-airport-r2)
+- `NissanStd`: [横浜国際総合競技場屋内地図オープンデータ](https://www.geospatial.jp/ckan/dataset/mlit-indoor-yokohama-arena)
+- `ShinyokohamaStation`: [新横浜駅屋内地図オープンデータ](https://www.geospatial.jp/ckan/dataset/mlit-indoor-shin-yokohama)
+- `TokyoStation`: [東京駅周辺屋内地図オープンデータ（令和２年度更新版）](https://www.geospatial.jp/ckan/dataset/mlit-indoor-tokyo-r2)
 
-First, run the development server:
+日本地図(県境): [47都道府県のポリゴンデータ geojson](https://japonyol.net/editor/article/47-prefectures-geojson.html)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The code I referred to is [Three.jsで新宿駅構内図を3Dで可視化してみる](https://qiita.com/satoshi7190/items/23d192372877af75b283)

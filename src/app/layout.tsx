@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.scss";
 
 export const metadata: Metadata = {
-  title: "Visualize GeoJSON with Three js",
+  title: "Visualize GeoJSON with Three.js",
   description: "This app visualizes GeoJSON data using Three.js.",
 };
 
