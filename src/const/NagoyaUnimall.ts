@@ -25,5 +25,9 @@ export const NagoyaUnimall = {
       lat: 35.171494875999997,
       lon: 136.88388259499999,
     },
+    source: {
+      text: "ユニモール地下街 屋内地図オープンデータ(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/city-nagoya-indoor-unimall",
+    },
   },
 };

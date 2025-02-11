@@ -356,5 +356,9 @@ export const TokyoStation = {
       lat: 35.673179538590972,
       lon: 139.75770945919132,
     },
+    source: {
+      text: "東京駅周辺屋内地図オープンデータ(令和2年度更新版)(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/mlit-indoor-tokyo-r2",
+    },
   },
 };

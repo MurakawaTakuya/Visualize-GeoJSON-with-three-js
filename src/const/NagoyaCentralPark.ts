@@ -25,5 +25,9 @@ export const NagoyaCentralPark = {
       lat: 35.173876354000001,
       lon: 136.90734294800001,
     },
+    source: {
+      text: "セントラルパーク地下街 屋内地図オープンデータ(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/city-nagoya-indoor-centralpark?resource_id=f803f525-bd47-44f3-8a99-9ad1a01205f8",
+    },
   },
 };

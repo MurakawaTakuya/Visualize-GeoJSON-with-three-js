@@ -13,6 +13,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { MapControls, TrackballControls } from "three/examples/jsm/Addons.js";
 import GUI from "three/examples/jsm/libs/lil-gui.module.min.js";
+import Reference from "../Reference/Reference";
 import styles from "./ThreeScene.module.scss";
 
 interface ThreeSceneProps {
@@ -223,8 +224,12 @@ export default function ThreeScene({
     };
   }, [center, setLoadFileRemaining]);
 
+  const sourceText = selectedData.source.text;
+  const sourceUrl = selectedData.source.url;
+
   return (
     <>
+      <Reference text={sourceText} url={sourceUrl} />
       <GeoFilesLoader
         loadFileRemaining={loadFileRemaining}
         totalFileCount={totalFileCount}

@@ -64,5 +64,9 @@ export const NissanStd = {
       lat: 35.508893267585599,
       lon: 139.60472214430615,
     },
+    source: {
+      text: "横浜国際総合競技場屋内地図オープンデータ(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/mlit-indoor-yokohama-arena",
+    },
   },
 };

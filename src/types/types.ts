@@ -25,6 +25,10 @@ export interface FileStructure {
   geoFiles: string[];
   center?: [number, number];
   coordinate: { lat: number; lon: number };
+  source: {
+    text: string;
+    url: string;
+  };
 }
 
 export interface MaterialWithTextures extends THREE.Material {

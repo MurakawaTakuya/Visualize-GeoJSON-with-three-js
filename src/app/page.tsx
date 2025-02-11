@@ -1,5 +1,6 @@
 "use client";
 import GeoFilesLoader from "@/components/GeoFilesLoader/GeoFilesLoader";
+import Reference from "@/components/Reference/Reference";
 import { data } from "@/const/const";
 import { Prefectures } from "@/const/Prefectures";
 import { FocusContext } from "@/context/FocusContext";
@@ -173,11 +174,16 @@ export default function Page() {
     });
   }, [center, focusName, sceneRef.current]);
 
+  const sourceText = Prefectures.Prefectures.source.text;
+  const sourceUrl = Prefectures.Prefectures.source.url;
+
   return (
     <>
+      <Reference text={sourceText} url={sourceUrl} />
       <GeoFilesLoader
         loadFileRemaining={loadFileRemaining}
         totalFileCount={geoFiles.length}
+        showProgress={false}
       />
       {selectedData ? (
         <div ref={containerRef} />

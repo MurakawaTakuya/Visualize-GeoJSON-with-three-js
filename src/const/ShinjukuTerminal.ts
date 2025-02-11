@@ -84,5 +84,9 @@ export const ShinjukuTerminal = {
       lat: 35.688332326154239,
       lon: 139.69877724857821,
     },
+    source: {
+      text: "新宿駅周辺屋内地図オープンデータ(令和2年度更新版)(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/mlit-indoor-shinjuku-r2",
+    },
   },
 };

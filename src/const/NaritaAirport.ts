@@ -141,5 +141,9 @@ export const NaritaAirport = {
       lat: 35.773122623636617,
       lon: 140.38708573103551,
     },
+    source: {
+      text: "成田国際空港屋内地図オープンデータ(令和2年度更新版)(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/mlit-indoor-narita-airport-r2",
+    },
   },
 };

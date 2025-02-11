@@ -4,7 +4,7 @@ import styles from "./GeoFilesLoader.module.scss";
 export default function GeoFilesLoader({
   loadFileRemaining,
   totalFileCount,
-  showProgress,
+  showProgress = true,
 }: {
   loadFileRemaining: number;
   totalFileCount: number;
@@ -16,9 +16,7 @@ export default function GeoFilesLoader({
         <div className={styles.loaderWrapper}>
           <CircularProgress size="lg" variant="plain" />
           {showProgress && (
-            <p
-              style={{ color: "white", textAlign: "center", marginTop: "3px" }}
-            >
+            <p>
               {totalFileCount - loadFileRemaining} / {totalFileCount}
             </p>
           )}

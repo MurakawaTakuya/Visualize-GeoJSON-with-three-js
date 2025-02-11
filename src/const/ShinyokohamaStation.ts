@@ -44,5 +44,9 @@ export const ShinyokohamaStation = {
     ],
     center: [-19581.029990072282, -54564.37425489624] as [number, number],
     coordinate: { lat: 35.5081185388, lon: 139.617829259 },
+    source: {
+      text: "横浜国際総合競技場屋内地図オープンデータ(国土交通省)",
+      url: "https://www.geospatial.jp/ckan/dataset/mlit-indoor-shin-yokohama",
+    },
   },
 };
