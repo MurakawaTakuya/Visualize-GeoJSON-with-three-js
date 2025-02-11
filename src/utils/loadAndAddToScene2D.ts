@@ -1,4 +1,4 @@
-import { prefectureScale, verticalOffset } from "@/const/const";
+import { prefectureZoomScale, verticalOffset } from "@/const/const";
 import { Feature, FeatureCollection } from "geojson";
 import { Dispatch } from "react";
 import * as THREE from "three";
@@ -44,8 +44,8 @@ export const loadAndAddToScene2D = (
                 color: "rgb(255, 0, 0)",
               });
               pointGeometry.translate(
-                (longitude - center[0]) * prefectureScale,
-                (latitude - center[1]) * prefectureScale,
+                (longitude - center[0]) * prefectureZoomScale,
+                (latitude - center[1]) * prefectureZoomScale,
                 0
               );
               const pointMesh = new THREE.Mesh(pointGeometry, pointMaterial);
@@ -68,8 +68,8 @@ export const loadAndAddToScene2D = (
               ).map(
                 ([lng, lat]) =>
                   new THREE.Vector3(
-                    (lng - center[0]) * prefectureScale,
-                    (lat - center[1]) * prefectureScale,
+                    (lng - center[0]) * prefectureZoomScale,
+                    (lat - center[1]) * prefectureZoomScale,
                     0
                   )
               );
@@ -102,8 +102,8 @@ export const loadAndAddToScene2D = (
                 coordinates.map(
                   ([lng, lat]) =>
                     new THREE.Vector2(
-                      (lng - center[0]) * prefectureScale,
-                      (lat - center[1]) * prefectureScale
+                      (lng - center[0]) * prefectureZoomScale,
+                      (lat - center[1]) * prefectureZoomScale
                     )
                 )
               );
@@ -135,8 +135,8 @@ export const loadAndAddToScene2D = (
                     (coordinates[0] as [number, number][]).map(
                       ([lng, lat]) =>
                         new THREE.Vector2(
-                          (lng - center[0]) * prefectureScale,
-                          (lat - center[1]) * prefectureScale
+                          (lng - center[0]) * prefectureZoomScale,
+                          (lat - center[1]) * prefectureZoomScale
                         )
                     )
                   );

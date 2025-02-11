@@ -1,8 +1,8 @@
-import { prefectureScale } from "@/const/const";
+import { prefectureZoomScale } from "@/const/const";
 import * as THREE from "three";
 
 export default function render2DGrid(scene: THREE.Scene) {
-  const gridSize = 1000 * prefectureScale;
+  const gridSize = 1000 * prefectureZoomScale;
 
   // 0.1単位ごとのグリッド(白)
   const smallestDivisions = gridSize;

@@ -1,4 +1,4 @@
-import { prefectureScale } from "@/const/const";
+import { prefectureZoomScale } from "@/const/const";
 import * as THREE from "three";
 
 export default function renderDot(
@@ -15,8 +15,8 @@ export default function renderDot(
   const centerCircle = new THREE.Mesh(circleGeometry, circleMaterial);
   // latitudeが0.1程度ずれているので補正
   centerCircle.position.set(
-    (lon - center[0]) * prefectureScale,
-    (lat - center[1] - 0.1) * prefectureScale,
+    (lon - center[0]) * prefectureZoomScale,
+    (lat - center[1] - 0.1) * prefectureZoomScale,
     0
   );
   // ドットとして識別するため、keyをuserDataに設定
