@@ -78,7 +78,6 @@ export default function Page() {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     containerRef.current.appendChild(renderer.domElement);
 
-    // 追加: OrbitControls を生成
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
@@ -91,12 +90,6 @@ export default function Page() {
     sceneRef.current.add(camera);
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-    // Object.keys(data).forEach((key) => {
-    //   const location = data[key];
-    //   const coord = location.coordinate;
-    //   renderDot(scene, center, key, coord.lat, coord.lon);
-    // });
 
     // グリッドを表示
     // render2DGrid(scene);
