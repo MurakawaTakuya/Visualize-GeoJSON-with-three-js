@@ -19,4 +19,5 @@ export const data: Record<string, FileStructure> = {
 };
 
 export const verticalOffset = 10; // 階の間の幅
-export const prefectureZoomScale = 20; // 日本地図のズーム率
+export const prefectureZoomScale =
+  typeof window !== "undefined" && window.innerWidth <= 767 ? 10 : 20; // 日本地図のズーム率
