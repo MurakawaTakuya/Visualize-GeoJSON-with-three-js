@@ -93,7 +93,7 @@ export default function Page() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     // グリッドを表示
-    // render2DGrid(scene);
+    // render2DGrid(sceneRef.current);
 
     // geoJSONファイルの読み込み
     geoFiles.forEach((f) => {
@@ -110,8 +110,10 @@ export default function Page() {
     // 描画
     const animate = () => {
       requestAnimationFrame(animate);
-      controls.update(); // 追加: コントロールを更新
+      controls.update();
       renderer.render(sceneRef.current, camera);
+
+      // console.log("Position:", camera.position);
     };
     animate();
 
@@ -138,9 +140,8 @@ export default function Page() {
 
     return () => {
       window.removeEventListener("resize", onResize);
-      controls.dispose(); // 追加: コントロールの破棄
+      controls.dispose();
       renderer.dispose();
-      // ...existing cleanup code...
       resetScene(sceneRef.current);
     };
   }, [center]);

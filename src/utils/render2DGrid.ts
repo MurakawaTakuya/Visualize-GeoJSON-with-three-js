@@ -1,6 +1,12 @@
 import { prefectureZoomScale } from "@/const/const";
 import * as THREE from "three";
 
+/**
+ * 2Dグリッドを描画する(テスト用)
+ *
+ * @export
+ * @param {THREE.Scene} scene
+ */
 export default function render2DGrid(scene: THREE.Scene) {
   const gridSize = 1000 * prefectureZoomScale;
 
