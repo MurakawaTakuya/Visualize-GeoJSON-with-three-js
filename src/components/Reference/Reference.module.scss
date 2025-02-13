@@ -1,11 +1,19 @@
+@import "@/styles/variables";
+
 .reference {
   position: absolute;
-  right: 10px;
-  bottom: 8px;
+  right: 8px;
+  bottom: 5px;
+  padding: 3px;
   color: white;
   background: rgba(0, 0, 0, 0.306);
 
   a {
     text-decoration: underline;
+  }
+
+  @include phone {
+    right: 0;
+    bottom: 0;
   }
 }
